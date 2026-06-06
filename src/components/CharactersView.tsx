@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { characters } from "../data";
 import { translations, getLocalizedCharacters, Language } from "../translations";
-<<<<<<< HEAD
 import {
   secondaryCategories,
   secondaryLoreDatabaseEs,
@@ -33,8 +32,6 @@ const valarPagesMap: Record<string, string> = {
   "Nessa la Bailarina": "/characters/nessa-la-bailarina.html",
   "Nessa the Dancer": "/characters/nessa-la-bailarina.html",
 };
-=======
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
 
 interface CharactersViewProps {
   selectedCharId?: string | null;
@@ -57,7 +54,6 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
   const [realmFilter, setRealmFilter] = useState(defaultRealm);
   const [hoveredCardId, setHoveredCardId] = useState<string | null>(null);
 
-<<<<<<< HEAD
   // Secondary characters & Interactive contributions states
   const [selectedSecondaryMember, setSelectedSecondaryMember] = useState<string | null>(null);
   const [showManuscriptModal, setShowManuscriptModal] = useState(false);
@@ -105,8 +101,6 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
     }, 4500);
   };
 
-=======
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
   // Sync state filters on language changes
   useEffect(() => {
     setRaceFilter(defaultRace);
@@ -240,26 +234,15 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
                     onClick={() => onSelectChar(char.id)}
                     onMouseEnter={() => setHoveredCardId(char.id)}
                     onMouseLeave={() => setHoveredCardId(null)}
-<<<<<<< HEAD
                     className={`p-6 flex flex-col gap-5 rounded-2xl group transition-all hover:-translate-y-1 cursor-pointer border ${
                       isSpecial
                         ? "neomorph-card border-red-500/20 shadow-2xl dark:bg-[#111218] dark:border-red-500/30 dark:shadow-red-500/5 dark:hover:border-red-500/50"
                         : "neomorph-card border-white/10"
-=======
-                    className={`neomorph-card p-6 flex flex-col gap-5 rounded-2xl group transition-all hover:-translate-y-1 cursor-pointer border ${
-                      isSpecial
-                        ? "bg-inverse-surface border-primary/20 shadow-2xl"
-                        : "border-white/10"
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
                     }`}
                   >
                     {/* Image Wrapper */}
                     <div className="neomorph-inset rounded-xl overflow-hidden aspect-[4/5] p-2 bg-surface-container-low">
-<<<<<<< HEAD
                        <img
-=======
-                      <img
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
                         className={`w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500 ${
                           hoveredCardId === char.id ? "grayscale-0" : "grayscale"
                         }`}
@@ -271,7 +254,6 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
 
                     {/* Meta info */}
                     <div className="px-2">
-<<<<<<< HEAD
                        <h2 className="font-headline text-2xl font-bold text-on-surface">
                         {char.name}
                        </h2>
@@ -279,33 +261,16 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
                         {char.title} &bull; {char.race}
                       </p>
                       <p className="font-body text-xs md:text-sm leading-relaxed line-clamp-3 text-on-surface-variant">
-=======
-                       <h2 className={`font-headline text-2xl font-bold ${isSpecial ? "text-surface-bright" : "text-on-surface"}`}>
-                        {char.name}
-                      </h2>
-                      <p className="font-label text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">
-                        {char.title} &bull; {char.race}
-                      </p>
-                      <p className={`font-body text-xs md:text-sm leading-relaxed line-clamp-3 ${isSpecial ? "text-surface-dim" : "text-on-surface-variant"}`}>
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
                         {char.bioBlocks && char.bioBlocks[0]?.text}
                       </p>
                     </div>
 
                     {/* Key deeds summary */}
-<<<<<<< HEAD
                     <div className={`mt-auto px-2 pt-4 border-t ${isSpecial ? "border-red-500/20" : "border-outline-variant/30"}`}>
                       <span className={`font-label text-[10px] font-extrabold uppercase tracking-widest block mb-1 ${isSpecial ? "text-red-500 dark:text-red-400" : "text-on-surface-variant"}`}>
                         {t.keyDeedsLabel}:
                       </span>
                       <p className="font-body text-xs italic text-on-surface-variant/80">
-=======
-                    <div className={`mt-auto px-2 pt-4 border-t ${isSpecial ? "border-primary/30" : "border-outline-variant/30"}`}>
-                      <span className={`font-label text-[10px] font-extrabold uppercase tracking-widest block mb-1 ${isSpecial ? "text-primary-fixed-dim" : "text-on-surface-variant"}`}>
-                        {t.keyDeedsLabel}:
-                      </span>
-                      <p className={`font-body text-xs italic ${isSpecial ? "text-surface-dim/85" : "text-on-surface-variant/80"}`}>
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
                         &ldquo;{char.memorableDeeds && char.memorableDeeds[0]?.title}: {char.memorableDeeds && char.memorableDeeds[0]?.text.slice(0, 60)}...&rdquo;
                       </p>
                     </div>
@@ -313,7 +278,6 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
                 );
               })}
             </section>
-<<<<<<< HEAD
 
             {/* 3. MULTI-RACIAL DIRECTORY (AGREGA EL RESTO DE RAZAS Y PERSONAJES CON BOTONES) */}
             <div className="pt-16 space-y-16 border-t border-outline-variant/30">
@@ -434,8 +398,6 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
                 </button>
               </div>
             </div>
-=======
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
           </motion.div>
         ) : (
           /* ========================================================================= */
@@ -683,7 +645,6 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
           </motion.div>
         )}
       </AnimatePresence>
-<<<<<<< HEAD
 
       {/* SECONDARY CHARACTER SCROLL MODAL */}
       <AnimatePresence>
@@ -935,8 +896,6 @@ export const CharactersView: React.FC<CharactersViewProps> = ({
           </motion.div>
         )}
       </AnimatePresence>
-=======
->>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
     </div>
   );
 };
