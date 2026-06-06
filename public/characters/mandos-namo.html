@@ -1,0 +1,250 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Námo (Mandos) - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#dcdee4",
+                        "surface-bright": "#edeef4",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#818cf8",
+                        "on-surface-variant": "#585a68",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-secondary-container": "#585a68",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "secondary-fixed": "#d8dae6",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "on-tertiary-fixed": "#2e1065",
+                        "inverse-primary": "#a5b4fc",
+                        "background": "#e8eaf0",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-fixed-dim": "#b8baca",
+                        "inverse-surface": "#2e3040",
+                        "outline-variant": "#d0d2dc",
+                        "outline": "#8a8c9a",
+                        "on-surface": "#2e3040",
+                        "surface-dim": "#d4d6dc",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "surface-tint": "#6366f1",
+                        "surface-container-highest": "#d6d8de",
+                        "on-secondary-fixed": "#1a1b26",
+                        "tertiary-container": "#a78bfa",
+                        "surface-container-lowest": "#f0f2f8",
+                        "surface-container": "#e2e4ea",
+                        "on-tertiary-container": "#3b1f63",
+                        "inverse-on-surface": "#e8eaf0",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#d8dae6",
+                        "on-error-container": "#991b1b",
+                        "primary": "#6366f1",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-container-high": "#dcdee4",
+                        "surface": "#e8eaf0",
+                        "on-primary-fixed": "#1e1b4b",
+                        "error": "#dc2626",
+                        "error-container": "#fee2e2",
+                        "tertiary": "#7c3aed",
+                        "primary-fixed": "#e0e2ff",
+                        "on-background": "#2e3040",
+                        "on-error": "#ffffff",
+                        "secondary": "#6c6e7e",
+                        "on-primary-container": "#e0e2ff",
+                        "on-tertiary-fixed-variant": "#5b21b6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .raised-neomorphic {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .inset-neomorphic {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        body {
+            background-color: #e8eaf0;
+            color: #2e3040;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<main class="flex-grow">
+<!-- Hero Section -->
+<header class="relative w-full h-[60vh] flex items-end overflow-hidden">
+<img alt="Námo Mandos" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS5tLb9w3BB1EG0OvEMY2aMqP_PaeimTTeVPRwqv5t53QAE8RlvLP2wH-2siJb1lQ3hp-7kB2sIb5MBDQU2obTwgrdHjMrbAJnbinpsNhqv_2kEg8-zB8_FpGCRIe_ih5MNJ9Shq-GgLi7sr0G4lOuKr_3WSw1zKrSS9FPbfPC5qBmD-GXz3cyyKiEJ4RKA70gBaM0qzutPvt6lMT0HsEaqgC1p01s8eQ6EVoGLNcn0b9TZ0TP8TQv_5IC0vY-OFmxRWO_6SacqQ">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-8 pb-12">
+<div class="max-w-3xl">
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface tracking-tight mb-2">Námo (Mandos)</h1>
+<p class="text-xl md:text-2xl font-body font-medium text-primary">El Juez, Guardián de las Estancias de la Espera • Vala (Ainu)</p>
+</div>
+</div>
+</header>
+<!-- Content Grid -->
+<div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Biography & Roles -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Introduction -->
+<section class="raised-neomorphic bg-surface rounded-xl p-8">
+<h2 class="text-2xl font-headline font-semibold text-on-surface mb-6">El Mayor de los Fëanturi</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-4">
+                        Námo es el mayor de los Fëanturi y uno de los ocho Aratar, los más poderosos de entre los Valar que descendieron al mundo en los Días Antiguos. Reside en los confines del mundo, en las Estancias de Mandos, que miran hacia el Mar Exterior y las sombras de la noche.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        Como custodio de los espíritus de aquellos que han pasado, Námo no es simplemente un carcelero, sino el árbitro del destino bajo el mandato de Manwë. Su sabiduría abarca todo lo que fue y lo que será, pronunciando las sentencias que rigen el curso de la historia de Arda.
+                    </p>
+</section>
+<!-- Key Aspects Blocks -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="raised-neomorphic bg-surface p-6 rounded-xl text-center group transition-transform hover:-translate-y-1">
+<div class="w-16 h-16 mx-auto mb-4 inset-neomorphic flex items-center justify-center rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="font-headline font-semibold text-on-surface mb-2">El Guardián de las Almas</h3>
+<p class="text-sm text-on-surface-variant">Custodio de los difuntos en las Estancias de la Espera.</p>
+</div>
+<div class="raised-neomorphic bg-surface p-6 rounded-xl text-center group transition-transform hover:-translate-y-1">
+<div class="w-16 h-16 mx-auto mb-4 inset-neomorphic flex items-center justify-center rounded-full text-tertiary">
+<span class="material-symbols-outlined text-3xl" data-icon="balance">balance</span>
+</div>
+<h3 class="font-headline font-semibold text-on-surface mb-2">El Juez Imperturbable</h3>
+<p class="text-sm text-on-surface-variant">Pronuncia los juicios de los Valar con serenidad eterna.</p>
+</div>
+<div class="raised-neomorphic bg-surface p-6 rounded-xl text-center group transition-transform hover:-translate-y-1">
+<div class="w-16 h-16 mx-auto mb-4 inset-neomorphic flex items-center justify-center rounded-full text-primary-container">
+<span class="material-symbols-outlined text-3xl" data-icon="favorite">favorite</span>
+</div>
+<h3 class="font-headline font-semibold text-on-surface mb-2">Esposo de la Tejedora</h3>
+<p class="text-sm text-on-surface-variant">Unido a Vairë, quien teje el destino en sus tapices.</p>
+</div>
+</div>
+<!-- Memorable Facts (Asymmetric Cards) -->
+<section class="space-y-8">
+<h2 class="text-2xl font-headline font-semibold text-on-surface">Hechos Memorables</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="raised-neomorphic bg-surface p-8 rounded-xl md:col-span-2">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-4xl text-primary p-4 inset-neomorphic rounded-xl" data-icon="gavel">gavel</span>
+<div>
+<h3 class="text-xl font-headline font-semibold text-on-surface mb-2">La Sentencia de Melkor</h3>
+<p class="text-on-surface-variant">Fue Námo quien determinó el encadenamiento de Melkor tras la Batalla de los Poderes, y quien predijo su regreso cuando se cumpliera el tiempo de su condena.</p>
+</div>
+</div>
+</div>
+<div class="raised-neomorphic bg-surface p-8 rounded-xl">
+<h3 class="text-xl font-headline font-semibold text-on-surface mb-3">La Profecía del Norte</h3>
+<p class="text-on-surface-variant">También conocida como el Hado de los Noldor; Námo apareció ante los huestes de Fëanor para advertirles de las sombras que caerían sobre su rebelión.</p>
+</div>
+<div class="raised-neomorphic bg-surface p-8 rounded-xl">
+<h3 class="text-xl font-headline font-semibold text-on-surface mb-3">La Piedad por Lúthien</h3>
+<p class="text-on-surface-variant">En un acto sin precedentes, su corazón se conmovió ante el canto de Lúthien Tinúviel, permitiendo que ella y Beren regresaran brevemente al mundo de los vivos.</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Technical Card -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="raised-neomorphic bg-surface p-8 rounded-xl sticky top-24">
+<h2 class="text-xl font-headline font-semibold text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="info">info</span>
+                        Ficha Técnica
+                    </h2>
+<div class="space-y-6">
+<div class="inset-neomorphic p-4 rounded-lg">
+<span class="block text-xs uppercase tracking-wider text-on-surface-variant font-bold mb-1">Raza</span>
+<span class="text-on-surface font-medium">Vala Aratar</span>
+</div>
+<div class="inset-neomorphic p-4 rounded-lg">
+<span class="block text-xs uppercase tracking-wider text-on-surface-variant font-bold mb-1">Atributos</span>
+<span class="text-on-surface font-medium">El Juicio y la Memoria</span>
+</div>
+<div class="inset-neomorphic p-4 rounded-lg">
+<span class="block text-xs uppercase tracking-wider text-on-surface-variant font-bold mb-1">Instrumento</span>
+<span class="text-on-surface font-medium">Las Estancias de la Espera</span>
+</div>
+<div class="inset-neomorphic p-4 rounded-lg flex justify-between items-center">
+<div>
+<span class="block text-xs uppercase tracking-wider text-on-surface-variant font-bold mb-1">Estado</span>
+<span class="text-on-surface font-medium">Activo en Mandos</span>
+</div>
+<div class="w-3 h-3 bg-primary rounded-full animate-pulse shadow-[0_0_8px_rgba(99,102,241,0.6)]"></div>
+</div>
+</div>
+<!-- Quote Block -->
+<div class="mt-12 border-l-4 border-primary/20 pl-6 italic text-on-surface-variant font-body leading-relaxed">
+                        "No olvidará nada; y conoce todas las cosas que han de ser, excepto aquellas que todavía están en la libertad de Ilúvatar."
+                    </div>
+</div>
+</aside>
+</div>
+<!-- Closing CTA -->
+<section class="max-w-7xl mx-auto px-8 py-20 text-center">
+<div class="inline-block raised-neomorphic bg-surface px-12 py-10 rounded-2xl">
+<h3 class="text-2xl font-headline font-semibold text-on-surface mb-4">El legado del Maestro del Hado</h3>
+<p class="text-on-surface-variant max-w-xl mx-auto mb-8">Námo permanece en silencio, observando el despliegue de la historia de Arda, esperando el fin de los tiempos y la Segunda Música.</p>
+<button class="raised-neomorphic bg-surface text-primary font-bold px-8 py-3 rounded-full hover:scale-105 active:scale-95 transition-all duration-300">
+                    Explorar el Panteón de los Valar
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full">
+<div class="mb-6 md:mb-0">
+<div class="text-lg font-headline font-semibold text-on-surface">Beleriand Archive</div>
+<p class="font-body text-sm text-on-surface-variant mt-1">© 2024 Beleriand Archive — Scholarly Resource for the Elder Days</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Reference Library</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Cartography</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Linguistic Analysis</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors opacity-80 hover:opacity-100" href="#">Contact Scribe</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions
+        document.querySelectorAll('.raised-neomorphic').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                if(el.tagName === 'BUTTON') {
+                    el.style.boxShadow = "inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5)";
+                }
+            });
+            el.addEventListener('mouseup', () => {
+                if(el.tagName === 'BUTTON') {
+                    el.style.boxShadow = "6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6)";
+                }
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+</body></html>

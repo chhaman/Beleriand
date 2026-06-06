@@ -1,0 +1,278 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nessa la Bailarina - Aetheria Wiki</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-container": "#a78bfa",
+                        "secondary-fixed": "#d8dae6",
+                        "outline-variant": "#d0d2dc",
+                        "on-surface": "#2e3040",
+                        "inverse-on-surface": "#e8eaf0",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "primary-container": "#818cf8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "inverse-primary": "#a5b4fc",
+                        "on-tertiary-fixed": "#2e1065",
+                        "secondary-fixed-dim": "#b8baca",
+                        "surface-tint": "#6366f1",
+                        "on-error": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-surface": "#2e3040",
+                        "surface-container-high": "#dcdee4",
+                        "on-tertiary-container": "#3b1f63",
+                        "tertiary": "#7c3aed",
+                        "surface-dim": "#d4d6dc",
+                        "on-background": "#2e3040",
+                        "surface-container-lowest": "#f0f2f8",
+                        "error": "#dc2626",
+                        "secondary-container": "#d8dae6",
+                        "primary": "#6366f1",
+                        "outline": "#8a8c9a",
+                        "surface-container-low": "#e5e7ed",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-primary-container": "#e0e2ff",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "tertiary-fixed": "#ede9fe",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-container": "#585a68",
+                        "background": "#e8eaf0",
+                        "surface": "#e8eaf0",
+                        "on-error-container": "#991b1b",
+                        "surface-bright": "#edeef4",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "surface-container": "#e2e4ea",
+                        "secondary": "#6c6e7e",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#585a68"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background flex justify-between items-center px-8 py-4 max-w-full no-border shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="flex items-center gap-4">
+<span class="text-xl font-semibold tracking-tight text-primary">Aetheria Wiki</span>
+</div>
+<div class="hidden md:flex items-center gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-all px-4 py-1 font-medium" href="#">Lore</a>
+<a class="text-on-surface-variant hover:text-primary transition-all px-4 py-1 font-medium" href="#">Atlas</a>
+<a class="text-primary shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-lg px-4 py-1 font-medium" href="#">Bestiary</a>
+<a class="text-on-surface-variant hover:text-primary transition-all px-4 py-1 font-medium" href="#">Heroes</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-secondary hover:text-primary transition-colors cursor-pointer">settings</button>
+<button class="material-symbols-outlined text-secondary hover:text-primary transition-colors cursor-pointer">person</button>
+</div>
+</nav>
+<main class="flex-grow max-w-7xl mx-auto w-full px-6 py-12 space-y-16">
+<!-- Hero Header -->
+<section class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 overflow-hidden rounded-xl neomorph-raised p-2 bg-background">
+<img alt="Nessa la Bailarina" class="w-full h-[500px] object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQeaVJGDFbAVAdhyqydIs-O_Hx4kS42U5Rw1BzKNl-PTo_kREEdsA4pl8CphxOkfgBuU0D2c_Hd-EOU_c8QqsUO__qu9wgfCISc1G8Yhub1rx4Jjrq6ufdhfY0nJ0FRu8_t6C_-o94nC76tCTZtAYKU1w9-MWaSs7XfT5DqqTVfNRuxV6h7g02hcHi3x_Oo7GenzMB2zThqM1Zk0d9RAIKevjvDQqXk55SYgNCEq0ewVY95lux0We_M6xmYU0vTUBDY-qMI0LeeA">
+</div>
+<div class="lg:col-span-5 flex flex-col space-y-6">
+<div class="inline-flex items-center self-start px-4 py-1 rounded-full bg-background neomorph-inset text-tertiary text-xs font-bold tracking-widest uppercase">
+                    REINA DE LAS VALIER
+                </div>
+<div class="space-y-2">
+<h1 class="text-5xl font-extrabold text-on-surface tracking-tight">Nessa la Bailarina</h1>
+<p class="text-xl text-primary font-medium">La Ágil, Señora de la Danza • Valië (Ainu)</p>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                    Hermana de Oromë y esposa de Tulkas, Nessa personifica la alegría del movimiento puro. Es más veloz que los ciervos que la siguen en las praderas de Valimar, y su danza es un eco de la armonía eterna que sostiene el mundo.
+                </p>
+<div class="pt-4 flex gap-4">
+<button class="px-8 py-3 bg-background neomorph-raised rounded-xl text-primary font-semibold active:scale-95 transition-transform">Seguir rastro</button>
+<button class="px-8 py-3 bg-background neomorph-raised rounded-xl text-secondary font-semibold active:scale-95 transition-transform flex items-center gap-2">
+<span class="material-symbols-outlined">share</span> Compartir
+                    </button>
+</div>
+</div>
+</section>
+<!-- Key Info Cards -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-background neomorph-raised p-8 rounded-xl flex flex-col items-center text-center space-y-3">
+<div class="w-12 h-12 flex items-center justify-center rounded-full neomorph-inset text-primary">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h3 class="font-semibold text-on-surface-variant text-sm uppercase tracking-wider">Raza</h3>
+<p class="text-xl font-bold text-on-surface">Valië (Ainu)</p>
+</div>
+<div class="bg-background neomorph-raised p-8 rounded-xl flex flex-col items-center text-center space-y-3 border-t-4 border-primary/20">
+<div class="w-12 h-12 flex items-center justify-center rounded-full neomorph-inset text-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h3 class="font-semibold text-on-surface-variant text-sm uppercase tracking-wider">Atributo</h3>
+<p class="text-xl font-bold text-on-surface">Los Ciervos y la Velocidad</p>
+</div>
+<div class="bg-background neomorph-raised p-8 rounded-xl flex flex-col items-center text-center space-y-3">
+<div class="w-12 h-12 flex items-center justify-center rounded-full neomorph-inset text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<h3 class="font-semibold text-on-surface-variant text-sm uppercase tracking-wider">Estado</h3>
+<p class="text-xl font-bold text-on-surface">Activa en Valmar</p>
+</div>
+</section>
+<!-- Narrative Blocks - Bento Style -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 bg-background neomorph-raised p-10 rounded-xl space-y-4">
+<div class="flex items-center gap-3 text-tertiary">
+<span class="material-symbols-outlined">forest</span>
+<h2 class="text-2xl font-bold tracking-tight">La Reina de los Ciervos</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                    Nessa es conocida por su amor a las criaturas de los bosques, especialmente a los ciervos, quienes la siguen por doquier. Se dice que es tan ágil que puede sobrepasarlos en carrera, moviéndose como una flecha en el viento. Su rapidez no es fruto del esfuerzo, sino de una ligereza espiritual que le permite deslizarse sobre la hierba sin apenas doblar las briznas.
+                </p>
+</div>
+<div class="bg-background neomorph-inset p-10 rounded-xl space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">groups</span>
+<h2 class="text-2xl font-bold tracking-tight">Vínculo Sagrado</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                    Hija del pensamiento de Eru, es la hermana de <span class="font-semibold text-on-surface">Oromë</span>, el Cazador, compartiendo su conexión con la naturaleza salvaje. En la plenitud de las edades, se unió en matrimonio con <span class="font-semibold text-on-surface">Tulkas el Fuerte</span>, equilibrando la fuerza bruta de su esposo con su gracia infinita.
+                </p>
+</div>
+<div class="lg:col-span-3 bg-background neomorph-raised p-10 rounded-xl flex flex-col md:flex-row items-center gap-10">
+<div class="flex-grow space-y-4">
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined">music_note</span>
+<h2 class="text-2xl font-bold tracking-tight">La Danza Eterna</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed italic">
+                        "En el baile se deleita, y baila en Valimar en prados de verde perenne."
+                    </p>
+<p class="text-on-surface-variant leading-relaxed">
+                        Sus pies nunca se cansan y su espíritu nunca se enturbia. Mientras haya prados verdes en Aman, la figura de Nessa seguirá siendo el recordatorio viviente de la alegría que existía antes de que las sombras tocaran el mundo. Su danza es un ritual de renovación y armonía física.
+                    </p>
+</div>
+<div class="shrink-0 w-32 h-32 rounded-full neomorph-raised flex items-center justify-center bg-background p-4">
+<span class="material-symbols-outlined text-6xl text-primary/30">celebration</span>
+</div>
+</div>
+</section>
+<!-- Memorable Feats Grid -->
+<section class="space-y-8">
+<div class="text-center">
+<h2 class="text-3xl font-extrabold text-on-surface">Hitos Memorables</h2>
+<div class="w-24 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-background neomorph-raised p-8 rounded-xl space-y-4 hover:translate-y-[-4px] transition-transform duration-300">
+<span class="text-primary font-bold text-4xl opacity-20">01</span>
+<h4 class="text-xl font-bold text-on-surface">El Orden de las Valier</h4>
+<p class="text-on-surface-variant text-sm">Contada entre las siete reinas de los Valar, Nessa sostiene uno de los pilares de la feminidad divina en Arda.</p>
+</div>
+<div class="bg-background neomorph-raised p-8 rounded-xl space-y-4 hover:translate-y-[-4px] transition-transform duration-300">
+<span class="text-primary font-bold text-4xl opacity-20">02</span>
+<h4 class="text-xl font-bold text-on-surface">El Desposorio</h4>
+<p class="text-on-surface-variant text-sm">Su boda con Tulkas en Almaren marcó el punto álgido de la Primavera de Arda, una era de dicha sin igual.</p>
+</div>
+<div class="bg-background neomorph-raised p-8 rounded-xl space-y-4 hover:translate-y-[-4px] transition-transform duration-300">
+<span class="text-primary font-bold text-4xl opacity-20">03</span>
+<h4 class="text-xl font-bold text-on-surface">La Resiliencia</h4>
+<p class="text-on-surface-variant text-sm">Tras la caída de los Árboles, su presencia continuó siendo un bálsamo de luz y belleza para los afligidos de Aman.</p>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="bg-background neomorph-inset p-12 rounded-2xl text-center space-y-6 max-w-4xl mx-auto">
+<h2 class="text-3xl font-extrabold text-on-surface">El legado de la Bailarina de Arda</h2>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-tertiary text-5xl">nature_people</span>
+</div>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                Nessa no solo representa la agilidad física, sino la libertad del alma que se expresa a través de la armonía corporal. Su legado es la comprensión de que el gozo y el movimiento son formas de adoración a la creación, un recordatorio perpetuo de que la belleza y la agilidad son armas contra la inercia de la oscuridad.
+            </p>
+<div class="pt-4">
+<button class="bg-background neomorph-raised px-10 py-4 rounded-xl text-primary font-bold hover:shadow-none transition-all active:scale-95">Explorar el Bestiario de Valimar</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-background shadow-[inset_0px_6px_12px_rgba(0,0,0,0.04)] flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-semibold text-on-surface">Aetheria Wiki</span>
+<span class="font-body text-sm text-on-surface-variant">© 214 Guild of Archivists. All rights reserved.</span>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-medium" href="#">Contribution Guide</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full neomorph-raised flex items-center justify-center cursor-pointer hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-xl">history_edu</span>
+</div>
+<div class="w-10 h-10 rounded-full neomorph-raised flex items-center justify-center cursor-pointer hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-xl">auto_stories</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('.neomorph-raised').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.classList.remove('neomorph-raised');
+                card.classList.add('neomorph-inset');
+            });
+            card.addEventListener('mouseup', () => {
+                card.classList.remove('neomorph-inset');
+                card.classList.add('neomorph-raised');
+            });
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('neomorph-inset');
+                card.classList.add('neomorph-raised');
+            });
+        });
+    </script>
+</body></html>

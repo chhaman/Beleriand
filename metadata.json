@@ -1,0 +1,6 @@
+{
+  "name": "Beleriand Archive",
+  "description": "Atlas de Guerras, Ejércitos, Cronologías y Héroes de la Primera Edad de Beleriand",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

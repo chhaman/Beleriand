@@ -1,0 +1,305 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ulmo | El Señor de las Aguas - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed": "#e0e2ff",
+                        "secondary-container": "#d8dae6",
+                        "surface-bright": "#edeef4",
+                        "primary-container": "#818cf8",
+                        "surface-container": "#e2e4ea",
+                        "inverse-primary": "#a5b4fc",
+                        "inverse-on-surface": "#e8eaf0",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "on-secondary-fixed": "#1a1b26",
+                        "surface-dim": "#d4d6dc",
+                        "surface": "#e8eaf0",
+                        "tertiary": "#7c3aed",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "on-surface-variant": "#585a68",
+                        "outline-variant": "#d0d2dc",
+                        "outline": "#8a8c9a",
+                        "background": "#e8eaf0",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#6366f1",
+                        "on-error-container": "#991b1b",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-background": "#2e3040",
+                        "tertiary-fixed": "#ede9fe",
+                        "surface-variant": "#dcdee4",
+                        "secondary": "#6c6e7e",
+                        "surface-container-lowest": "#f0f2f8",
+                        "error": "#dc2626",
+                        "primary": "#6366f1",
+                        "on-secondary-container": "#585a68",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "surface-container-low": "#e5e7ed",
+                        "error-container": "#fee2e2",
+                        "on-tertiary-fixed": "#2e1065",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#dcdee4",
+                        "inverse-surface": "#2e3040",
+                        "tertiary-container": "#a78bfa",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface": "#2e3040",
+                        "surface-container-highest": "#d6d8de",
+                        "secondary-fixed-dim": "#b8baca"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            color: #2e3040;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .neomorphic-raised {
+            background: #e8eaf0;
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+            border-radius: 1.5rem;
+        }
+        .neomorphic-inset {
+            background: #e8eaf0;
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+            border-radius: 1.5rem;
+        }
+        .neomorphic-button:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .glass-panel {
+            background: rgba(232, 234, 240, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 bg-background flex justify-between items-center px-8 py-4 sticky z-50 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="flex items-center gap-4">
+<span class="font-display font-semibold text-xl tracking-tight text-on-surface">Beleriand Archive</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-body font-medium">
+<a class="text-on-surface-variant hover:text-primary transition-transform duration-200 hover:scale-[1.02]" href="#">Eras</a>
+<a class="text-on-surface-variant hover:text-primary transition-transform duration-200 hover:scale-[1.02]" href="#">Geography</a>
+<a class="text-primary border-b-2 border-primary/20 pb-1 transition-transform duration-200 hover:scale-[1.02]" href="#">Characters</a>
+<a class="text-on-surface-variant hover:text-primary transition-transform duration-200 hover:scale-[1.02]" href="#">Artifacts</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-2 flex items-center justify-center transition-transform duration-200 active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)]">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-8">
+<!-- Hero Section -->
+<section class="relative h-[600px] w-full neomorphic-raised overflow-hidden mb-12 group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="High-fantasy illustration of Ulmo, the Lord of Waters, rising from the depths of the ocean as a majestic Vala of immense scale. He wears a dark helmet crowned with foam and silver-green scale mail that glitters like emeralds while blowing his great white conch horns. The stormy sea atmosphere features deep blue and turquoise water with dramatic lighting, embodying the epic and powerful Silk design system aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4tFsRlxZEUFGRx8eE6b26hJ1omX2BAdM34Yq-SGh_m5gDO1GHlSs0N_Oky9HhxdrONFFyobZm89IwEkcMzqUD8anam-Olv-SG1xYV2F_CkCsrsGGONi8IxLS3Bs-GXkNQ0I-1_MtXCp20trXpY1jhbQfT8B14lcrjEPHTJ0dglcfQy6FKcIPrbMearmmRFNZ7Su9IKSsBVQW4V6IpJtEGu5O-NylFR9guETUhj5w7EXDDM9VitXHP-bZ9wiyNHGR0-6mRybFvig');">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-12 w-full flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-primary font-semibold tracking-widest text-sm uppercase px-4 py-1 neomorphic-raised w-fit bg-opacity-50">El Señor de las Aguas</span>
+<h1 class="text-6xl font-display font-semibold text-on-surface drop-shadow-sm">Ulmo</h1>
+<p class="text-lg text-on-surface-variant font-medium">Rey del Mar • Vala (Ainu)</p>
+</div>
+<div class="glass-panel p-6 rounded-xl flex gap-8 items-center border-none shadow-lg">
+<div class="flex flex-col items-center">
+<span class="text-xs uppercase tracking-tighter text-secondary">Raza</span>
+<span class="font-semibold text-primary">Vala (Aratar)</span>
+</div>
+<div class="w-px h-10 bg-outline-variant"></div>
+<div class="flex flex-col items-center">
+<span class="text-xs uppercase tracking-tighter text-secondary">Estado</span>
+<span class="font-semibold text-primary">Activo (Ekkaia)</span>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Left Column: Key Quote & Lore -->
+<div class="lg:col-span-8 flex flex-col gap-10">
+<!-- Quote Card -->
+<div class="neomorphic-raised p-10 flex flex-col items-center text-center relative overflow-hidden">
+<span class="material-symbols-outlined text-primary/20 text-8xl absolute top-4 left-4 opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="text-2xl font-medium text-on-surface leading-relaxed italic relative z-10">
+                        "Se dice que en el agua vive todavía el eco de la Música de los Ainur más que en cualquier otra sustancia de la Tierra..."
+                    </blockquote>
+<cite class="mt-6 font-display font-semibold text-primary not-italic tracking-wide">— Quenta Silmarillion</cite>
+</div>
+<!-- Lore Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Lore Section 1 -->
+<div class="neomorphic-raised p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="neomorphic-inset p-3">
+<span class="material-symbols-outlined text-primary">water_drop</span>
+</div>
+<h3 class="text-xl font-semibold text-on-surface">El Soberano Solitario</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            A diferencia de los otros Valar, Ulmo no habita en Valinor, sino que prefiere las profundidades del Mar Exterior o Ekkaia. Su apariencia es imponente y terrible para los ojos mortales: surge de las olas portando un yelmo oscuro coronado de espuma y una cota de malla de color verde esmeralda que reluce bajo las aguas.
+                        </p>
+</div>
+<!-- Lore Section 2 -->
+<div class="neomorphic-raised p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="neomorphic-inset p-3">
+<span class="material-symbols-outlined text-primary">hearing</span>
+</div>
+<h3 class="text-xl font-semibold text-on-surface">El Amigo Infatigable</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            Es el Vala que más ama a los Hijos de Ilúvatar. Nunca los abandonó en sus horas más oscuras, enviando mensajes a través de todos los ríos y fuentes del mundo. Su voz viaja por las corrientes, guiando a aquellos que saben escuchar el murmullo de las aguas dulces y saladas.
+                        </p>
+</div>
+<!-- Lore Section 3 (Full Width) -->
+<div class="md:col-span-2 neomorphic-raised p-8 flex flex-col md:flex-row gap-8 items-center">
+<div class="neomorphic-inset p-6 shrink-0">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">music_note</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-semibold text-on-surface">Maestro de la Armonía Primordial</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                Ulmo fue instruido profundamente por Eru Ilúvatar en los misterios de la música. Por ello, el elemento agua es el que mejor conserva la esencia de la creación original. Cuando Ulmo toca sus cuernos, los Ulumúri, la música es tan vasta como el océano mismo, evocando tanto la alegría de la luz como la tristeza de las profundidades insondables.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Notable Deeds -->
+<div class="flex flex-col gap-6">
+<h2 class="text-3xl font-display font-semibold text-on-surface px-2">Hazañas Notables</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="neomorphic-raised p-6 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-300 group">
+<div class="h-1 bg-primary/20 w-12 rounded-full group-hover:w-full transition-all duration-500"></div>
+<h4 class="font-semibold text-on-surface">La Oposición al Traslado</h4>
+<p class="text-sm text-on-surface-variant">Se opuso firmemente a llevar a los Quendi a Valinor, creyendo que debían habitar libremente en la Tierra Media.</p>
+</div>
+<div class="neomorphic-raised p-6 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-300 group">
+<div class="h-1 bg-primary/20 w-12 rounded-full group-hover:w-full transition-all duration-500"></div>
+<h4 class="font-semibold text-on-surface">El Arquitecto Oculto</h4>
+<p class="text-sm text-on-surface-variant">Inspiró mediante sueños a Finrod Felagund y Turgon para fundar los reinos ocultos de Nargothrond y Gondolin.</p>
+</div>
+<div class="neomorphic-raised p-6 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-300 group">
+<div class="h-1 bg-primary/20 w-12 rounded-full group-hover:w-full transition-all duration-500"></div>
+<h4 class="font-semibold text-on-surface">El Rescate de la Esperanza</h4>
+<p class="text-sm text-on-surface-variant">Salvó a Elwing de las aguas y se manifestó ante Tuor en Vinyamar para entregar el mensaje final a Gondolin.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar -->
+<aside class="lg:col-span-4 flex flex-col gap-8 sticky top-24">
+<!-- Quick Info Card -->
+<div class="neomorphic-raised p-8 flex flex-col gap-6">
+<h3 class="text-lg font-semibold text-on-surface border-b border-outline-variant pb-4">Detalles de la Entidad</h3>
+<div class="flex flex-col gap-5">
+<div class="flex flex-col gap-1">
+<span class="text-xs text-secondary uppercase font-medium">Instrumento Principal</span>
+<div class="neomorphic-inset px-4 py-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">surround_sound</span>
+<span class="text-on-surface font-medium">Los Cuernos Ulumúri</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs text-secondary uppercase font-medium">Residencia</span>
+<div class="neomorphic-inset px-4 py-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="text-on-surface font-medium">Ekkaia (Mar Exterior)</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs text-secondary uppercase font-medium">Elemento Dominante</span>
+<div class="neomorphic-inset px-4 py-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-sm">waves</span>
+<span class="text-on-surface font-medium">Agua y Música</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action / Interactive -->
+<div class="neomorphic-raised p-8 bg-primary/5 flex flex-col gap-4 items-center text-center">
+<div class="neomorphic-raised p-4 bg-primary text-on-primary">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">waves</span>
+</div>
+<h4 class="text-lg font-semibold text-on-surface">Escuchar el Eco del Mar</h4>
+<p class="text-sm text-on-surface-variant">Explora la cartografía de los océanos de la Primera Edad influenciados por Ulmo.</p>
+<button class="neomorphic-raised px-6 py-3 w-full text-primary font-semibold neomorphic-button transition-all duration-200">
+                        Ver Mapa de Belegaer
+                    </button>
+</div>
+<!-- Related Links -->
+<div class="neomorphic-raised p-8 flex flex-col gap-4">
+<h3 class="text-sm font-semibold text-on-surface-variant uppercase tracking-wider">Entidades Relacionadas</h3>
+<div class="flex flex-wrap gap-2">
+<a class="neomorphic-inset px-3 py-1 text-xs font-medium text-secondary hover:text-primary transition-colors" href="#">Ossë</a>
+<a class="neomorphic-inset px-3 py-1 text-xs font-medium text-secondary hover:text-primary transition-colors" href="#">Uinen</a>
+<a class="neomorphic-inset px-3 py-1 text-xs font-medium text-secondary hover:text-primary transition-colors" href="#">Manwë Súlimo</a>
+<a class="neomorphic-inset px-3 py-1 text-xs font-medium text-secondary hover:text-primary transition-colors" href="#">Tuor</a>
+<a class="neomorphic-inset px-3 py-1 text-xs font-medium text-secondary hover:text-primary transition-colors" href="#">Círdan</a>
+</div>
+</div>
+</aside>
+</div>
+<!-- Footer Narrative Section -->
+<footer class="mt-20 flex flex-col items-center gap-8 max-w-4xl mx-auto text-center py-12">
+<div class="neomorphic-inset p-1 w-full max-w-xs"></div>
+<div class="flex flex-col gap-4">
+<h2 class="text-2xl font-display font-semibold text-on-surface">El legado del Señor de las Aguas</h2>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                    Ulmo permanece como el defensor más compasivo de la Tierra Media. Mientras los otros Valar se retiraron tras sus montañas, él siguió velando por los destinos de Elfos y Hombres. Su música, destilada en los cuernos Ulumúri tallados por Salmar, aún resuena en cada ola que golpea la costa, recordando a todos los que escuchan que la esperanza nunca se hunde del todo mientras las aguas sigan fluyendo hacia el mar.
+                </p>
+</div>
+<div class="flex gap-10 mt-6 text-sm font-medium text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Terms of Lore</a>
+<a class="hover:text-primary transition-colors" href="#">Map Metadata</a>
+<a class="hover:text-primary transition-colors" href="#">Archive Privacy</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-display font-semibold text-on-surface-variant text-lg">Beleriand Archive</span>
+<p class="text-secondary opacity-80">© First Age Beleriand Archive</p>
+</div>
+</footer>
+</main>
+<!-- Interactive script for neomorphic feedback -->
+<script>
+        document.querySelectorAll('.neomorphic-button, .neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.add('scale-[0.98]');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.remove('scale-[0.98]');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.remove('scale-[0.98]');
+            });
+        });
+    </script>
+</body></html>

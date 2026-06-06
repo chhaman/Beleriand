@@ -1,0 +1,323 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nienna - First Age Wiki</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary-fixed-variant": "#4338ca",
+                "secondary": "#6c6e7e",
+                "on-error": "#ffffff",
+                "error-container": "#fee2e2",
+                "surface-dim": "#d4d6dc",
+                "on-error-container": "#991b1b",
+                "tertiary-fixed-dim": "#c4b5fd",
+                "inverse-primary": "#a5b4fc",
+                "surface": "#e8eaf0",
+                "secondary-fixed-dim": "#b8baca",
+                "primary-container": "#818cf8",
+                "on-background": "#2e3040",
+                "primary": "#6366f1",
+                "surface-container-low": "#e5e7ed",
+                "on-tertiary-fixed": "#2e1065",
+                "on-tertiary-fixed-variant": "#5b21b6",
+                "surface-container-highest": "#d6d8de",
+                "surface-container-high": "#dcdee4",
+                "secondary-fixed": "#d8dae6",
+                "on-surface": "#2e3040",
+                "primary-fixed-dim": "#a5b4fc",
+                "inverse-on-surface": "#e8eaf0",
+                "tertiary-fixed": "#ede9fe",
+                "tertiary-container": "#a78bfa",
+                "on-primary": "#ffffff",
+                "primary-fixed": "#e0e2ff",
+                "outline": "#8a8c9a",
+                "secondary-container": "#d8dae6",
+                "error": "#dc2626",
+                "on-tertiary-container": "#3b1f63",
+                "on-secondary-container": "#585a68",
+                "on-secondary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "background": "#e8eaf0",
+                "on-primary-container": "#e0e2ff",
+                "inverse-surface": "#2e3040",
+                "surface-container": "#e2e4ea",
+                "on-secondary-fixed": "#1a1b26",
+                "outline-variant": "#d0d2dc",
+                "surface-container-lowest": "#f0f2f8",
+                "tertiary": "#7c3aed",
+                "on-surface-variant": "#585a68",
+                "on-secondary-fixed-variant": "#404252",
+                "surface-bright": "#edeef4",
+                "on-primary-fixed": "#1e1b4b",
+                "surface-variant": "#dcdee4",
+                "surface-tint": "#6366f1"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.5rem",
+                "lg": "1rem",
+                "xl": "1.5rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "display": ["Plus Jakarta Sans"],
+                "body": ["Plus Jakarta Sans"],
+                "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            color: #2e3040;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .silk-gradient-text {
+            background: linear-gradient(135deg, #6366f1, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full sticky top-0 z-50 bg-background shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] w-full top-0 px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="text-xl font-semibold tracking-tighter text-primary">First Age Wiki</span>
+</div>
+<nav class="hidden md:flex items-center space-x-2 font-body font-medium tracking-tight text-on-surface">
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-colors" href="#">Eras</a>
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-colors" href="#">Geography</a>
+<a class="text-primary shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-xl px-4 py-2" href="#">Characters</a>
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-colors" href="#">Artifacts</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="neomorphic-inset px-4 py-2 rounded-xl flex items-center gap-2 group">
+<span class="material-symbols-outlined text-secondary text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm text-on-surface placeholder-on-surface-variant/50 w-32 lg:w-48" placeholder="Search..." type="text">
+</div>
+<button class="neomorphic-raised w-10 h-10 rounded-xl flex items-center justify-center text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+<!-- Hero Section -->
+<section class="relative group">
+<div class="neomorphic-raised rounded-[2rem] overflow-hidden p-2 bg-background">
+<div class="relative h-[600px] w-full rounded-[1.5rem] overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[0.3] brightness-90 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtZtQidWiCneToegw7ZFU3RoXW_V66l32w4OmLyNnbIq0-6UdiH8DVoVAiTolHGy3Gn_N3TeriIHlTVgKz9EHbDwOXgZC9U0amJl0RhVNHKiDydjsallBuCJe_Nz3krJxuG9OzvUIZ2wWYYT2_frBT7OFZ8IInRLBWPNDxNI-KD3iF-td9JuLeFyYrNCFMM-33-5Muzi-Xa35pPGrvHVUsVrIyAsPY9qee64RiaqfG53p5oAJEA0JGMH6UXA8J29F2gasAsJrXQ">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-12 left-12 max-w-2xl space-y-4">
+<span class="inline-block px-4 py-1 rounded-full neomorphic-raised bg-background text-xs font-semibold tracking-widest text-primary uppercase">Valië (Ainu)</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-none">Nienna</h1>
+<p class="text-2xl md:text-3xl font-medium text-secondary italic">La Señora de la Piedad, Reina del Lamento</p>
+<p class="text-lg font-medium text-on-surface-variant tracking-wide">La Señora del Sufrimiento</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Ficha Técnica -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="neomorphic-raised p-8 rounded-[2rem] bg-background">
+<h3 class="text-xl font-bold mb-8 flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">info</span>
+                        Ficha Técnica
+                    </h3>
+<div class="space-y-6">
+<div class="neomorphic-inset p-5 rounded-2xl">
+<span class="block text-[10px] font-bold text-on-surface-variant tracking-widest uppercase mb-1">RAZA</span>
+<span class="text-lg font-semibold text-on-surface">Valië (Aratar)</span>
+</div>
+<div class="neomorphic-inset p-5 rounded-2xl">
+<span class="block text-[10px] font-bold text-on-surface-variant tracking-widest uppercase mb-1">ATRIBUTO</span>
+<span class="text-lg font-semibold text-on-surface">El Lamento y la Esperanza / Las Lágrimas</span>
+</div>
+<div class="neomorphic-inset p-5 rounded-2xl">
+<span class="block text-[10px] font-bold text-on-surface-variant tracking-widest uppercase mb-1">ESTADO</span>
+<span class="text-lg font-semibold text-on-surface">Activa en sus estancias en las fronteras del mundo</span>
+</div>
+</div>
+</div>
+<!-- Quote Banner -->
+<div class="neomorphic-raised p-8 rounded-[2rem] bg-background border-l-4 border-primary">
+<span class="material-symbols-outlined text-4xl text-primary/30 mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="text-xl italic font-medium leading-relaxed text-on-surface">
+                        "El sonido del luto fue tejido en los temas del Mundo antes de que comenzara."
+                    </p>
+</div>
+</aside>
+<!-- Main Content Sections -->
+<section class="lg:col-span-8 space-y-12">
+<!-- Bento Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="neomorphic-raised p-10 rounded-[2.5rem] bg-background md:col-span-2">
+<div class="flex items-start gap-6">
+<div class="neomorphic-inset p-4 rounded-2xl text-primary shrink-0">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<div>
+<h2 class="text-3xl font-extrabold tracking-tight mb-4 text-on-surface">El Corazón de la Compasión</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                    Nienna no llora por su propio pesar, sino por el daño sufrido por la creación en manos de la oscuridad. Su dolor no es desesperación, sino la raíz de la piedad y la fortaleza necesarias para sanar el mundo. A través de sus lágrimas, enseña a los Ainu y a los Hijos de Ilúvatar que la sabiduría no proviene de la alegría ciega, sino de la comprensión del sufrimiento ajeno.
+                                </p>
+</div>
+</div>
+</div>
+<div class="neomorphic-raised p-8 rounded-[2rem] bg-background group hover:translate-y-[-4px] transition-all duration-300">
+<div class="mb-6">
+<span class="material-symbols-outlined text-4xl text-tertiary">temple_hindu</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-on-surface">La Consoladora de las Almas</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Visita regularmente las Estancias de Mandos para consolar a aquellos que esperan en la sombra de la muerte, convirtiendo su amargura en sabiduría y su dolor en esperanza.
+                        </p>
+</div>
+<div class="neomorphic-raised p-8 rounded-[2rem] bg-background group hover:translate-y-[-4px] transition-all duration-300">
+<div class="mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">school</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-on-surface">Mentora de la Sabiduría</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Fue la tutora de Olórin, quien más tarde sería conocido como Gandalf. De ella, el más sabio de los Maiar aprendió la paciencia, la piedad y el valor de los pequeños actos de bondad.
+                        </p>
+</div>
+</div>
+</section>
+</div>
+<!-- Memorable Facts Grid -->
+<section class="space-y-10">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface mb-4">Hechos Memorables</h2>
+<div class="h-1.5 w-24 bg-primary/20 rounded-full mx-auto relative overflow-hidden">
+<div class="absolute inset-0 bg-primary w-1/2 rounded-full"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Fact 01 -->
+<div class="neomorphic-raised p-8 rounded-[2rem] bg-background relative overflow-hidden group">
+<div class="absolute -top-4 -right-4 text-8xl font-black text-on-surface/[0.03] select-none">01</div>
+<div class="neomorphic-inset w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<h4 class="text-xl font-bold mb-3 text-on-surface">El Riego de Ezellohar</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Regó con sus abundantes lágrimas el túmulo de los Dos Árboles durante su creación, aportando la humedad necesaria para que la luz de Yavanna floreciera.
+                    </p>
+</div>
+<!-- Fact 02 -->
+<div class="neomorphic-raised p-8 rounded-[2rem] bg-background relative overflow-hidden group">
+<div class="absolute -top-4 -right-4 text-8xl font-black text-on-surface/[0.03] select-none">02</div>
+<div class="neomorphic-inset w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">balance</span>
+</div>
+<h4 class="text-xl font-bold mb-3 text-on-surface">La Petición por el Enemigo</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Abogó por el perdón de Melkor ante el tribunal de los Valar, no por ignorancia de sus actos, sino por una fe inquebrantable en la redención a través de la misericordia.
+                    </p>
+</div>
+<!-- Fact 03 -->
+<div class="neomorphic-raised p-8 rounded-[2rem] bg-background relative overflow-hidden group">
+<div class="absolute -top-4 -right-4 text-8xl font-black text-on-surface/[0.03] select-none">03</div>
+<div class="neomorphic-inset w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">brightness_medium</span>
+</div>
+<h4 class="text-xl font-bold mb-3 text-on-surface">La Última Cosecha de Luz</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Tras el oscurecimiento de Valinor, lavó con sus lágrimas el veneno de Ungoliant de los restos de los Árboles, permitiendo el nacimiento del Sol y la Luna.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="neomorphic-raised p-12 rounded-[3rem] bg-background relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<span class="inline-flex items-center gap-2 px-4 py-2 rounded-full neomorphic-inset text-tertiary text-xs font-bold tracking-widest uppercase">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+                        Legado Eterno
+                    </span>
+<h2 class="text-4xl font-extrabold tracking-tight text-on-surface">El legado de la Señora del Lamento</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Nienna representa la necesidad existencial del dolor para alcanzar una comprensión superior. En una 'Arda Manchada' por la disonancia de Melkor, su papel es el de un bálsamo que no borra la cicatriz, sino que le otorga significado. Su legado persiste en cada acto de empatía y en la esperanza que surge tras la pérdida más profunda, recordándonos que incluso en el Vacío Exterior, la compasión es una luz inextinguible.
+                    </p>
+<div class="flex gap-4 pt-4">
+<button class="neomorphic-raised px-8 py-3 rounded-xl bg-background text-primary font-bold active:neomorphic-inset transition-all">
+                            Ver Genealogía
+                        </button>
+<button class="neomorphic-raised px-8 py-3 rounded-xl bg-background text-on-surface-variant font-bold active:neomorphic-inset transition-all">
+                            Relatos Relacionados
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="neomorphic-raised aspect-square rounded-[2rem] p-4 bg-background transform rotate-3 hover:rotate-0 transition-transform duration-500 overflow-hidden">
+<div class="w-full h-full bg-surface-container-high rounded-2xl flex items-center justify-center relative">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" data-alt="A misty and atmospheric mountain landscape at dusk, with soft grey clouds rolling over jagged peaks. The scene is quiet and somber, reflecting the mourning nature of Nienna. The lighting is diffused and ethereal, predominantly in silver and muted cool tones to match the Silk neomorphic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq1y_Cjt9nXi2RuH2zAUCSMlgej5m6d_XdFjTwoXJTdRM_Ti82uj4KfPmiNXFeVlsyvV0NGMFs2w57erpTf7pE6kJwI0xERbzPIHeP2C9a51j7PMIv_-srltxwMuv6KZraNq8meZjv80bz2XTMI3xL-xHdNzOTYEZpCOSJrtTMQIDbr58kTa6nxpJVHgyOALPEFa3YY-ttRatqglpCy-Lz8syeh3V5jPi6a6pXK_zWPynyCJ_Owjw6oOBpsVbSH4rESxdXQKo7Ow">
+<span class="material-symbols-outlined text-9xl text-primary/10 select-none">waves</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background border-t border-outline-variant/30 w-full mt-auto py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto w-full gap-6">
+<div class="text-lg font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+                First Age Wiki
+            </div>
+<div class="flex flex-wrap justify-center gap-8 font-body text-sm text-on-surface-variant">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sources</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="text-sm text-on-surface-variant opacity-70">
+                © 2024 The Silmarillion Compendium. All rights reserved. Built with Silk System.
+            </div>
+</div>
+</footer>
+<script>
+        // Soft hover effect for neomorphic elements
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'scale(0.98)';
+                el.style.transition = 'transform 0.1s ease';
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = 'scale(1)';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>

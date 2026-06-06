@@ -1,0 +1,307 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Manwë Súlimo - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Hero Text -->
+<div class="lg:col-span-5 flex flex-col justify-center order-2 lg:order-1">
+<div class="inline-block px-4 py-2 mb-6 rounded-full neomorphic-inset w-fit">
+<span class="text-primary font-semibold text-sm tracking-wide">VALA (AINU)</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-on-surface mb-2 tracking-tighter">Manwë Súlimo</h1>
+<h2 class="text-xl md:text-2xl font-headline font-medium text-tertiary mb-6">El Rey de Arda, Señor del Aliento</h2>
+<div class="p-8 neomorphic-raised rounded-xl bg-surface mb-8">
+<p class="text-lg leading-relaxed text-on-surface-variant font-body">
+                        Es el más noble de los Ainur y el más querido por Ilúvatar, pues es quien mejor comprende Sus propósitos dentro del diseño del mundo. Reside en la cima del Taniquetil, la montaña más alta de la tierra, desde donde vigila todas las regiones del aire y escucha las voces que claman desde el este hasta el oeste.
+                    </p>
+</div>
+<div class="neomorphic-inset p-6 rounded-xl border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline font-semibold text-on-surface italic leading-snug">
+                        “El Gran Instrumento de la Armonía: Fue el principal intérprete del segundo tema propuesto por Ilúvatar para contrarrestar la discordia de Melkor, convirtiéndose en el protector de la visión original de la Creación.”
+                    </p>
+</div>
+</div>
+<!-- Hero Image Frame -->
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="neomorphic-raised p-4 rounded-xl bg-surface h-full">
+<img alt="Manwë Súlimo" class="w-full h-auto rounded-lg object-cover shadow-inner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY95Cno5L1u3XolOTfbhNQ03QLrn2PxonHmqORTJqW5ry1TuXtucPSw-7-RiFdU-YWp9ZB-cZRh_fOsb_u615hQF-CUo6VJq1xBPJO9khaIPK9koNHBgtac1XAnhG3UvQwMJ3PkkchKvrYngTY7xkKKNxHv5CsTtAfHS0qRcCQDNxBzzVoBkFPlBnODSpZq1XeRSN5wuUTkbvrWwvWKrAuDAU5slsznemPI6D3XGnlcfphb4-Xv3s5LYaMrabUfenCaylXCa6G7A">
+</div>
+</div>
+</section>
+<!-- Bento Grid Information -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+<!-- Side Card (Technical Profile) -->
+<div class="md:col-span-1 lg:row-span-2 space-y-6">
+<div class="neomorphic-raised p-8 rounded-xl bg-surface h-full">
+<div class="flex items-center gap-3 mb-6">
+<div class="p-3 neomorphic-inset rounded-lg text-primary">
+<span class="material-symbols-outlined">identity_platform</span>
+</div>
+<h3 class="font-headline font-bold text-xl">Ficha Técnica</h3>
+</div>
+<div class="space-y-6">
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-outline mb-1">Nombre</p>
+<p class="text-on-surface font-semibold">Manwë Súlimo</p>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-outline mb-1">Rol</p>
+<p class="text-on-surface font-semibold">Rey Supremo de Arda y gobernante de todos sus habitantes</p>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-outline mb-1">Raza</p>
+<p class="text-on-surface font-semibold">Vala (Aratar)</p>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-outline mb-1">Atributos</p>
+<p class="text-on-surface font-semibold">Los Vientos y las Aves / Cetro de Zafiro</p>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-outline mb-1">Estado</p>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<p class="text-on-surface font-semibold">Eterno en Valinor</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Sections Grid -->
+<div class="md:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Section 1 -->
+<div class="neomorphic-raised p-8 rounded-xl bg-surface group hover:scale-[1.01] transition-transform">
+<div class="w-12 h-12 neomorphic-inset rounded-full flex items-center justify-center text-tertiary mb-6">
+<span class="material-symbols-outlined">air</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">Señor del Aliento de Arda</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Su deleite reside en los vientos, las nubes y todas las regiones del aire... Surnombrado Súlimo, el que rige las corrientes que acarician la tierra.</p>
+</div>
+<!-- Section 2 -->
+<div class="neomorphic-raised p-8 rounded-xl bg-surface group hover:scale-[1.01] transition-transform">
+<div class="w-12 h-12 neomorphic-inset rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">El Corazón de la Sabiduría</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Quien posee la comunicación más directa con el pensamiento de Ilúvatar. Su sabiduría es el reflejo de la voluntad divina en el mundo físico.</p>
+</div>
+<!-- Section 3 -->
+<div class="neomorphic-raised p-8 rounded-xl bg-surface group hover:scale-[1.01] transition-transform">
+<div class="w-12 h-12 neomorphic-inset rounded-full flex items-center justify-center text-error mb-6">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">Protector de los Hijos</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Defensor de los Elfos y los Hombres frente a la malicia de la Oscuridad. Su justicia es firme pero teñida de una compasión infinita.</p>
+</div>
+<!-- Interactive Summary Card -->
+<div class="neomorphic-inset p-8 rounded-xl bg-surface flex flex-col justify-center">
+<p class="text-on-surface font-headline font-medium leading-relaxed italic">
+                        "Manwë Súlimo es la autoridad suprema delegada por Dios... Su legado es la esperanza que viaja en el viento."
+                    </p>
+<div class="mt-4 flex items-center gap-2">
+<div class="h-1 w-8 bg-primary rounded-full"></div>
+<p class="text-xs uppercase tracking-widest font-bold text-primary">Conclusión</p>
+</div>
+</div>
+</div>
+<!-- Memorable Facts Row -->
+<div class="md:col-span-3 lg:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-6">
+<!-- Fact 1 -->
+<div class="neomorphic-raised p-6 rounded-xl bg-surface">
+<h4 class="text-primary font-bold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">gavel</span>
+                        Juicio de Melkor
+                    </h4>
+<p class="text-sm text-on-surface-variant">Sentenció a Melkor a tres edades de cautiverio en las estancias de Mandos.</p>
+</div>
+<!-- Fact 2 -->
+<div class="neomorphic-raised p-6 rounded-xl bg-surface">
+<h4 class="text-primary font-bold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">flutter_dash</span>
+                        Envío de Águilas
+                    </h4>
+<p class="text-sm text-on-surface-variant">Ordenó que las Grandes Águilas descendieran a la Tierra Media para vigilar el mal.</p>
+</div>
+<!-- Fact 3 -->
+<div class="neomorphic-raised p-6 rounded-xl bg-surface">
+<h4 class="text-primary font-bold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">brightness_high</span>
+                        Sol y Luna
+                    </h4>
+<p class="text-sm text-on-surface-variant">Santificó la última flor de plata (Isil) y el último fruto de oro (Anar) tras la caída de los Árboles.</p>
+</div>
+</div>
+</div>
+<!-- Atmospheric Quote Section -->
+<section class="max-w-4xl mx-auto text-center py-12">
+<div class="mb-4 inline-flex items-center gap-2 text-outline">
+<span class="h-px w-8 bg-outline-variant"></span>
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="h-px w-8 bg-outline-variant"></span>
+</div>
+<blockquote class="text-2xl md:text-3xl font-headline font-semibold text-on-surface-variant leading-tight">
+                “En Arda su deleite está en los vientos y las nubes, y en todas las regiones del aire... Súlimo es sobrenombrado, Señor del Aliento de Arda.”
+            </blockquote>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+</body></html>

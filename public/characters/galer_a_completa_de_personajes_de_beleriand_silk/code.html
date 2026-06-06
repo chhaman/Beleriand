@@ -1,0 +1,605 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-high": "#dcdee4",
+                "on-error-container": "#991b1b",
+                "on-tertiary": "#ffffff",
+                "on-secondary-container": "#585a68",
+                "inverse-on-surface": "#e8eaf0",
+                "on-secondary": "#ffffff",
+                "secondary-container": "#d8dae6",
+                "on-primary-fixed-variant": "#4338ca",
+                "surface": "#e8eaf0",
+                "secondary": "#6c6e7e",
+                "on-primary": "#ffffff",
+                "on-error": "#ffffff",
+                "tertiary-fixed-dim": "#c4b5fd",
+                "inverse-surface": "#2e3040",
+                "outline": "#8a8c9a",
+                "on-primary-container": "#e0e2ff",
+                "on-surface": "#2e3040",
+                "surface-container-highest": "#d6d8de",
+                "on-secondary-fixed": "#1a1b26",
+                "on-background": "#2e3040",
+                "tertiary-fixed": "#ede9fe",
+                "on-surface-variant": "#585a68",
+                "surface-dim": "#d4d6dc",
+                "primary": "#6366f1",
+                "secondary-fixed": "#d8dae6",
+                "surface-bright": "#edeef4",
+                "primary-fixed": "#e0e2ff",
+                "on-tertiary-fixed": "#2e1065",
+                "surface-tint": "#6366f1",
+                "on-tertiary-fixed-variant": "#5b21b6",
+                "outline-variant": "#d0d2dc",
+                "primary-fixed-dim": "#a5b4fc",
+                "surface-container-lowest": "#f0f2f8",
+                "on-tertiary-container": "#3b1f63",
+                "on-secondary-fixed-variant": "#404252",
+                "surface-container-low": "#e5e7ed",
+                "on-primary-fixed": "#1e1b4b",
+                "error": "#dc2626",
+                "background": "#e8eaf0",
+                "surface-container": "#e2e4ea",
+                "inverse-primary": "#a5b4fc",
+                "surface-variant": "#dcdee4",
+                "primary-container": "#818cf8",
+                "tertiary": "#7c3aed",
+                "error-container": "#fee2e2",
+                "secondary-fixed-dim": "#b8baca",
+                "tertiary-container": "#a78bfa"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.5rem",
+                "lg": "1rem",
+                "xl": "1.5rem",
+                "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "32px",
+          "container-max": "1120px",
+          "sidebar-width": "280px"
+        },
+        "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "display": ["Plus Jakarta Sans"],
+                "body": ["Plus Jakarta Sans"],
+                "label": ["Plus Jakarta Sans"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+.neomorph-card {
+    background: #e8eaf0;
+    box-shadow: 8px 8px 16px #c5c7cc, -8px -8px 16px #ffffff;
+}
+.neomorph-inset {
+    background: #e8eaf0;
+    box-shadow: inset 4px 4px 8px #c5c7cc, inset -4px -4px 8px #ffffff;
+}
+.neomorph-button {
+    background: #e8eaf0;
+    box-shadow: 4px 4px 8px #c5c7cc, -4px -4px 8px #ffffff;
+    transition: all 0.2s ease;
+}
+.neomorph-button:active {
+    box-shadow: inset 2px 2px 5px #c5c7cc, inset -2px -2px 5px #ffffff;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #e8eaf0
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body class="bg-background font-body text-on-background selection:bg-primary/30 min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline text-2xl font-extrabold text-primary tracking-tight">Beleriand Archive</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Encyclopedia</a>
+<a class="font-label text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Timeline</a>
+<a class="font-label text-sm font-semibold text-primary border-b-2 border-primary pb-1" href="#">Characters</a>
+<a class="font-label text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Atlas</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden md:block relative">
+<input class="neomorph-inset border-none rounded-full px-4 py-2 text-sm focus:ring-2 focus:ring-primary/50 w-48" placeholder="Search chronicles..." type="text">
+</div>
+<button class="neomorph-button p-2 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+</button>
+</div>
+</div>
+</header>
+<div class="max-w-container-max mx-auto flex">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col fixed left-[calc(50%-560px)] top-20 pt-8 gap-4 h-[calc(100vh-80px)] w-sidebar-width border-r border-outline-variant/20">
+<div class="px-8 mb-8">
+<div class="font-headline text-xl font-bold text-on-surface">Runes of Knowledge</div>
+<div class="font-body text-xs text-on-surface-variant/70 italic uppercase tracking-wider">Archives of Nargothrond</div>
+</div>
+<nav class="flex flex-col gap-2 px-4">
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 rounded-lg hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+<span class="font-label text-sm font-medium">Library</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 rounded-lg hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-primary">history_toggle_off</span>
+<span class="font-label text-sm font-medium">Timeline</span>
+</a>
+<a class="flex items-center gap-4 bg-primary/10 text-primary px-4 py-3 rounded-lg font-bold" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label text-sm">Bestiary</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 rounded-lg hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-primary">map</span>
+<span class="font-label text-sm font-medium">Cartography</span>
+</a>
+</nav>
+<div class="mt-auto px-8 pb-12">
+<div class="neomorph-button p-4 rounded-xl flex items-center justify-center">
+<img alt="Sigil" class="w-12 h-12 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCrqFcRytybdtGHv23bRnp9DtrcTz-lFLEWeHcWoRpt25pJ8dHxn-sAn09AaEnER4uIma9K5t_E_c1cnUxhYJy45-cbXpyyehLKptYCKdL870exmpavRwC4fI9RpCwsZ2BrnZkymajbI0yuOCcyhM8EFGKvSqJeZoo-qe5d137y2pZRbJdwA9yfAmnRuhMMDDoA1ZWlBmZgOHeYbxozZI3k6kHzoB5wWvJlf_M-hEcPpmU3771l1YHJN5deVZFZvoWctyiv9TmMQ">
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="w-full lg:ml-sidebar-width min-h-screen px-gutter py-12">
+<!-- Header Section -->
+<section class="mb-16 text-center">
+<h1 class="font-display text-5xl font-extrabold text-on-surface mb-4 tracking-tight">Galería de Héroes y Villanos</h1>
+<div class="flex items-center justify-center gap-4 mb-8">
+<div class="h-px w-12 bg-primary/20"></div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<div class="h-px w-12 bg-primary/20"></div>
+</div>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto italic leading-relaxed">
+                "Que se guarden sus nombres en las piedras de Beleriand, pues sus destinos tejieron la música del mundo."
+            </p>
+</section>
+<!-- Legendary Figures -->
+<section class="mb-24">
+<h2 class="font-headline text-3xl font-extrabold text-on-surface mb-10 flex items-center gap-4">
+<span class="w-10 h-px bg-primary"></span>
+    Legendary Figures
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+<!-- Fëanor -->
+<div class="neomorph-card p-6 flex flex-col gap-5 rounded-2xl group transition-all hover:-translate-y-1">
+<div class="neomorph-inset rounded-xl overflow-hidden aspect-[4/5] p-2">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZFpLflSVUMab8LEkruTGQF6q2kM2PnBk_0_N7ctuHKaPH61YKtW2x6w13DH3KqezWMIrrrbrCnZaMtX22M9sM8XB_iTD5FN5btyattEFBXsMia9_zND4EqZpsGA-fOuxm1orr_cYz-SkyY5kRaUjA79h8DqNL7a6p00qsEz1OKfbRCYVMQSg_bkkaYC61TJqbk-MeU0XXxIWKrFpFHLFQFqD-jXqOIGtiRIv5qmBI8kw0AGAukHqivrjkvlBY7r4wU1XCtYkDWg">
+</div>
+<div class="px-2">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Fëanor</h3>
+<p class="font-label text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">High King of the Noldor • Elf</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-3">The greatest of the Eldar in skill and word, creator of the Silmarils, whose oath led the Noldor into the shadows of Middle-earth.</p>
+</div>
+<div class="mt-auto px-2 pt-4 border-t border-outline-variant/30">
+<span class="font-label text-[10px] font-extrabold text-on-surface-variant uppercase tracking-widest block mb-1">Key Deed:</span>
+<p class="font-body text-xs italic text-on-surface-variant/80">"Crafted the Silmarils, trapping the light of the Two Trees of Valinor."</p>
+</div>
+</div>
+<!-- Fingolfin -->
+<div class="neomorph-card p-6 flex flex-col gap-5 rounded-2xl group transition-all hover:-translate-y-1">
+<div class="neomorph-inset rounded-xl overflow-hidden aspect-[4/5] p-2">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkS20FvIFbWd7u-1d9QtnVq0OrwiihPoZBbPZXma7AYq4k89z6qYKJLZarPOMKm4OfP3uiGTerpTkCf6EUKsRYKaK0h7EJegtfhm_xvJjbvMo4wupzQZ-hDwIht9In-0JJ3_nC8OjAdoSMwlq47QzQz4U7BoSekywRjd-vuL-yWwzIwq1CHgdmS38kj_VEAhbb8lO0yk9QIYVoHGQoBAim4jMrCojC-fi9MOaQEl_iwpUkvP6g1f6QaA8PxApbrvJKjSYj0MDx0w">
+</div>
+<div class="px-2">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Fingolfin</h3>
+<p class="font-label text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">King of Hithlum • Elf</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-3">Most valiant of the kings of old, who rode alone to the gates of Angband to challenge the Dark Lord in single combat.</p>
+</div>
+<div class="mt-auto px-2 pt-4 border-t border-outline-variant/30">
+<span class="font-label text-[10px] font-extrabold text-on-surface-variant uppercase tracking-widest block mb-1">Key Deed:</span>
+<p class="font-body text-xs italic text-on-surface-variant/80">"Wounded Morgoth seven times before the gates of hell."</p>
+</div>
+</div>
+<!-- Lúthien Tinúviel -->
+<div class="neomorph-card p-6 flex flex-col gap-5 rounded-2xl group transition-all hover:-translate-y-1">
+<div class="neomorph-inset rounded-xl overflow-hidden aspect-[4/5] p-2">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHtrXM1JJ6ecQ-GiF5JDKq6InQqCwv6w6QAGp-Zqp3IjjtiugOXdGkTGfRwjrwd2mvOyW63Zu2_69SE2WSz1FyoGor5OSU5q2MP0q5Yz59XWxyCvbOgLEDimu_5Kdlyxsqi2ykplj7ScmnZCFjLeg3sZk6Uc5wyLkpPlRnqN2ALeAmh1gdf6lP16TOaJkiE3IKcL82Eupe_o2n-z0ocfOTN-M_0leVnHh-wHFiWFtxtHdaTCF0n-eBtlrQl4qmSJS0RS4iRCqeqg">
+</div>
+<div class="px-2">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Lúthien Tinúviel</h3>
+<p class="font-label text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">Princess of Doriath • Half-Maia</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-3">The morning star of the Elves, who through song and love conquered the darkness of the Iron Crown.</p>
+</div>
+<div class="mt-auto px-2 pt-4 border-t border-outline-variant/30">
+<span class="font-label text-[10px] font-extrabold text-on-surface-variant uppercase tracking-widest block mb-1">Key Deed:</span>
+<p class="font-body text-xs italic text-on-surface-variant/80">"Put Morgoth to sleep and recovered a Silmaril from his crown."</p>
+</div>
+</div>
+<!-- Beren -->
+<div class="neomorph-card p-6 flex flex-col gap-5 rounded-2xl group transition-all hover:-translate-y-1">
+<div class="neomorph-inset rounded-xl overflow-hidden aspect-[4/5] p-2">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEVzVWZhZ5__RQgkpZK20EAMf7v7HxdQuLKOg7aZrMW8NtlUDYu4_wQ5o-UI-aWC50G-9Db8N5P-zdPPW37sI3Jf593fWKyOEw8FZngcNBeSaHTruhZS-IaaHEraJ3XSsPbvtaflB9llQnPbG9Y7ViloQR6p2tGd_6So1HsotFo7nT7n00xle4yXc1AFrwwdt7oF59UVveJdycUl7s9U4b3SV4M-sJ4Hw9df5MApzgRiBYQZKjmYG64pmK-95JE7R31y8SvqJd7A">
+</div>
+<div class="px-2">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Beren</h3>
+<p class="font-label text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">Outlaw of Dorthonion • Man</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-3">A mortal man who accomplished an impossible quest for the love of an immortal maiden, becoming a legend across ages.</p>
+</div>
+<div class="mt-auto px-2 pt-4 border-t border-outline-variant/30">
+<span class="font-label text-[10px] font-extrabold text-on-surface-variant uppercase tracking-widest block mb-1">Key Deed:</span>
+<p class="font-body text-xs italic text-on-surface-variant/80">"Passed through the Girdle of Melian and breached the fortress of Angband."</p>
+</div>
+</div>
+<!-- Túrin Turambar -->
+<div class="neomorph-card p-6 flex flex-col gap-5 rounded-2xl group transition-all hover:-translate-y-1">
+<div class="neomorph-inset rounded-xl overflow-hidden aspect-[4/5] p-2">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500 grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAasY0djZ-LWif0GfNAF1yxh_UVw_NqJJJIOv5yew6pgw__kX9J4s8L2fYyo-wYjUwI3uS9cFjfi87RzJx12d3gB1EhBxsRIQT3v-u5s27_RTEhS04ARAegLv09HN_hrdsef4gnA5LSg_Of0I6m73hfWcD5RhwdRb0GI8fzKM4z5bM0CKQm5kx_184_UPgz6jhBYPer74RxPVjbkGdLvdqCGLFxCJA5dZ71PotVkuXDskH2HYvCk50RzK1WjnyjV5mjH8gGX9UKzw">
+</div>
+<div class="px-2">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Túrin Turambar</h3>
+<p class="font-label text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-3">Master of Doom • Man</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-3">A hero of great strength and sorrow, cursed by the Dark Lord to bring ruin to all he loved, yet slayer of the Father of Dragons.</p>
+</div>
+<div class="mt-auto px-2 pt-4 border-t border-outline-variant/30">
+<span class="font-label text-[10px] font-extrabold text-on-surface-variant uppercase tracking-widest block mb-1">Key Deed:</span>
+<p class="font-body text-xs italic text-on-surface-variant/80">"Slew Glaurung the Golden, the first of the Great Urulóki."</p>
+</div>
+</div>
+<!-- Morgoth Bauglir -->
+<div class="neomorph-card p-6 flex flex-col gap-5 rounded-2xl bg-inverse-surface border border-primary/20 group transition-all hover:-translate-y-1 overflow-hidden relative shadow-2xl">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="h-full w-full" style="background-image: radial-gradient(#6366f1 1px, transparent 1px); background-size: 20px 20px;"></div>
+</div>
+<div class="rounded-xl overflow-hidden aspect-[4/5] p-2 bg-on-background relative z-10">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-700 grayscale brightness-75 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6HTpO4x48y3JDkvNYBKT_Pouy0Si2EYMpPqOB9oiqHKPaosYgVerJU2Ms-GxYDLcPqfExkpkTtw4W79wXAlnD0TOlTBcgvNpL43d3Asu-sGNujpRSAQzW2h1w8yNFPp-j7VRzaQjS9Bm0O3SbRP3LhKnpa6G17_b0yL9AZbq1QIAmjUrvfhiehkpvcFFNjCb9v8sT2BMCukoQ3kyqdDturl0Q1nAm9DLKiErdnGOhPIlLV95xpvklpRxwA9uN7F4Bomm-7CBIWw">
+</div>
+<div class="px-2 relative z-10">
+<h3 class="font-headline text-2xl font-bold text-surface-bright">Morgoth Bauglir</h3>
+<p class="font-label text-[10px] font-bold text-primary-fixed uppercase tracking-[0.2em] mb-3">The Great Enemy • Ainu</p>
+<p class="font-body text-sm text-surface-dim leading-relaxed line-clamp-3">The first Dark Lord, who lusted for the light and wrought discord in the music of the world, ruling from the pits of Angband.</p>
+</div>
+<div class="mt-auto px-2 pt-4 border-t border-primary/30 relative z-10">
+<span class="font-label text-[10px] font-extrabold text-primary-fixed-dim uppercase tracking-widest block mb-1">Key Deed:</span>
+<p class="font-body text-xs italic text-surface-dim/80">"Destroyed the Two Trees and stole the Silmarils from Valinor."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ainur Section -->
+<section class="mb-24">
+<h2 class="font-headline text-3xl font-extrabold text-on-surface mb-10 flex items-center gap-4">
+<span class="w-10 h-px bg-primary"></span>
+    Ainur: The Holy Ones
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">The Origin</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li class="font-bold">Eru Ilúvatar</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">The Valar</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Manwë Súlimo</li>
+<li>Ulmo</li>
+<li>Aulë the Smith</li>
+<li>Oromë Aldaron</li>
+<li>Mandos (Námo)</li>
+<li>Lórien (Irmo)</li>
+<li>Tulkas Astaldo</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">The Valier</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Varda Elentári</li>
+<li>Yavanna Kementári</li>
+<li>Nienna</li>
+<li>Estë the Gentle</li>
+<li>Vairë the Weaver</li>
+<li>Vána the Ever-young</li>
+<li>Nessa the Dancer</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">The Maiar</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Melian (Queen of Doriath)</li>
+<li>Eönwë</li>
+<li>Ilmarë</li>
+<li>Ossë &amp; Uinen</li>
+<li>Olórin (Gandalf)</li>
+<li>Arien &amp; Tilion</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Elves Section -->
+<section class="mb-24">
+<h2 class="font-headline text-3xl font-extrabold text-on-surface mb-10 flex items-center gap-4">
+<span class="w-10 h-px bg-primary"></span>
+    Elves: The Quendi
+</h2>
+<div class="space-y-8">
+<div class="neomorph-card p-8 rounded-2xl">
+<h3 class="font-headline text-xl font-bold text-primary mb-6 border-b border-primary/10 pb-2">The Noldor (Exiles)</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-label text-xs font-bold text-on-surface-variant/60 uppercase tracking-widest mb-4">House of Finwë</h4>
+<ul class="font-body text-sm space-y-2 text-on-surface">
+<li>Fëanor (Curufinwë)</li>
+<li>Maedhros, Maglor</li>
+<li>Celegorm, Caranthir</li>
+<li>Curufin, Amrod, Amras</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs font-bold text-on-surface-variant/60 uppercase tracking-widest mb-4">House of Fingolfin</h4>
+<ul class="font-body text-sm space-y-2 text-on-surface">
+<li>Fingolfin</li>
+<li>Fingon the Valiant</li>
+<li>Turgon (Lord of Gondolin)</li>
+<li>Aredhel the White</li>
+<li>Idril Celebrindal</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs font-bold text-on-surface-variant/60 uppercase tracking-widest mb-4">House of Finarfin</h4>
+<ul class="font-body text-sm space-y-2 text-on-surface">
+<li>Finarfin</li>
+<li>Finrod Felagund</li>
+<li>Angrod &amp; Aegnor</li>
+<li>Galadriel</li>
+<li>Orodreth</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">The Vanyar</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Ingwë (High King)</li>
+<li>Indis</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">The Sindar &amp; Teleri</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Thingol (Elwë Singollo)</li>
+<li>Celeborn</li>
+<li>Círdan the Shipwright</li>
+<li>Beleg Cúthalion</li>
+<li>Mablung</li>
+<li>Daeron the Minstrel</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">The Nandor</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Lenwë</li>
+<li>Denethor (Leader of Laiquendi)</li>
+<li>Saeros</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Men Section -->
+<section class="mb-24">
+<h2 class="font-headline text-3xl font-extrabold text-on-surface mb-10 flex items-center gap-4">
+<span class="w-10 h-px bg-primary"></span>
+    Men: The Edain &amp; Others
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">House of Bëor</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Bëor the Old</li>
+<li>Barahir (Father of Beren)</li>
+<li>Beren Erchamion</li>
+<li>Morwen Eledhwen</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">House of Hador</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Hador Lórindol</li>
+<li>Galdor the Tall</li>
+<li>Húrin Thalion</li>
+<li>Huor</li>
+<li>Túrin Turambar</li>
+<li>Tuor Eladar</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">House of Haleth</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Haldad</li>
+<li>Lady Haleth</li>
+<li>Haldar</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-4">The Dúnedain Origins</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Eärendil the Mariner</li>
+<li>Elwing the White</li>
+<li>Elros Tar-Minyatur</li>
+<li>Elrond Half-elven</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl border border-error/10">
+<h3 class="font-headline text-lg font-bold text-error mb-4">Easterlings (Hombres Cetrinos)</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Bór and his sons</li>
+<li>Ulfang the Black</li>
+<li>Uldor the Accursed</li>
+<li>Brodda</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Dwarves Section -->
+<section class="mb-24">
+<h2 class="font-headline text-3xl font-extrabold text-on-surface mb-10 flex items-center gap-4">
+<span class="w-10 h-px bg-primary"></span>
+    Dwarves: The Naugrim
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">The Fathers</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Durin the Deathless</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">Lords &amp; Kings</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Azaghâl (Lord of Belegost)</li>
+<li>Naugladur (Lord of Nogrod)</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">The Smiths</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Telchar (Maker of Narsil)</li>
+<li>Gamil Zirak</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl">
+<h3 class="font-headline text-lg font-bold text-primary mb-2">Petty-Dwarves</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Mîm</li>
+<li>Ibûn &amp; Khîm</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Shadow Section -->
+<section class="mb-24">
+<h2 class="font-headline text-3xl font-extrabold text-on-surface mb-10 flex items-center gap-4">
+<span class="w-10 h-px bg-error"></span>
+    The Shadow: Creatures of Darkness
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="neomorph-card p-6 rounded-2xl bg-on-background/5 border border-error/20">
+<h3 class="font-headline text-xl font-bold text-error mb-4">Dark Lords &amp; Lieutenants</h3>
+<div class="space-y-4">
+<div>
+<span class="font-label text-[10px] font-bold text-error uppercase tracking-tighter block mb-1">Morgoth's Lieutenant</span>
+<p class="font-body text-sm font-semibold text-on-surface">Sauron (Mairon/Gorthaur)</p>
+</div>
+<div>
+<span class="font-label text-[10px] font-bold text-error uppercase tracking-tighter block mb-1">Lord of Balrogs</span>
+<p class="font-body text-sm font-semibold text-on-surface">Gothmog</p>
+</div>
+</div>
+</div>
+<div class="neomorph-card p-6 rounded-2xl bg-on-background/5 border border-error/20">
+<h3 class="font-headline text-xl font-bold text-error mb-4">Great Terrors</h3>
+<ul class="font-body text-sm space-y-2 text-on-surface-variant">
+<li>Ungoliant (The Great Spider)</li>
+<li>Glaurung (Father of Dragons)</li>
+<li>Ancalagon the Black</li>
+<li>Carcharoth (Anfauglir)</li>
+<li>Draugluin (Sire of Werewolves)</li>
+<li>Thuringwethil (Messenger of Sauron)</li>
+</ul>
+</div>
+<div class="neomorph-card p-6 rounded-2xl bg-on-background/5 border border-error/20">
+<h3 class="font-headline text-xl font-bold text-error mb-4">The Valaraukar</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4 italic">"The Scourges of Fire, spirits of shadow and flame that followed Melkor."</p>
+<ul class="font-body text-sm space-y-2 text-on-surface">
+<li>The Balrogs of Angband</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-24 neomorph-card p-12 text-center rounded-[2rem] max-w-3xl mx-auto mb-20 border border-white/50">
+<h3 class="font-headline text-3xl font-extrabold text-on-surface mb-4">Contribuye al Archivo</h3>
+<p class="font-body text-on-surface-variant mb-10 leading-relaxed max-w-xl mx-auto">
+                ¿Posees fragmentos perdidos de la historia de los Edain o los Eldar? Envía tus transcripciones para ser revisadas por los sabios de Nargothrond.
+            </p>
+<button class="neomorph-button bg-primary text-on-primary font-label text-sm font-bold px-10 py-4 rounded-full hover:scale-105 active:scale-95 transition-all uppercase tracking-widest">
+                ENVIAR MANUSCRITO
+            </button>
+</section>
+</main>
+<!-- Right Side: Info Panel -->
+<aside class="hidden xl:block w-[320px] pt-20 px-8 sticky top-0 h-screen overflow-y-auto custom-scrollbar">
+<div class="mb-12">
+<h4 class="font-label text-xs font-bold text-primary mb-6 border-b border-primary/20 pb-3 tracking-widest uppercase">Scholar's Notes</h4>
+<div class="neomorph-inset p-5 rounded-2xl">
+<p class="font-body text-sm text-on-surface-variant italic leading-relaxed">
+                    "The archives displayed here represent the silk-woven histories of the First Age, preserved through the careful curation of the Noldorin librarians."
+                </p>
+</div>
+</div>
+<div class="mb-12">
+<h4 class="font-label text-xs font-bold text-primary mb-6 border-b border-primary/20 pb-3 tracking-widest uppercase">Active Chronicles</h4>
+<ul class="space-y-6">
+<li class="flex gap-4 group cursor-pointer">
+<div class="w-2 h-2 rounded-full bg-primary mt-2 group-hover:scale-150 transition-transform"></div>
+<div>
+<span class="font-label text-[10px] font-bold text-on-surface-variant/50 block uppercase tracking-tighter">QUIZÁS TE INTERESE</span>
+<a class="font-body font-semibold text-on-surface hover:text-primary transition-colors" href="#">El Destino de los Silmarils</a>
+</div>
+</li>
+<li class="flex gap-4 group cursor-pointer">
+<div class="w-2 h-2 rounded-full bg-tertiary mt-2 group-hover:scale-150 transition-transform"></div>
+<div>
+<span class="font-label text-[10px] font-bold text-on-surface-variant/50 block uppercase tracking-tighter">ACTUALIZACIÓN RECIENTE</span>
+<a class="font-body font-semibold text-on-surface hover:text-primary transition-colors" href="#">Mapa de Beleriand Oriental</a>
+</div>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-container mt-12 border-t border-outline-variant/30">
+<div class="flex flex-col items-center py-16 gap-8 w-full max-w-container-max mx-auto px-gutter">
+<div class="font-headline text-3xl font-black text-primary tracking-tighter">Beleriand Archive</div>
+<nav class="flex flex-wrap justify-center gap-10">
+<a class="font-label text-xs font-bold text-on-surface-variant hover:text-primary transition-all uppercase tracking-widest" href="#">Archives</a>
+<a class="font-label text-xs font-bold text-on-surface-variant hover:text-primary transition-all uppercase tracking-widest" href="#">The Silmarillion</a>
+<a class="font-label text-xs font-bold text-on-surface-variant hover:text-primary transition-all uppercase tracking-widest" href="#">Map of Beleriand</a>
+</nav>
+<div class="h-px w-24 bg-outline-variant/30"></div>
+<p class="font-body text-xs font-medium text-on-surface-variant/60 tracking-wide text-center">
+            © FIRST AGE SCHOLARLY SOCIETY. ALL INSCRIPTIONS IN QUENYA.
+        </p>
+<div class="flex gap-8">
+<span class="material-symbols-outlined text-primary/40 text-xl" data-icon="book_5">book_5</span>
+<span class="material-symbols-outlined text-primary/40 text-xl" data-icon="ink_pen">ink_pen</span>
+<span class="material-symbols-outlined text-primary/40 text-xl" data-icon="star_half">star_half</span>
+</div>
+</div>
+</footer>
+<script>
+    // Interaction: Light pulse effect on primary cards
+    document.querySelectorAll('.neomorph-card').forEach(el => {
+        el.addEventListener('mousemove', (e) => {
+            const rect = el.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            el.style.setProperty('--mouse-x', `${x}px`);
+            el.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+</script>
+</body></html>

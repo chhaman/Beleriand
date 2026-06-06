@@ -1,0 +1,304 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Aulë the Smith | Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#6366f1",
+                        "inverse-on-surface": "#e8eaf0",
+                        "background": "#e8eaf0",
+                        "surface-dim": "#d4d6dc",
+                        "primary-fixed": "#e0e2ff",
+                        "surface-container-highest": "#d6d8de",
+                        "inverse-primary": "#a5b4fc",
+                        "secondary": "#6c6e7e",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "primary": "#6366f1",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-primary-fixed": "#1e1b4b",
+                        "on-primary-container": "#e0e2ff",
+                        "inverse-surface": "#2e3040",
+                        "on-error-container": "#991b1b",
+                        "secondary-fixed": "#d8dae6",
+                        "on-surface-variant": "#585a68",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#d8dae6",
+                        "outline": "#8a8c9a",
+                        "tertiary": "#7c3aed",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-background": "#2e3040",
+                        "surface": "#e8eaf0",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "error-container": "#fee2e2",
+                        "surface-container-low": "#e5e7ed",
+                        "on-tertiary-fixed": "#2e1065",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-secondary-container": "#585a68",
+                        "outline-variant": "#d0d2dc",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "primary-container": "#818cf8",
+                        "on-surface": "#2e3040",
+                        "surface-container": "#e2e4ea",
+                        "surface-variant": "#dcdee4",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "surface-container-lowest": "#f0f2f8",
+                        "error": "#dc2626",
+                        "tertiary-fixed": "#ede9fe",
+                        "surface-bright": "#edeef4",
+                        "tertiary-container": "#a78bfa",
+                        "surface-container-high": "#dcdee4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #e8eaf0;
+            color: #2e3040;
+        }
+
+        .raised-neomorphic {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+
+        .inset-neomorphic {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .active-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        
+        .transition-soft {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<nav class="flex justify-between items-center px-8 py-4 w-full max-w-full mx-auto">
+<div class="font-headline font-semibold text-primary text-xl tracking-tight">Beleriand Archive</div>
+<div class="hidden md:flex items-center gap-2">
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-colors font-body font-medium" href="#">Eras</a>
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-colors font-body font-medium" href="#">Geography</a>
+<a class="text-primary font-semibold shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-lg px-4 py-2 font-body" href="#">Characters</a>
+<a class="text-on-surface-variant px-4 py-2 hover:text-primary transition-colors font-body font-medium" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="raised-neomorphic p-2 rounded-full text-on-surface-variant active:scale-95 transition-all">
+<span class="material-symbols-outlined block">search</span>
+</button>
+<button class="raised-neomorphic p-2 rounded-full text-primary active:scale-95 transition-all">
+<span class="material-symbols-outlined block">account_circle</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="flex-grow max-w-7xl mx-auto w-full px-6 py-12 space-y-16">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-8 space-y-8">
+<div class="relative rounded-xl overflow-hidden raised-neomorphic aspect-[1.79]">
+<img alt="Aulë the Smith" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaOjkpRXmMBPiXVQbhdizalFrz94EmnqxKEy9N3tPCedgaSeIcig9UOzxyVPTZq-tfJfG5tWJPjQuAvpwYeCp-MNK6XjztZGDUKlzhvlExySgX8XiSr9kodHp_9GrIBPLam49vDozKTny4QfpRE-H76myAGhUVAXlceDeK-LKd3rM0lfNPh1viC9jNC2wc4eKArQB0bmi-PAi759dAHN0x2M4FIVjEvgXKlO3WXubOizWEMpmB57SapEb4Fg8WaumgHNyc1n1zSg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+<div class="space-y-4">
+<h1 class="text-5xl font-headline font-semibold text-on-surface tracking-tight">Aulë</h1>
+<p class="text-xl font-medium text-primary">El Hacedor, Señor de la Tierra • Vala (Ainu)</p>
+<p class="text-on-surface-variant leading-relaxed max-w-3xl">
+                        Heredó de Ilúvatar la mayor parte de su conocimiento sobre la estructura de Arda y todas las artes de la forja. Fue el arquitecto de las tierras y el creador de los materiales de los que está hecho el mundo físico.
+                    </p>
+</div>
+<div class="raised-neomorphic p-8 rounded-xl bg-surface border-l-4 border-primary">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="space-y-2">
+<p class="font-headline font-semibold text-lg text-on-surface">La Creación de los Naugrim</p>
+<p class="italic text-on-surface-variant">"En su impaciencia por la llegada de los Hijos de Ilúvatar, creó en secreto a los Siete Padres de los Enanos en las entrañas de la tierra..."</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Details Panel -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="raised-neomorphic rounded-xl p-8 space-y-6">
+<h3 class="text-xl font-headline font-semibold text-on-surface pb-4 border-b border-outline-variant/30">El Herrero de los Valar</h3>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="inset-neomorphic p-3 rounded-lg text-tertiary">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Raza</p>
+<p class="font-medium text-on-surface">Vala (Aratar)</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="inset-neomorphic p-3 rounded-lg text-tertiary">
+<span class="material-symbols-outlined">handyman</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Instrumento</p>
+<p class="font-medium text-on-surface">El Gran Martillo / El Yunque de Arda</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="inset-neomorphic p-3 rounded-lg text-tertiary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Estado</p>
+<p class="font-medium text-on-surface">Activo en sus mansiones de Valinor</p>
+</div>
+</div>
+</div>
+</div>
+<div class="inset-neomorphic rounded-xl p-6 bg-surface-container-lowest">
+<p class="text-sm italic text-on-surface-variant text-center">"Amaba a los Noldor más que a ninguno de los otros pueblos."</p>
+</div>
+</aside>
+</section>
+<!-- Main Content Blocks -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="raised-neomorphic p-8 rounded-xl space-y-4 hover:translate-y-[-4px] transition-soft">
+<h3 class="text-xl font-headline font-semibold text-primary">Maestro de la Materia</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                    Su dominio se extiende sobre todas las sustancias de las que se compone Arda. Desde las vetas de oro en las profundidades hasta las gemas más brillantes, Aulë entiende la esencia de cada elemento físico, moldeando la corteza del mundo con precisión divina.
+                </p>
+</div>
+<div class="raised-neomorphic p-8 rounded-xl space-y-4 hover:translate-y-[-4px] transition-soft">
+<h3 class="text-xl font-headline font-semibold text-primary">El Espíritu de la Creación Pura</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                    A diferencia de Melkor, Aulë no busca la posesión ni el dominio. Su deleite reside en el acto mismo de la creación y en la entrega de sus obras a Eru. Para él, el arte es un reflejo de la gloria del Creador, no una herramienta para el ego.
+                </p>
+</div>
+<div class="raised-neomorphic p-8 rounded-xl space-y-4 hover:translate-y-[-4px] transition-soft">
+<h3 class="text-xl font-headline font-semibold text-primary">Mentor de los Sabios</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                    Fue el maestro de los Noldor en Aman, enseñándoles el lenguaje y las artes de la mano. Su influencia marcó a grandes artesanos como Mahtan y el mismísimo Fëanor, sembrando las semillas de la mayor era de creación en la historia de los Elfos.
+                </p>
+</div>
+</section>
+<!-- Hechos Memorables -->
+<section class="space-y-8">
+<h2 class="text-3xl font-headline font-semibold text-on-surface text-center">Hechos Memorables</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="raised-neomorphic p-8 rounded-xl text-center space-y-4 group transition-soft">
+<div class="w-16 h-16 mx-auto rounded-full inset-neomorphic flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">gavel</span>
+</div>
+<h4 class="font-headline font-semibold text-on-surface">La Sumisión de los Enanos</h4>
+<p class="text-sm text-on-surface-variant">Cuando Aulë alzó su martillo para destruir a sus creaciones ante la reprimenda de Eru, los Enanos lloraron, y el Padre de Todo les otorgó vida propia.</p>
+</div>
+<!-- Card 2 -->
+<div class="raised-neomorphic p-8 rounded-xl text-center space-y-4 group transition-soft">
+<div class="w-16 h-16 mx-auto rounded-full inset-neomorphic flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">wb_sunny</span>
+</div>
+<h4 class="font-headline font-semibold text-on-surface">La Iluminación del Mundo</h4>
+<p class="text-sm text-on-surface-variant">Forjó las Dos Grandes Lámparas, Illuin y Ormal, que iluminaron la Tierra Media mucho antes de que el Sol y la Luna existieran.</p>
+</div>
+<!-- Card 3 -->
+<div class="raised-neomorphic p-8 rounded-xl text-center space-y-4 group transition-soft">
+<div class="w-16 h-16 mx-auto rounded-full inset-neomorphic flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">brightness_medium</span>
+</div>
+<h4 class="font-headline font-semibold text-on-surface">Los Vasos del Día y la Noche</h4>
+<p class="text-sm text-on-surface-variant">Aulë y sus artesanos crearon los recipientes sagrados que contendrían el resplandor de los árboles Laurelin y Telperion para guiar los cielos.</p>
+</div>
+</div>
+</section>
+<!-- Closing Section -->
+<section class="max-w-4xl mx-auto text-center space-y-10 py-12">
+<div class="space-y-6">
+<h2 class="text-4xl font-headline font-semibold text-on-surface">El legado del Maestro de Artes</h2>
+<div class="inset-neomorphic p-10 rounded-2xl bg-surface-container-lowest leading-relaxed text-on-surface-variant space-y-6">
+<p>
+                        A pesar de su inmenso poder, Aulë es recordado por su profunda humildad. Su subcreación, los Naugrim (llamados Mahal por ellos), se convirtió en un pueblo independiente que heredó su resistencia y amor por las artes ocultas de la tierra.
+                    </p>
+<p>
+                        A través de las eras, su figura permaneció como un pilar de estabilidad en Valinor, siempre dispuesto a reparar lo que otros dañaban y a enseñar a quienes deseaban aprender con un corazón puro.
+                    </p>
+<div class="pt-6 border-t border-outline-variant/30">
+<p class="text-xl font-headline text-primary font-medium italic">"Aulë permaneció fiel a Eru y sometió todo lo que hizo a su voluntad."</p>
+</div>
+</div>
+</div>
+<button class="raised-neomorphic px-8 py-4 rounded-full text-primary font-semibold hover:scale-105 active:scale-95 transition-all inline-flex items-center gap-2">
+                Explorar los Noldor <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full max-w-7xl mx-auto gap-8">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<div class="text-lg font-headline font-semibold text-on-surface">Beleriand Archive</div>
+<p class="font-body text-sm text-on-surface-variant max-w-sm">
+                    © 2024 Beleriand Archive — Scholarly Resource for the Elder Days
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Reference Library</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Cartography</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Linguistic Analysis</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Contact Scribe</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for neomorphic buttons
+        document.querySelectorAll('.raised-neomorphic').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                if(button.tagName === 'BUTTON' || button.tagName === 'A') {
+                    button.classList.remove('raised-neomorphic');
+                    button.classList.add('inset-neomorphic');
+                }
+            });
+            button.addEventListener('mouseup', () => {
+                if(button.tagName === 'BUTTON' || button.tagName === 'A') {
+                    button.classList.remove('inset-neomorphic');
+                    button.classList.add('raised-neomorphic');
+                }
+            });
+            button.addEventListener('mouseleave', () => {
+                if(button.tagName === 'BUTTON' || button.tagName === 'A') {
+                    button.classList.remove('inset-neomorphic');
+                    button.classList.add('raised-neomorphic');
+                }
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Vairë la Tejedora | Silk Silmarillion Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#7c3aed",
+                        "surface-container-low": "#e5e7ed",
+                        "on-surface-variant": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "surface-dim": "#d4d6dc",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "surface-container": "#e2e4ea",
+                        "primary-container": "#818cf8",
+                        "outline": "#8a8c9a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#f0f2f8",
+                        "inverse-primary": "#a5b4fc",
+                        "error-container": "#fee2e2",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#2e3040",
+                        "on-primary-fixed": "#1e1b4b",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-surface": "#2e3040",
+                        "inverse-on-surface": "#e8eaf0",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-secondary-fixed-variant": "#404252",
+                        "tertiary-container": "#a78bfa",
+                        "surface-container-high": "#dcdee4",
+                        "primary-fixed": "#e0e2ff",
+                        "surface": "#e8eaf0",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-container-highest": "#d6d8de",
+                        "secondary": "#6c6e7e",
+                        "primary": "#6366f1",
+                        "tertiary-fixed": "#ede9fe",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "error": "#dc2626",
+                        "surface-bright": "#edeef4",
+                        "inverse-surface": "#2e3040",
+                        "on-error-container": "#991b1b",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary": "#ffffff",
+                        "background": "#e8eaf0",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neo-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neo-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neo-interaction:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .text-glow-primary {
+            text-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full sticky top-0 z-50 bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] w-full top-0 px-6 py-4">
+<div class="text-xl font-semibold tracking-tight text-on-surface dark:text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+            Silk Silmarillion
+        </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body font-medium" href="#">Eras</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body font-medium" href="#">Geography</a>
+<a class="text-primary font-semibold border-b-2 border-primary pb-1 font-body font-medium" href="#">Characters</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body font-medium" href="#">Artifacts</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="neo-raised w-10 h-10 rounded-full flex items-center justify-center neo-interaction text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1 space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-2 neo-inset rounded-full text-tertiary font-medium text-sm">
+<span class="material-symbols-outlined text-sm">history_edu</span>
+                    Señora de los Tapices
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-tight">
+                    Vairë <br> <span class="text-primary">la Tejedora</span>
+</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed font-medium">
+                    La Historiadora de Arda, Señora de los Tapices • Valië (Ainu)
+                </p>
+<blockquote class="border-l-4 border-tertiary-container pl-6 py-2 italic text-on-secondary-container bg-surface-container-lowest rounded-r-xl">
+                    "Vairë la Tejedora es su esposa, que entreteje todas las cosas que han sido en el Tiempo en sus telas historiadas."
+                </blockquote>
+</div>
+<div class="order-1 lg:order-2">
+<div class="p-4 neo-raised rounded-[2rem] bg-surface">
+<img alt="Vairë the Weaver" class="w-full h-auto rounded-[1.5rem] object-cover aspect-[4/3] grayscale-[0.2] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3oiGPA0b_7G3n_jCCeaPFQg4iD8FtnVFpqfQfFTzs19Gx6k59n9IpTPkApOKNgQ4Hp2GWH3ZAloDoo-3mL5pKVCGqc4pOT5VZ3hJkqf1UpzEfscsFSxRLs6n3F_I1B2z7QbKbYsJmdDK-n-a-u7txswuTpgIhlj9pCdFvDKiy4B5ffavJtxMX3pYfCO8mCvcJUrzKFZUUwVSZLL2j3VMK9fFXt-MMxlAXxWim2SRGHlEMAH83C-sWAADrjJF5BpPcioSOtkunrQ">
+</div>
+</div>
+</section>
+<!-- Introduction -->
+<section class="max-w-4xl mx-auto text-center space-y-8">
+<h2 class="text-3xl font-bold text-on-surface">La Cronista del Destino</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                En las Estancias de Mandos, donde las almas aguardan y el silencio es absoluto, resuena el rítmico latido de un telar eterno. Vairë no solo observa la historia; la fija, la entrelaza y la vuelve inmortal. Cada hilo representa un suspiro, cada color una era, y en la vastedad de sus tapices, el tiempo deja de ser una línea para convertirse en un paisaje infinito que reviste las paredes del Juicio.
+            </p>
+</section>
+<!-- Technical Profile -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 neo-raised rounded-2xl bg-surface space-y-4 text-center">
+<div class="w-16 h-16 mx-auto neo-inset rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">diversity_3</span>
+</div>
+<h3 class="font-semibold text-on-surface">Race</h3>
+<p class="text-on-surface-variant">Valië (Reina de los Valar)</p>
+</div>
+<div class="p-8 neo-raised rounded-2xl bg-surface space-y-4 text-center border-2 border-primary-container/20">
+<div class="w-16 h-16 mx-auto neo-inset rounded-full flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">texture</span>
+</div>
+<h3 class="font-semibold text-on-surface">Attribute</h3>
+<p class="text-on-surface-variant">El Telar y los Tapices / El Recuerdo del Pasado</p>
+</div>
+<div class="p-8 neo-raised rounded-2xl bg-surface space-y-4 text-center">
+<div class="w-16 h-16 mx-auto neo-inset rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<h3 class="font-semibold text-on-surface">Status</h3>
+<p class="text-on-surface-variant">Activa en las Estancias de Mandos</p>
+</div>
+</section>
+<!-- Character Attributes -->
+<section class="space-y-12">
+<div class="flex items-center gap-4">
+<div class="h-[2px] flex-grow bg-outline-variant"></div>
+<h2 class="text-2xl font-bold text-on-surface-variant shrink-0">Atributos de la Valië</h2>
+<div class="h-[2px] flex-grow bg-outline-variant"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Card 1 -->
+<div class="p-8 neo-raised rounded-[2rem] bg-surface flex flex-col items-center text-center space-y-6 group hover:-translate-y-2 transition-transform duration-300">
+<div class="p-6 neo-inset rounded-full text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">inventory_2</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">La Tejedora de la Historia</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Posee el don único de capturar el flujo efímero del tiempo en una forma tangible y eterna. Sus manos no solo hilan seda, sino la esencia misma de los sucesos.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="p-8 neo-raised rounded-[2rem] bg-surface flex flex-col items-center text-center space-y-6 group hover:-translate-y-2 transition-transform duration-300">
+<div class="p-6 neo-inset rounded-full text-tertiary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">balance</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">Compañera del Juez</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Esposa de Mandos (Námo), ella complementa el rigor del juicio con la fidelidad del registro, guardando la memoria colectiva de todos los seres de Arda.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="p-8 neo-raised rounded-[2rem] bg-surface flex flex-col items-center text-center space-y-6 group hover:-translate-y-2 transition-transform duration-300">
+<div class="p-6 neo-inset rounded-full text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">museum</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">El Archivo de los Muertos</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        A medida que el mundo envejece, sus tapices crecen, expandiendo físicamente las Estancias de Mandos para albergar la creciente complejidad de la historia.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Memorable Deeds Grid -->
+<section class="space-y-12">
+<h2 class="text-4xl font-extrabold text-on-surface text-center">Hechos Memorables</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Grid Item 1 -->
+<div class="lg:col-span-2 p-8 neo-raised rounded-[2.5rem] bg-surface flex flex-col md:flex-row gap-8 items-center border border-white/40">
+<div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-inner h-64">
+<img class="w-full h-full object-cover" data-alt="A macro photograph of an ancient wooden loom being used to weave a tapestry that glows with internal celestial light. The threads are luminescent indigo and gold, representing stars and historical events. The setting is a dimly lit, vast stone chamber with architectural details reminiscent of Tolkien's Halls of Mandos, bathed in a soft violet and silver atmospheric glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwsTeJm4M0S-7n86JUVzfl63hKd31d8NeRSabSN1-J0gLV-AZ1fHv5mlLG5lO4RF9BjaEuEohz-z4GgR3qVaSxoxDl7YM8BXzzVpoK821e5NkV80bKF9LmDMxY6Fyf4-ak7XyCeUrutBCG5RwqduWPrU0_PXgpP0ZyLu90y5WVx_K0hP9XmUsAncEC3B4D_CPFA1S-CRCml3wyk3FcVtXe224AJhl3gXVzny5ZAsxCHO9omY6pbomi2D4QbNM8T-wBms6uCJW7ng">
+</div>
+<div class="w-full md:w-1/2 space-y-4">
+<span class="text-primary font-bold text-xs uppercase tracking-widest">Justicia Visual</span>
+<h4 class="text-2xl font-bold text-on-surface">El Testimonio del Juicio</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Sus obras sirven como la prueba irrefutable ante los juicios de Námo. No hay engaño posible en los hilos de Vairë; lo que fue, queda registrado con una claridad que trasciende la palabra hablada.
+                        </p>
+</div>
+</div>
+<!-- Grid Item 2 -->
+<div class="p-8 neo-raised rounded-[2.5rem] bg-surface flex flex-col justify-between">
+<div class="space-y-4">
+<div class="neo-inset w-12 h-12 rounded-xl flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">auto_stories</span>
+</div>
+<h4 class="text-xl font-bold text-on-surface">La Preservación de los Días Antiguos</h4>
+<p class="text-on-surface-variant text-sm">
+                            Gracias a su labor, el resplandor de los Dos Árboles y la gloria de la Primera Edad permanecen vivos, protegiendo la belleza original del mundo contra el olvido de Melkor.
+                        </p>
+</div>
+<button class="mt-8 px-6 py-3 neo-raised rounded-full text-tertiary font-semibold hover:text-primary transition-all neo-interaction self-start">
+                        Explorar Eras
+                    </button>
+</div>
+<!-- Grid Item 3 -->
+<div class="p-8 neo-raised rounded-[2.5rem] bg-surface flex flex-col gap-6">
+<div class="rounded-2xl overflow-hidden h-40">
+<img class="w-full h-full object-cover" data-alt="A soft, ethereal close-up of translucent fabric drifting in a gentle breeze, illuminated by golden hour sunlight. The texture is extremely fine, like gossamer or elven silk. The color palette consists of warm creams, soft violets, and glowing ambers, creating a mood of profound peace, comfort, and cosmic understanding in a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV5H6tXJ8GXUcwh-cs2HLECfQWdy7XZgQ-raVE7YYjvP_d_0sUz8mYTcjSyyaBYcK15ZuLuFiDN9ki1eqFSwU5QKUbFTUkgVRfZsco6WVHSS-TqhIgu1fM7xTjLi9Yle-kf3HNcrskDqngrbDipWlNt7bggOnfpE5o58zoUPrWo-qBqkXO_G6fZQwyRrQLhVRhdB_apFwbRasBhC4iYnfu2oj7ha3v367NZwWGaTV6Pv99MmKnXefKDhfNjaCxPE4gRBulnFAGRg">
+</div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold text-on-surface">El Consuelo de las Almas</h4>
+<p class="text-on-surface-variant text-sm">
+                            Muchos espíritus encuentran paz al observar sus propias vidas reflejadas en el telar, comprendiendo por fin el propósito de sus alegrías y sufrimientos dentro de la Gran Música.
+                        </p>
+</div>
+</div>
+<!-- Grid Item 4 (Wide) -->
+<div class="lg:col-span-2 p-10 neo-raised rounded-[2.5rem] bg-surface flex flex-col justify-center relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-[15rem]" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+</div>
+<div class="relative z-10 space-y-4 max-w-lg">
+<h4 class="text-3xl font-extrabold text-on-surface">El Legado de la Continuidad</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Vairë nos enseña que nada se pierde realmente. Cada acción, por pequeña que sea, es un hilo necesario en el patrón universal. Su legado es la certeza de que la historia es un todo coherente y eterno.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Reflective Section -->
+<section class="py-20 text-center space-y-10 relative">
+<div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem]">flare</span>
+</div>
+<div class="max-w-2xl mx-auto space-y-6 relative z-10">
+<h2 class="text-4xl font-bold text-on-surface">Nadie es insignificante en el Telar</h2>
+<p class="text-lg text-on-surface-variant italic">
+                    "Al final, no son los grandes reyes quienes sostienen la trama, sino los incontables hilos de vidas sencillas que dan color y resistencia a la historia de Arda."
+                </p>
+<div class="flex justify-center gap-6 pt-6">
+<button class="px-8 py-4 neo-raised rounded-2xl bg-surface text-primary font-bold hover:scale-105 transition-transform neo-interaction">
+                        Ver Archivos de Mandos
+                    </button>
+<button class="px-8 py-4 neo-raised rounded-2xl bg-surface text-tertiary font-bold hover:scale-105 transition-transform neo-interaction">
+                        Cronología Completa
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto py-12 px-8 bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] border-t-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="space-y-4">
+<div class="font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+                Silk Silmarillion
+            </div>
+<p class="font-body text-sm text-on-surface-variant">© First Age Scholarly Archive. Based on the Silmarillion.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 justify-start md:justify-end">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">The Valar</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">Beleriand History</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">Character Index</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body text-sm" href="#">Glossary</a>
+</div>
+</footer>
+<!-- FAB Suppression Logic: Not rendering FAB as this is a Details/Profile screen -->
+<script>
+        // Micro-interaction for hover effects on images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('mouseenter', () => {
+                img.parentElement.style.transform = 'scale(1.02)';
+                img.parentElement.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+            });
+            img.addEventListener('mouseleave', () => {
+                img.parentElement.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body></html>

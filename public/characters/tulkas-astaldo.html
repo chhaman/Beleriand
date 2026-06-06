@@ -1,0 +1,295 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tulkas Astaldo - Silk Silmarillion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#6366f1",
+                        "background": "#e8eaf0",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "tertiary": "#7c3aed",
+                        "surface-container": "#e2e4ea",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#edeef4",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "surface-container-low": "#e5e7ed",
+                        "inverse-surface": "#2e3040",
+                        "tertiary-container": "#a78bfa",
+                        "surface-container-high": "#dcdee4",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "on-secondary-fixed-variant": "#404252",
+                        "inverse-on-surface": "#e8eaf0",
+                        "secondary-container": "#d8dae6",
+                        "on-surface": "#2e3040",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-error-container": "#991b1b",
+                        "tertiary-fixed": "#ede9fe",
+                        "surface": "#e8eaf0",
+                        "error": "#dc2626",
+                        "surface-dim": "#d4d6dc",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "on-background": "#2e3040",
+                        "outline": "#8a8c9a",
+                        "primary": "#6366f1",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#d0d2dc",
+                        "on-primary-fixed": "#1e1b4b",
+                        "on-primary-container": "#e0e2ff",
+                        "primary-container": "#818cf8",
+                        "on-surface-variant": "#585a68",
+                        "secondary": "#6c6e7e",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "on-tertiary-fixed": "#2e1065",
+                        "on-secondary-container": "#585a68",
+                        "on-secondary-fixed": "#1a1b26",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed": "#e0e2ff",
+                        "surface-variant": "#dcdee4",
+                        "inverse-primary": "#a5b4fc",
+                        "secondary-fixed-dim": "#b8baca"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neo-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neo-pressed {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neo-button:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<main class="flex-grow container mx-auto px-6 py-12 max-w-7xl space-y-20">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<div>
+<h1 class="text-5xl font-extrabold text-on-surface leading-tight tracking-tight">Tulkas Astaldo</h1>
+<p class="text-xl text-tertiary font-semibold mt-2">El Luchador, El Valiente • Vala (Ainu)</p>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                    Fue el último de los Ainur en descender a Arda para ayudar a los Valar en sus primeras batallas contra Melkor. Su entrada fue anunciada por una risa atronadora que hizo temblar las montañas y retroceder a la oscuridad. No monta caballos ni usa armas; su fuerza reside en sus propias manos y en su valor inquebrantable.
+                </p>
+<div class="pt-4">
+<button class="px-8 py-4 bg-surface neo-raised rounded-xl text-primary font-bold hover:scale-[1.02] transition-transform active:shadow-inner flex items-center gap-3">
+                        Explorar Historias
+                        <span class="material-symbols-outlined">explore</span>
+</button>
+</div>
+</div>
+<div class="relative group">
+<div class="neo-raised rounded-[2rem] overflow-hidden aspect-[4/3]">
+<img alt="Tulkas Astaldo illustration" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVgP6bmk8X8Q5RP7Jiz0t-31jQFl5GQ0dxdNU74qZBLSKzN1eyBtvVFpA_hycwEkSVJDk0xFMiFzDCwAoBkizltn5fmWGehs49cnXTIPlXIzy6gm4RwFPkOZiZj8s1NH1KK6EeT_G6DpYLWDI3r0NUAaAQhdJZSfPqgYDmCR1V0qlgeN3aTfcrox77KUTrnzH4dK1_RDXJVEVoAPyFjq6R_fya4eUbf23ci5GdaGbX-wFfbuWy3abey9954q2si0iQgR_xV1RFMg">
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-surface neo-raised rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined !text-5xl">sentiment_very_satisfied</span>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Sidebar/Technical Card -->
+<div class="lg:col-span-4 space-y-8">
+<div class="neo-raised rounded-2xl p-8 bg-surface">
+<h3 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">assignment</span>
+                        Ficha Técnica
+                    </h3>
+<ul class="space-y-6">
+<li class="neo-pressed p-4 rounded-xl">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest block mb-1">Raza</span>
+<span class="text-lg font-medium text-on-surface">Vala (Aratar)</span>
+</li>
+<li class="neo-pressed p-4 rounded-xl">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest block mb-1">Atributo</span>
+<span class="text-lg font-medium text-on-surface">Fuerza física / Sus propias manos</span>
+</li>
+<li class="neo-pressed p-4 rounded-xl">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest block mb-1">Estado</span>
+<span class="text-lg font-medium text-on-surface">Activo en Valinor</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Middle Cards -->
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="neo-raised rounded-2xl p-8 bg-surface space-y-4">
+<div class="w-12 h-12 neo-pressed rounded-xl flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined">fitness_center</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">La Fuerza Encarnada</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        De cabello y barba dorados, su piel es rosada por el esfuerzo y la salud. No conoce la fatiga; corre más rápido que cualquier criatura que use patas y lucha sin espada ni escudo, confiando solo en su poder físico superior.
+                    </p>
+</div>
+<div class="neo-raised rounded-2xl p-8 bg-surface space-y-4">
+<div class="w-12 h-12 neo-pressed rounded-xl flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined">comedy_mask</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">El Guerrero Alegre</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Su risa es su estandarte. Tulkas no lucha por odio, sino por amor al deporte y a la justicia. Incluso en medio de la guerra más terrible, su risa resuena como un trueno, inspirando a sus aliados y aterrorizando a sus enemigos.
+                    </p>
+</div>
+<div class="md:col-span-2 neo-raised rounded-2xl p-8 bg-surface flex flex-col md:flex-row gap-8 items-center">
+<div class="w-24 h-24 neo-pressed rounded-full flex-shrink-0 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined !text-4xl">favorite</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">Un Amigo en la Batalla</h3>
+<p class="text-on-surface-variant leading-relaxed mt-2">
+                            Casado con Nessa, la Bailarina, Tulkas es el epítome de la lealtad y la franqueza. No es un estratega complejo ni un sabio de palabras oscuras; su devoción a los suyos es tan sólida y directa como un golpe de sus manos.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="py-12">
+<div class="neo-pressed rounded-[2.5rem] p-16 text-center max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-primary !text-6xl opacity-40 mb-6">format_quote</span>
+<blockquote class="text-3xl md:text-4xl font-headline font-semibold text-on-surface italic leading-snug">
+                    "Tulkas ríe siempre, en el deporte o en la guerra."
+                </blockquote>
+<p class="mt-6 font-bold text-on-surface-variant tracking-widest uppercase text-sm">— Quenta Silmarillion</p>
+</div>
+</section>
+<!-- Hechos Memorables Section -->
+<section class="space-y-10">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-on-surface">Hechos Memorables</h2>
+<div class="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="neo-raised rounded-2xl p-8 text-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 neo-pressed rounded-full mx-auto flex items-center justify-center text-primary mb-6 group-hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined !text-3xl">sports_kabaddi</span>
+</div>
+<h4 class="font-bold text-lg mb-3">El Duelo de Utumno</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Durante la Guerra de las Potencias, Tulkas luchó cuerpo a cuerpo con Melkor, derribándolo y encadenándolo con Angainor.
+                    </p>
+</div>
+<div class="neo-raised rounded-2xl p-8 text-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 neo-pressed rounded-full mx-auto flex items-center justify-center text-primary mb-6 group-hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined !text-3xl">directions_run</span>
+</div>
+<h4 class="font-bold text-lg mb-3">La Persecución</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Tras el Oscurecimiento de Valinor, Tulkas fue el primero en perseguir a Melkor y Ungoliant a través de las tinieblas.
+                    </p>
+</div>
+<div class="neo-raised rounded-2xl p-8 text-center group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 neo-pressed rounded-full mx-auto flex items-center justify-center text-primary mb-6 group-hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined !text-3xl">gavel</span>
+</div>
+<h4 class="font-bold text-lg mb-3">El Juicio de Melkor</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Fue el único Vala que desconfió abiertamente del supuesto arrepentimiento de Melkor, manteniendo sus puños listos.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="neo-raised rounded-3xl overflow-hidden bg-surface-container-low">
+<div class="p-12 md:p-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h2 class="text-4xl font-extrabold text-on-surface">El legado del Campeón de los Poderes</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Tulkas representa la fuerza vital y la alegría que no se deja amedrentar por la oscuridad. Como protector físico de Valinor, su legado es uno de valentía simple y directa: donde otros ven complejidad y miedo, él ve la oportunidad de actuar con honor y regocijo. Es el recordatorio de que la risa es, en sí misma, una forma de victoria.
+                    </p>
+<div class="flex gap-4">
+<div class="neo-pressed px-6 py-3 rounded-full text-sm font-bold text-tertiary">#Valiente</div>
+<div class="neo-pressed px-6 py-3 rounded-full text-sm font-bold text-tertiary">#Defensor</div>
+<div class="neo-pressed px-6 py-3 rounded-full text-sm font-bold text-tertiary">#Alegría</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square neo-pressed rounded-full flex items-center justify-center overflow-hidden p-8">
+<div class="w-full h-full neo-raised rounded-full bg-gradient-to-br from-primary-container to-tertiary-container opacity-20 absolute"></div>
+<span class="material-symbols-outlined !text-[12rem] text-primary" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto py-12 px-8 bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] border-t-0">
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<div class="font-semibold text-on-surface text-lg mb-2">Beleriand Archive</div>
+<p class="font-body text-sm text-on-surface-variant">© First Age Scholarly Archive. Based on the Silmarillion by J.R.R. Tolkien.</p>
+</div>
+<div class="flex flex-wrap gap-6 md:justify-end font-body text-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">The Valar</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Beleriand History</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Character Index</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Glossary</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for neomorphic cards
+        document.querySelectorAll('.neo-raised').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                if(card.classList.contains('neo-button')) {
+                    card.classList.remove('neo-raised');
+                    card.classList.add('neo-pressed');
+                }
+            });
+            card.addEventListener('mouseup', () => {
+                if(card.classList.contains('neo-button')) {
+                    card.classList.add('neo-raised');
+                    card.classList.remove('neo-pressed');
+                }
+            });
+            card.addEventListener('mouseleave', () => {
+                if(card.classList.contains('neo-button')) {
+                    card.classList.add('neo-raised');
+                    card.classList.remove('neo-pressed');
+                }
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+</body></html>

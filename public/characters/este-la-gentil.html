@@ -1,0 +1,317 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Estë the Gentle | Valaquenta</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d4d6dc",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#991b1b",
+                        "error-container": "#fee2e2",
+                        "tertiary": "#7c3aed",
+                        "surface-bright": "#edeef4",
+                        "background": "#e8eaf0",
+                        "surface": "#e8eaf0",
+                        "outline": "#8a8c9a",
+                        "surface-container-low": "#e5e7ed",
+                        "primary-fixed": "#e0e2ff",
+                        "on-secondary-fixed-variant": "#404252",
+                        "surface-tint": "#6366f1",
+                        "inverse-primary": "#a5b4fc",
+                        "secondary": "#6c6e7e",
+                        "inverse-surface": "#2e3040",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "secondary-fixed-dim": "#b8baca",
+                        "tertiary-fixed": "#ede9fe",
+                        "surface-container-high": "#dcdee4",
+                        "on-surface": "#2e3040",
+                        "on-primary-container": "#e0e2ff",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-tertiary-container": "#3b1f63",
+                        "surface-container": "#e2e4ea",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-container": "#818cf8",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "tertiary-container": "#a78bfa",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-secondary-container": "#585a68",
+                        "error": "#dc2626",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#2e3040",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#e8eaf0",
+                        "surface-container-highest": "#d6d8de",
+                        "primary": "#6366f1",
+                        "on-tertiary-fixed": "#2e1065",
+                        "secondary-container": "#d8dae6",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            color: #2e3040;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .nav-item-active {
+            color: #6366f1;
+            font-weight: 600;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 4px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col py-6 px-4 w-72 h-[calc(100vh-80px)] sticky top-20">
+<div class="flex flex-col items-center mb-8">
+<div class="w-24 h-24 rounded-2xl neomorph-raised p-1 mb-4">
+<img alt="Estë Silhouette" class="w-full h-full object-cover rounded-xl" data-alt="A mystical, ethereal silhouette of a celestial feminine figure, illuminated by soft moonlight. The background is a dreamy haze of soft violets and greys. The figure appears peaceful, embodying the essence of rest and healing in a high-key, neomorphic art style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-L9fJQEjESsqRTRhbMnAL0F3dE-0A0Qp4cOPUgPskSqh4E4pksJ1ezEtndQ4gwuRbqem-STSlUsl01P9wSJjeZHovJi9hL8zm_SOn15UjvAFxYTAdv6m6E7_IhAox_lzVXEEIA2jop2T9HTY-mLlhCQFiV2SI6zeFAR_rPeIejkwC3qQsmM_XT3DVm1G3JA_WxW1jy2836ujwK0lpRgg3xK7TH9AWJS0yXaxgkeBQkGABM9Svo5oZrqTz3I5Ys0V30I7QhtrGjw">
+</div>
+<h2 class="font-headline text-lg font-semibold text-on-surface">Estë the Gentle</h2>
+<p class="text-sm text-on-surface-variant">Lady of Rest</p>
+</div>
+<nav class="flex-1 space-y-2">
+<div class="neomorph-inset text-primary rounded-lg p-3 flex items-center gap-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-medium">Character Bio</span>
+</div>
+<div class="p-3 hover:neomorph-raised rounded-lg flex items-center gap-3 transition-all text-on-surface-variant hover:text-tertiary">
+<span class="material-symbols-outlined">groups</span>
+<span>Valar Council</span>
+</div>
+<div class="p-3 hover:neomorph-raised rounded-lg flex items-center gap-3 transition-all text-on-surface-variant hover:text-tertiary">
+<span class="material-symbols-outlined">waves</span>
+<span>Lore of Lórien</span>
+</div>
+<div class="p-3 hover:neomorph-raised rounded-lg flex items-center gap-3 transition-all text-on-surface-variant hover:text-tertiary">
+<span class="material-symbols-outlined">star</span>
+<span>Stellar Connections</span>
+</div>
+</nav>
+<div class="mt-auto space-y-2 pt-6">
+<button class="w-full neomorph-raised py-3 rounded-xl text-primary font-semibold active:neomorph-inset transition-all">
+                    View Genealogy
+                </button>
+<div class="flex justify-around pt-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">settings</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">menu_book</span>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-8 py-10 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="relative w-full h-[500px] rounded-[2.5rem] overflow-hidden neomorph-raised">
+<img alt="Estë la Gentil resting in the gardens of Lórien" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoPPW1gJbc2hMGn0YVDrE6mKH7TlVGlYgsuObcXbIG460yESbATtbKiZ08OmERgbah8j-dIQmWeSDP4rxXWfZQiChVdHo1Z9ggRCUTHGMHgD5TzOkjo1HGNX4vVjCc3pNU21XF7Rt-paUVcC-HP_8dSkhcpvnD9m6585QRUUGrzgcJJ1WaqqAPGzuxbbydhZZEJkEuzDFPM9zan3PCBhe6fvQrAvFBi7D_gEllGlnebT0h4KRpnsN3ZzZBqe_7u79ggOoRTLMmjQ">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent"></div>
+<div class="absolute bottom-10 left-10 max-w-2xl">
+<h1 class="text-5xl font-headline font-semibold text-on-surface mb-2">Estë la Gentil</h1>
+<p class="text-xl text-tertiary font-medium mb-4">La Sanadora, Señora del Reposo • Valië (Ainu)</p>
+<p class="text-on-surface-variant leading-relaxed text-lg bg-surface/40 backdrop-blur-sm p-4 rounded-xl">
+                            Es la esposa de Irmo y reside con él en los jardines de Lórien en Valinor. Su don principal es la curación del dolor y el alivio del cansancio.
+                        </p>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<!-- Main Content Left/Center -->
+<div class="lg:col-span-2 space-y-10">
+<!-- Hecho Clave -->
+<div class="neomorph-raised rounded-xl p-8 bg-surface">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary text-4xl" style="font-variation-settings: 'FILL' 1;">nights_stay</span>
+<div>
+<h3 class="text-xl font-headline font-semibold text-on-surface mb-3">El Don del Descanso</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                    Estë no camina durante las horas del día, sino que duerme en la isla del lago Lórellin, bajo la sombra de los árboles, personificando el reposo necesario que sostiene la salud del mundo.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Main Content Blocks -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="neomorph-raised rounded-xl p-6 bg-surface">
+<div class="w-12 h-12 neomorph-inset rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<h4 class="font-headline font-semibold text-on-surface mb-2">La Sanadora de los Poderes</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                Su nombre significa "Descanso". Mientras su esposo Irmo gobierna las visiones y los sueños, Estë se encarga de la recuperación física y espiritual del ser.
+                            </p>
+</div>
+<div class="neomorph-raised rounded-xl p-6 bg-surface">
+<div class="w-12 h-12 neomorph-inset rounded-lg flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined">water</span>
+</div>
+<h4 class="font-headline font-semibold text-on-surface mb-2">Señora del Lago Lórellin</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                Su morada es una isla en medio del lago Lórellin, rodeado de bosques en los jardines de Lórien. Este es considerado el lugar más tranquilo y bello de toda Arda.
+                            </p>
+</div>
+<div class="lg:col-span-2 neomorph-raised rounded-xl p-6 bg-surface">
+<div class="flex gap-6 items-center">
+<div class="w-16 h-16 neomorph-inset rounded-full flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-on-surface mb-1">Mentora de Espíritus Nobles</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                        Bajo su tutela y la de Vána se formó Melian la Maia, quien vivió mucho tiempo en Lórien cuidando los árboles que florecen en sus jardines.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Ficha Técnica Sidebar -->
+<div class="space-y-8">
+<div class="neomorph-raised rounded-xl p-8 bg-surface">
+<h3 class="text-lg font-headline font-semibold text-on-surface mb-6 border-b border-outline-variant pb-2">Ficha Técnica</h3>
+<div class="space-y-6">
+<div>
+<label class="text-xs font-semibold text-primary uppercase tracking-wider">Race</label>
+<p class="text-on-surface font-medium">Valië</p>
+</div>
+<div>
+<label class="text-xs font-semibold text-primary uppercase tracking-wider">Attribute</label>
+<p class="text-on-surface font-medium">El Sueño y el Reposo / Vestiduras Grises</p>
+</div>
+<div>
+<label class="text-xs font-semibold text-primary uppercase tracking-wider">Status</label>
+<p class="text-on-surface font-medium">Activa en los jardines de Lórien</p>
+</div>
+</div>
+</div>
+<!-- Quote Section -->
+<div class="neomorph-inset rounded-xl p-8 bg-surface italic text-center relative overflow-hidden">
+<span class="absolute top-0 left-4 text-6xl text-primary/10 select-none">"</span>
+<p class="text-lg text-on-surface font-medium relative z-10">
+                            Gris es su vestidura; y el descanso es su don.
+                        </p>
+<span class="absolute bottom-0 right-4 text-6xl text-primary/10 select-none rotate-180">"</span>
+</div>
+</div>
+</div>
+<!-- Hechos Memorables Grid -->
+<section class="mt-20">
+<h3 class="text-2xl font-headline font-semibold text-on-surface mb-8 text-center">Hechos Memorables</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="neomorph-raised rounded-2xl p-6 bg-surface hover:translate-y-[-4px] transition-transform duration-300">
+<div class="h-40 w-full rounded-xl mb-4 overflow-hidden neomorph-inset">
+<img class="w-full h-full object-cover opacity-80" data-alt="A cinematic night scene showing a star-filled sky over a tranquil forest of silver-leaved trees. The lighting is mystical and low-key, with soft glows of indigo and lavender. A feeling of profound silence and divine peace permeates the landscape, captured in a modern digital painting style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZG0IbZVNCXIU0lwEp6Jb1dN4rSvQEKJDwIgZCP6lAdsDhYUpu6pZYfKtrZ12aV92fxnd4QRYP9AnSA0k4oSkzdxs_Pqjv4dklljK4ZMMDcYA-K4AJXzouY_VWOZaaP3OMBapzwA64e3P4AuQyDAy9DfAea8wo--YbiavFg8DA99Ehu0xH3p2s0YmMkFMWiFMj__CC6GNELqgTB7-6z1yXI8xZ0cf2qnjKxXx8HUxYZFD-hWjsRM_fdePXJErjTwYIdh8rv35kaA">
+</div>
+<h4 class="font-headline font-semibold text-primary mb-2">La Petición de la Noche</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Intercedió ante los Valar para asegurar que la noche fuera un tiempo de renovación absoluta para todas las criaturas de Arda.</p>
+</div>
+<div class="neomorph-raised rounded-2xl p-6 bg-surface hover:translate-y-[-4px] transition-transform duration-300">
+<div class="h-40 w-full rounded-xl mb-4 overflow-hidden neomorph-inset">
+<img class="w-full h-full object-cover opacity-80" data-alt="A sacred, ethereal chamber inside a crystal palace, where a body lies in peaceful repose surrounded by glowing white lilies. The lighting is soft and diffuse, emphasizing a sense of eternal rest and divine protection. The color palette is composed of soft greys, icy blues, and warm indigo accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwkNGtG2xejpDrpAIdcvO1KA9ovbJ-fJB_gPh86C94DyNRMFMKAyN9hB8_Id99HtoE5HTfed-fyKMqT5v1_AZG4Bz6qW8KEt5wT2m06rAtg9rFvQweISW5JlnK636UZoy1zAS2kBqLluzTzerLD00BFCgYHl8ybU2OK9D6YULwOoCqEQwcOQvpOsKS6_HaeILFZuoHpHN5DttX8plhOmL-hlU7dWS7J1HsD8UpsBFLYW33K26BrPecUwZg-BYApJCeU5wMpAL0IQ">
+</div>
+<h4 class="font-headline font-semibold text-primary mb-2">La Custodia de Míriel</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Mantiene el cuerpo de Míriel Serindë incorrupto en los jardines, velando por su descanso eterno tras el agotamiento de su espíritu.</p>
+</div>
+<div class="neomorph-raised rounded-2xl p-6 bg-surface hover:translate-y-[-4px] transition-transform duration-300">
+<div class="h-40 w-full rounded-xl mb-4 overflow-hidden neomorph-inset">
+<img class="w-full h-full object-cover opacity-80" data-alt="A majestic celestial fountain in an ancient city, with glowing water cascading into silver basins. The surrounding architecture is elegant and minimalist, rendered in soft light-mode tones. The water emits a subtle violet luminescence, representing spiritual refreshment and healing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEGLJCasnzUCp8Lax_bJYOGSn5rrr7H5z1IxjGqGcOA5D-LjxTwklDAvmwzNhapQKkl9z3CDCpbQD6HYo8CUmSqmXlhUXh6TmUwNhtfyXDbZHS8ASwwJ1c_A-AnrOpYtbUuHV-rSH8h8TEHRhOAG15hHKTfLplo1u1ZLdNCUiWRFeLBuoluX6pBJ0oNIbcLO5AMZBoeGFcIhlHGy5bfvrVd2ODZ7wTY5o6IrJnIBIvKnThkujil089VSp5VrIHzTL_noTgn9U10g">
+</div>
+<h4 class="font-headline font-semibold text-primary mb-2">La Fuente de Refresco</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Concede el refrigerio espiritual a todos los habitantes de Valmar, restaurando sus fuerzas tras los grandes trabajos creativos.</p>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="mt-20 neomorph-raised rounded-[2.5rem] p-12 bg-surface text-center overflow-hidden relative">
+<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(#6366f1 1px, transparent 1px); background-size: 20px 20px;"></div>
+<h3 class="text-3xl font-headline font-semibold text-on-surface mb-6">El legado de la Señora de la Gentileza</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-4xl mx-auto">
+                    Estë representa la necesidad divina de la pausa y la renovación. En un mundo de constantes desafíos, su figura nos recuerda que la curación no es solo la ausencia de enfermedad, sino la presencia activa del descanso. Su legado es la preservación de la vida a través de la curación y la calma suprema.
+                </p>
+<div class="mt-10 flex justify-center gap-4">
+<button class="neomorph-raised px-8 py-3 rounded-xl text-primary font-semibold hover:text-tertiary transition-all active:neomorph-inset">
+                        Explorar los Jardines de Lórien
+                    </button>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-8 px-12 flex flex-col md:flex-row justify-between items-center mt-20 bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)]">
+<p class="font-body text-sm text-on-surface-variant mb-4 md:mb-0">© First Age Encyclopedia - The Silmarillion Chronicles</p>
+<div class="flex gap-8">
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Terms of Lore</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Contact Mandos</a>
+</div>
+</footer>
+<script>
+        // Micro-interactions for neomorphic elements
+        document.querySelectorAll('.neomorph-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.add('neomorph-inset');
+                el.classList.remove('neomorph-raised');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+        });
+
+        // Subtle parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('section img');
+            if(heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.1}px)`;
+            }
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+</body></html>

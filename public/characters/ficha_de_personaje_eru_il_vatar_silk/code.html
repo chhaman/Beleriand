@@ -1,0 +1,272 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Eru Ilúvatar | Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "primary-fixed": "#e0e2ff",
+                        "on-secondary-container": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "background": "#e8eaf0",
+                        "surface-container-highest": "#d6d8de",
+                        "inverse-surface": "#2e3040",
+                        "error-container": "#fee2e2",
+                        "on-primary-container": "#e0e2ff",
+                        "surface-tint": "#6366f1",
+                        "surface": "#e8eaf0",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#3b1f63",
+                        "tertiary-fixed": "#ede9fe",
+                        "error": "#dc2626",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "secondary": "#6c6e7e",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "outline": "#8a8c9a",
+                        "on-background": "#2e3040",
+                        "surface-dim": "#d4d6dc",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#7c3aed",
+                        "secondary-fixed": "#d8dae6",
+                        "primary": "#6366f1",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2e1065",
+                        "inverse-primary": "#a5b4fc",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#818cf8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "inverse-on-surface": "#e8eaf0",
+                        "on-primary-fixed": "#1e1b4b",
+                        "on-error-container": "#991b1b",
+                        "secondary-container": "#d8dae6",
+                        "outline-variant": "#d0d2dc",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "surface-bright": "#edeef4",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-container": "#e2e4ea",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-surface": "#2e3040",
+                        "surface-container-high": "#dcdee4",
+                        "on-tertiary-fixed-variant": "#5b21b6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-active:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+            transform: scale(0.98);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-surface dark:bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="text-2xl font-headline font-bold text-primary dark:text-primary-fixed tracking-tight">
+            Beleriand Archive
+        </div>
+<div class="hidden md:flex gap-4">
+<a class="text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:text-primary transition-all hover:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05),inset_-2px_-2px_5px_rgba(255,255,255,0.4)]" href="#">Eras</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:text-primary transition-all hover:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05),inset_-2px_-2px_5px_rgba(255,255,255,0.4)]" href="#">Geography</a>
+<a class="text-primary dark:text-primary-fixed shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-xl px-4 py-1" href="#">Characters</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant px-4 py-1 hover:text-primary transition-all hover:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05),inset_-2px_-2px_5px_rgba(255,255,255,0.4)]" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 transition-transform" data-icon="menu_book">menu_book</span>
+</div>
+</nav>
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto space-y-12">
+<!-- Hero Section -->
+<section class="relative w-full rounded-xl overflow-hidden neomorphic-raised">
+<div class="relative h-[600px] w-full overflow-hidden">
+<img alt="Eru Ilúvatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB46MEJtY4uhcrHS5mcHm48g-h6W0EhGNbLS8dvN-T34Dd_JtlXDqNQdR1_vJ8s2qAZw6Cw0v5Tz1IeWDkZNv6QIPdEGr-ALN2hBWrYL7moUUtUHpRvadiC3OfyZ8EBJR-6DqSfOrlJw2fFOsSAKyhrxntZojrCypX4DTQ-TlKbt11MqNXAk3ZvgDQtG_xHEU_MFiAbuS5XXQ46a8yoNJ0t8TVprhvlDKiS8kuFm1w1vE0oqrZ6l3ab17ievq82wGcEnu9FWnRJzw">
+<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-surface/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 w-full md:w-2/3">
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface tracking-tight mb-2">Eru Ilúvatar</h1>
+<p class="text-xl md:text-2xl text-primary font-medium">El Uno, Padre de Todo • Deidad Única</p>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Bio & Stats -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Biography Section -->
+<div class="bg-surface p-8 rounded-xl neomorphic-raised space-y-6">
+<h2 class="text-3xl font-headline font-semibold text-on-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="auto_awesome">auto_awesome</span>
+                        El Origen de la Conciencia
+                    </h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        En el principio, antes de que el Tiempo tuviera medida y el Espacio forma, existía Eru, el Uno, a quien en la lengua de los Elfos llaman Ilúvatar. Moraba solo en los Salones Intemporales, en medio del Vacío Absoluto, pero Su pensamiento no era inactivo. De Su propia conciencia creó a los Ainur, los Santos, que fueron los vástagos de Su pensamiento, y estaban con Él antes de que nada más fuera creado.
+                    </p>
+<div class="p-6 rounded-xl neomorphic-inset bg-surface-container-low italic text-on-secondary-fixed-variant border-l-4 border-primary">
+                        “Eä! ¡Que estas cosas sean!: La palabra de mando que transformó la visión de la Gran Música en una realidad tangible, enviando la Llama Impercedera al corazón del universo.”
+                    </div>
+</div>
+<!-- Sovereignty & Destity -->
+<div class="bg-surface p-8 rounded-xl neomorphic-raised space-y-6">
+<h2 class="text-3xl font-headline font-semibold text-on-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="architecture">architecture</span>
+                        El Arquitecto del Destino
+                    </h2>
+<p class="text-on-surface-variant leading-relaxed">
+                        A través de los temas musicales propuestos por Ilúvatar, los Ainur cantaron en una armonía sublime. Sin embargo, cuando Melkor intentó entrelazar su propia discordia, Eru no lo detuvo con violencia, sino que introdujo nuevos temas que absorbieron la rebeldía del Ainu, convirtiendo la disonancia en una parte esencial de un diseño más glorioso y complejo. Nada puede existir fuera de Su voluntad definitiva.
+                    </p>
+<div class="bg-surface p-8 rounded-xl neomorphic-inset text-center space-y-4">
+<p class="text-2xl font-headline text-on-surface italic leading-snug">
+                            “Y tú, Melkor, verás que ningún tema puede ser interpretado que no tenga su fuente última en mí, ni nadie puede alterar la música a mi pesar.”
+                        </p>
+</div>
+</div>
+<!-- Fathership -->
+<div class="bg-surface p-8 rounded-xl neomorphic-raised space-y-6">
+<h2 class="text-3xl font-headline font-semibold text-on-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="groups">groups</span>
+                        Padre de los Hijos
+                    </h2>
+<p class="text-on-surface-variant leading-relaxed">
+                        Los Primeros Nacidos y los Seguidores —Elfos y Hombres— fueron concebidos únicamente por Eru en el Tercer Tema de la Gran Música. Los Ainur no participaron en su creación, por lo que son llamados los Hijos de Ilúvatar. A los Elfos les otorgó la longevidad y el amor por la belleza de Arda, mientras que a los Hombres les concedió el Don de la Mortalidad, permitiéndoles trascender los círculos del mundo.
+                    </p>
+</div>
+</div>
+<!-- Right Column: Stats & Cards -->
+<div class="lg:col-span-4 space-y-8">
+<!-- Stats Card -->
+<div class="bg-surface p-8 rounded-xl neomorphic-raised space-y-6 sticky top-28">
+<div class="text-center pb-4 border-b border-surface-variant">
+<h3 class="text-2xl font-headline font-bold text-primary">El Todo Eru Ilúvatar</h3>
+<p class="text-on-surface-variant font-medium">Creador del Universo</p>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 p-3 rounded-lg neomorphic-inset">
+<span class="material-symbols-outlined text-primary" data-icon="brightness_high">brightness_high</span>
+<div>
+<p class="text-xs text-on-secondary-fixed-variant uppercase tracking-wider font-bold">Raza</p>
+<p class="text-on-surface font-semibold">Deidad Suprema</p>
+</div>
+</li>
+<li class="flex items-center gap-4 p-3 rounded-lg neomorphic-inset">
+<span class="material-symbols-outlined text-primary" data-icon="local_fire_department">local_fire_department</span>
+<div>
+<p class="text-xs text-on-secondary-fixed-variant uppercase tracking-wider font-bold">Instrumento</p>
+<p class="text-on-surface font-semibold">La Llama Impercedera</p>
+</div>
+</li>
+<li class="flex items-center gap-4 p-3 rounded-lg neomorphic-inset">
+<span class="material-symbols-outlined text-primary" data-icon="all_inclusive">all_inclusive</span>
+<div>
+<p class="text-xs text-on-secondary-fixed-variant uppercase tracking-wider font-bold">Estado</p>
+<p class="text-on-surface font-semibold">Eterno</p>
+</div>
+</li>
+</ul>
+<button class="w-full py-4 px-6 bg-surface rounded-xl font-semibold text-primary neomorphic-raised neomorphic-active transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+                        Consultar Archivos
+                    </button>
+</div>
+</div>
+</div>
+<!-- Memorable Facts Bento Grid -->
+<section class="space-y-6">
+<h2 class="text-3xl font-headline font-bold text-on-surface-variant px-2">Hechos Memorables</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Fact 1 -->
+<div class="bg-surface p-8 rounded-xl neomorphic-raised space-y-4 hover:scale-[1.02] transition-transform cursor-default">
+<div class="w-12 h-12 rounded-xl neomorphic-inset flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">La Corrección de la Discordia</h3>
+<p class="text-on-surface-variant text-sm">Cada nota desafinada de Melkor fue incorporada por Eru en un diseño superior, demostrando que incluso el mal sirve a un propósito final más glorioso.</p>
+</div>
+<!-- Fact 2 -->
+<div class="bg-surface p-8 rounded-xl neomorphic-raised space-y-4 hover:scale-[1.02] transition-transform cursor-default">
+<div class="w-12 h-12 rounded-xl neomorphic-inset flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="flight_takeoff">flight_takeoff</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">La Visión de Arda</h3>
+<p class="text-on-surface-variant text-sm">Mostró a los Ainur una visión de la historia del mundo antes de que existiera, despertando en ellos el deseo de entrar en Eä para realizarla.</p>
+</div>
+<!-- Fact 3 -->
+<div class="bg-surface p-8 rounded-xl neomorphic-raised space-y-4 hover:scale-[1.02] transition-transform cursor-default">
+<div class="w-12 h-12 rounded-xl neomorphic-inset flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="local_fire_department">local_fire_department</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">La Creación de Eä</h3>
+<p class="text-on-surface-variant text-sm">Con una sola palabra, transformó el pensamiento en realidad física, situando la Llama Impercedera en el corazón del mundo recién nacido.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="max-w-4xl text-center space-y-4">
+<h4 class="text-xl font-headline font-semibold text-tertiary">La Fuente de la Existencia</h4>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                Eru Ilúvatar permanece como el centro absoluto de toda la cosmogonía tolkieniana. Su rol no es el de un gobernante activo que interviene en los detalles cotidianos, sino el de la Voluntad Primera que ha trazado el destino de Arda desde el silencio de los Salones Intemporales. A través del Don de los Hombres, ha permitido que la historia no sea un ciclo cerrado, sino un camino hacia una Segunda Música de los Ainur, que será interpretada por los Hijos de Ilúvatar y los Santos tras el fin de los tiempos.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-sm font-medium">
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Primary Sources</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Genealogies</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Timeline</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="#">Editorial Policy</a>
+</div>
+<p class="font-body text-xs text-on-surface-variant opacity-70">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use.
+        </p>
+</footer>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('.neomorphic-raised').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                if(!card.classList.contains('sticky')) {
+                    card.style.transform = 'translateY(-4px)';
+                    card.style.transition = 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                }
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>
