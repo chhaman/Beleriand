@@ -65,13 +65,21 @@ export const HomeView: React.FC<HomeViewProps> = ({ onTabChange, lang }) => {
           <div className="relative z-10">
             <button
               onClick={() => onTabChange("characters", "feanor")}
+<<<<<<< HEAD
               className="px-6 py-3.5 rounded-xl neo-button text-primary font-bold text-xs md:text-sm hover:scale-105 active:scale-[0.98] transition-all flex items-center gap-3 cursor-pointer uppercase tracking-wider border border-white/5"
+=======
+              className="inline-flex items-center gap-3 bg-white/20 dark:bg-black/40 hover:bg-primary dark:hover:bg-primary hover:text-white text-primary px-6 py-3 rounded-xl font-bold text-xs md:text-sm shadow-md transition-all active:scale-95 cursor-pointer uppercase tracking-wider border border-white/10"
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
             >
               {t.consultFeanor} <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </button>
           </div>
           <img
+<<<<<<< HEAD
             className="absolute -right-8 -bottom-8 w-1/3 md:w-1/2 h-1/2 object-contain opacity-40 md:opacity-55 group-hover:scale-115 group-hover:opacity-75 transition-all duration-700 pointer-events-none filter brightness-110 contrast-110"
+=======
+            className="absolute -right-8 -bottom-8 w-1/3 md:w-1/2 h-1/2 object-contain opacity-15 md:opacity-20 group-hover:scale-110 group-hover:opacity-30 transition-all duration-700 pointer-events-none"
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4unGPKxe2wferSv9Nvui4UmU-c4xouvhfkL7DEgCEhKV8fymiqJY1QMltcF1kbTBoYuN4CmZdjgBVXeYJv-Z0EkMusu6-_qKG6MgceHFUuE-x4cyZuSy1QsaXQ4cMMqZsgTEqSKbTP5JXt6xdRNA-KLyFt6lMyjHHZkf-nzS_o9yiiL88Ut8ef8OJ1xgOwkeR77c0EVnmS2jUxe6Q3zwOOyPsE02g05nOjrN2FEF1n-q82bJ1ZLyGv_5uc6WfJ5hdD5golKmHzQ"
             alt="Silmaril visual silhouette decoration"
             referrerPolicy="no-referrer"
@@ -103,6 +111,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onTabChange, lang }) => {
           </div>
 
           {/* Shadow of the North card */}
+<<<<<<< HEAD
           <div className="rounded-3xl neo-card p-6 border border-white/10 flex flex-col justify-between flex-1 relative overflow-hidden group">
             <div className="relative z-10">
               <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] mb-1 block">{t.pitsOfIron}</span>
@@ -112,6 +121,17 @@ export const HomeView: React.FC<HomeViewProps> = ({ onTabChange, lang }) => {
               </p>
             </div>
             <span className="material-symbols-outlined absolute -right-4 -bottom-4 text-8xl text-on-surface-variant/5 dark:text-white/5 group-hover:rotate-12 group-hover:scale-110 transition-transform pointer-events-none select-none">
+=======
+          <div className="rounded-3xl bg-inverse-surface text-white p-6 shadow-neo-elevated relative overflow-hidden group flex-1">
+            <div className="relative z-10">
+              <span className="text-[10px] font-semibold text-primary-fixed uppercase tracking-widest block mb-1">{t.pitsOfIron}</span>
+              <h3 className="text-lg font-bold mb-2 font-headline text-primary-fixed-dim">{t.sombraNorte}</h3>
+              <p className="text-white/80 text-xs md:text-sm leading-relaxed font-body">
+                {t.sombraDesc}
+              </p>
+            </div>
+            <span className="material-symbols-outlined absolute -right-4 -bottom-4 text-8xl text-white/5 opacity-50 group-hover:rotate-12 group-hover:scale-110 transition-transform pointer-events-none select-none">
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
               skull
             </span>
           </div>

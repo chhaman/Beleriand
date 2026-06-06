@@ -74,7 +74,11 @@ export const SideNavBar: React.FC<SideNavBarProps> = ({
               currentTab === "characters" ? "text-primary" : "text-outline"
             }`}
           >
+<<<<<<< HEAD
             crown
+=======
+            raven
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
           </span>
           <span className="text-sm font-medium">{t.characters}</span>
         </button>

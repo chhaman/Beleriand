@@ -10,6 +10,7 @@ import { translations } from "./translations";
 type TabType = "encyclopedia" | "timeline" | "characters" | "atlas";
 
 export default function App() {
+<<<<<<< HEAD
   const [currentTab, setCurrentTab] = useState<TabType>(() => {
     const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
     const tabParam = params.get("tab");
@@ -32,15 +33,30 @@ export default function App() {
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     return localStorage.getItem("darkMode") === "true";
   });
+=======
+  const [currentTab, setCurrentTab] = useState<TabType>("encyclopedia");
+  const [selectedCharId, setSelectedCharId] = useState<string | null>(null);
+  
+  // Custom language switcher state: "es" (default) or "en"
+  const [lang, setLang] = useState<"es" | "en">("es");
+  
+  // High-fidelity dark mode state
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
 
   // Smooth scroll to top on tab changes
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentTab]);
 
+<<<<<<< HEAD
   // Synchronize HTML element class tag and localStorage for Tailwind V4 Dark selection
   useEffect(() => {
     localStorage.setItem("darkMode", String(darkMode));
+=======
+  // Synchronize HTML element class tag for Tailwind V4 Dark selection
+  useEffect(() => {
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
@@ -48,11 +64,14 @@ export default function App() {
     }
   }, [darkMode]);
 
+<<<<<<< HEAD
   // Sync language selection to localStorage
   useEffect(() => {
     localStorage.setItem("lang", lang);
   }, [lang]);
 
+=======
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
   // Deep-linking callback from real-time Search Engine
   const handleSearchSelect = (
     type: "character" | "battle" | "milestone",
@@ -201,7 +220,11 @@ export default function App() {
               currentTab === "characters" ? "text-primary font-bold" : "text-on-surface-variant/75"
             }`}
           >
+<<<<<<< HEAD
             <span className="material-symbols-outlined text-[18px]">crown</span>
+=======
+            <span className="material-symbols-outlined text-[18px]">raven</span>
+>>>>>>> f70f251b6fd7c0ea7a3b3540a328d8265f790281
             <span className="text-[9px] uppercase font-bold tracking-tight">{t.characters}</span>
           </button>
           <button
