@@ -1,0 +1,292 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Carcharoth - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+<!-- Main Visual -->
+<div class="xl:col-span-7 neomorph-raised rounded-3xl p-4 bg-background relative overflow-hidden group">
+<div class="aspect-[4/5] md:aspect-video xl:aspect-square w-full rounded-2xl overflow-hidden relative shadow-inner">
+<img alt="Carcharoth (Anfauglir)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoHxeaU83pO_l_SWtPhLuvXbMYn33408MRRIHVdl_lMBDGWhsSVpfGlHfHy92R_xiV1eKeiQkUc6dbiVPDYu7L8pn3smxQVb69HcYTUV3OVRJW6yNzVxmjOL8Lb-X6Gz-_sseDWLy65Yq-l8ZZMpI8ZMENn17B4URSy4SXttSHH0MgDUNlv5RTlqIqzkulIgRF21sciPkQCNFd9kadzao8UeuSSOvd4nNSYOq1vFXyPmcadzP_ir7XbqvuIaFix6TTGKZhhlyK5Q">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+<h1 class="text-4xl md:text-5xl font-extrabold text-white mb-2 tracking-tight">Carcharoth (Anfauglir)</h1>
+<p class="text-white/90 text-lg font-medium">Las Fauces de la Sed, El Lobo de Angband • Lobo (Licántropo)</p>
+</div>
+</div>
+</div>
+<!-- Profile Summary & Quick Facts -->
+<div class="xl:col-span-5 flex flex-col gap-6">
+<div class="neomorph-raised rounded-3xl p-8 bg-background">
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6">Quick Facts</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 neomorph-inset rounded-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary">pets</span>
+<span class="font-medium">Raza</span>
+</div>
+<span class="font-semibold text-on-surface">Lobo Monstruoso</span>
+</div>
+<div class="flex items-center justify-between p-4 neomorph-inset rounded-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary">bolt</span>
+<span class="font-medium">Atributo</span>
+</div>
+<span class="font-semibold text-on-surface">Dientes de acero / Fuego</span>
+</div>
+<div class="flex items-center justify-between p-4 neomorph-inset rounded-2xl">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-error">skull</span>
+<span class="font-medium">Estado</span>
+</div>
+<span class="font-semibold text-error">Fallecido</span>
+</div>
+</div>
+</div>
+<!-- Key Event Card -->
+<div class="neomorph-raised rounded-3xl p-8 bg-background border-l-4 border-error/20">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">stars</span>
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] text-error">Hecho Clave</h3>
+</div>
+<h4 class="text-xl font-bold mb-2">El Robo de la Joya</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Carcharoth bit off the hand of Beren Erchamion, swallowing the Silmaril. The holy jewel burned his innards, driving him into a mindless, fiery madness that ravaged the northern lands.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Detailed Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+<!-- Biography -->
+<section class="neomorph-raised rounded-3xl p-8 bg-background">
+<div class="flex items-center gap-3 mb-6">
+<div class="p-2 neomorph-inset rounded-lg">
+<span class="material-symbols-outlined text-primary">history_edu</span>
+</div>
+<h2 class="text-xl font-bold">Biography</h2>
+</div>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p class="">
+                            Born of the lineage of Draugluin, the first of the werewolves, Carcharoth was hand-fed by Morgoth himself with living flesh and imbued with hellish power. 
+                        </p>
+<p class="">
+                            He stood as the unsleeping guardian of the Gates of Angband, a colossal terror whose eyes glowed like coals and whose breath was a poisonous vapor. No creature, save perhaps Huan the Hound of Valinor, could match his ferocity in the First Age.
+                        </p>
+</div>
+</section>
+<!-- Legacy -->
+<section class="neomorph-raised rounded-3xl p-8 bg-background">
+<div class="flex items-center gap-3 mb-6">
+<div class="p-2 neomorph-inset rounded-lg">
+<span class="material-symbols-outlined text-tertiary">military_tech</span>
+</div>
+<h2 class="text-xl font-bold">Legacy</h2>
+</div>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p class="">
+                            The memory of the "Great Hunt of the Wolf" remains one of the most tragic yet heroic tales of the Elder Days. It led to the final confrontation in the Valley of Esgalduin.
+                        </p>
+<ul class="space-y-3">
+<li class="flex gap-3">
+<span class="text-tertiary">•</span>
+<span class="">The tragic sacrifice of <strong>Huan</strong>, the Captain of Hounds.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-tertiary">•</span>
+<span class="">The retrieval of the Silmaril from the beast's belly.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-tertiary">•</span>
+<span class="">Defined the boundaries of destiny for Beren and Lúthien.</span>
+</li>
+</ul>
+</div>
+</section>
+</div>
+<!-- Artistic Flourish / Quote Section -->
+<div class="mt-12 neomorph-inset rounded-[2.5rem] p-12 text-center bg-background/50 relative overflow-hidden">
+<div class="absolute -top-12 -left-12 opacity-5">
+<span class="material-symbols-outlined text-[12rem]">skull</span>
+</div>
+<blockquote class="relative z-10">
+<p class="text-2xl md:text-3xl font-headline italic text-on-surface-variant leading-snug max-w-3xl mx-auto">
+                        "The Red Maw... whose eyes were like coals in the night, and whose breath was a flame of death."
+                    </p>
+<cite class="block mt-6 text-sm font-bold uppercase tracking-widest text-primary">— Chronicles of the First Age</cite>
+</blockquote>
+</div>
+<!-- Gallery Bento -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+<div class="neomorph-raised rounded-2xl p-2 aspect-square">
+<img class="w-full h-full object-cover rounded-xl shadow-inner" data-alt="A dark, cinematic close-up of a monstrous wolf's glowing red eyes peering through thick grey smoke. The aesthetic is raw and fierce, utilizing deep charcoal tones and subtle blood-red highlights to emphasize a sense of ancient, infernal danger in a high-key neomorphic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8iRAtPdqHxJOn9ufvwKOOYkUB9WMmpRi0TvJszRSiIkxbi2ToImWe1whCu-HBU_wet5sJUl9AeJCO1sKmR_M90ZkieFEzrcdJzbmteNktHWXI5R75KRpvM63vtJ8YfnhbKT0LdSDO-N-rOamEfbi-YqQFDzgaUk46gK62TbkhMy9GB7-6o6JYmU3fqjJOaNKmRmZGv4HHSdxUxslBH8yiN2S2HFRkOLip6MnmuB6ccgxnYwQktkq34SS7okBKGqVhD_5fsb7_Bg">
+</div>
+<div class="neomorph-raised rounded-2xl p-2 aspect-square">
+<img class="w-full h-full object-cover rounded-xl shadow-inner" data-alt="A scorched, volcanic landscape with jagged black obsidian rocks and glowing orange magma veins. The scene is shrouded in heavy soot and mist, echoing the desolate environment of Angband. The mood is oppressive and dark, designed with professional digital art quality and soft UI depth effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERSl-VnMNhKw17pb_Vg912RgzAD-_R5YRi41GHxzU9N5cwQ3tb35hcFogeg9bjYk2lWwpYhD5sbo873wfCon8YcpB5YZn1SDP-t15jyC6GGLN5lC1DwSO86vRrQZEif-3Kx45LHUj6W8Ah4XspZOm4KdXyV5-JsUTYDWKCOynsQVfnhXRrNP0W40Ow35RGn_dgM_6hN0cxX0W42uoLE9ZucjipqekSuVxU522S1hCkZ5TYrS4MnXgW8l6PZDXXd_Lnjm_9kpmPw">
+</div>
+<div class="neomorph-raised rounded-2xl p-2 aspect-square">
+<img class="w-full h-full object-cover rounded-xl shadow-inner" data-alt="Intricate steel armor plates forged in a brutalist, spiked style, glowing from within with a faint, malevolent red heat. The textures are cold and sharp, representing the mechanical malice of Morgoth's forge. The lighting is low and dramatic, focusing on the tactile depth of the metal surfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd9iH9SHOaObeuYeRi6RHi38zSmEznElV1N7STmlAJpqRmcXv-5NLKF0M3Iz6gAWqby9xa_HMebqisAbNUk1fHYryjewg0zOlmKRNJA6Ckj9XFVlOwF_VjqoYTTie9qyOt9yu8GtYiTVACxjgInOEYueuY0HUNp4aGVRP6tb8lwTiBbIPXTlkMMN3hMwM02VXZra_hvuWWFrtCNTBFnbzvEO1Fh_rKX670vCuLNCOk5gZxICdSmYTZzoXUU8SZOaBiJ0MdlJVTRw">
+</div>
+<div class="neomorph-raised rounded-2xl p-2 aspect-square">
+<img class="w-full h-full object-cover rounded-xl shadow-inner" data-alt="Abstract swirls of deep crimson and indigo ink clashing in a pool of dark water, creating a visceral and fierce visual representation of internal fire and raw power. The composition is artistic and minimalist, maintaining a high-end UI feel through soft shadows and consistent tonal range." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCvPLbdpcx_J6xAbd3e3_5E3-lmGpDoamHP5bpAt-l5QPU9ay_c1-YBiATXwL0NGzMCLCX_XJ9afU01qdvKV8-jl7A8JxgNxWWZSl0Z2QLONHzJrOJssxRJhxX2KbL1t5ABoFKfQXqQ8ZEXaJ28x7lzjWB5-4C54QEnBdXNIxi4AAp8qW5sOoD2Gh_Qhj6GS8v3YKlK_2tZ6HIfHGIZYxubnrQANUzm2q0CCNbwwi4QdEsE4SNfu-cQVKuswKsZOv8HhcQp1Am9w">
+</div>
+</div></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>

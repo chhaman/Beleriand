@@ -1,0 +1,286 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Glaurung - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section / Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Main Identity Card -->
+<div class="md:col-span-8 group">
+<div class="neomorphic-raised rounded-xl overflow-hidden bg-background h-full flex flex-col">
+<div class="relative h-[400px] w-full overflow-hidden">
+<img alt="Glaurung the Great Wyrm" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtMzgku3tRo0LI-WlY13I4o1Y7DPta3us0qYIyfVEZVSBuVfr7NygGncDuCc7z1nT0g2WF0c55SeIJYrVDGk0Hg1vXhewwTC7xJV5-3aSI4s0gzG0J48wImoKWI_fT-GPB6hmDFiuoCSoZcJjsZRgUz4ZK-FbpiFkgrpaTzffc_xcLCmy4yfvkTo8vTJxCXLY5b2xR5Xi-gAcQ6_-eblbnJfxS6DGqO1fV8KHr0GoLeiIco11Zv-WiKdOvpj0LEU5W01TocL4HtQ">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h1 class="text-5xl md:text-6xl font-extrabold text-on-surface tracking-tighter mb-2">Glaurung</h1>
+<p class="text-tertiary font-medium text-lg flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                                    El Gran Gusano, El Padre de los Dragones • Dragón (Urulóki)
+                                </p>
+</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-semibold mb-4 text-primary">Biography</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                First fire dragon created by Morgoth Bauglir in the pits of Angband. Unlike his winged descendants, Glaurung was a massive flightless serpent of immense power and malevolence. He was not just a physical force of destruction, but a psychological terror expert, capable of weaving powerful enchantments with his gaze.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Quick Facts Sidebar -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="neomorphic-raised rounded-xl p-6 bg-background">
+<h3 class="text-lg font-semibold mb-6 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">info</span>
+                            Quick Facts
+                        </h3>
+<div class="space-y-6">
+<div class="neomorphic-inset p-4 rounded-lg">
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Raza</p>
+<p class="text-on-surface font-semibold text-lg">Dragón (Urulóki)</p>
+</div>
+<div class="neomorphic-inset p-4 rounded-lg">
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Arma</p>
+<p class="text-on-surface font-semibold text-lg">Fuego / Hechizo Ojos de Serpiente</p>
+</div>
+<div class="neomorphic-inset p-4 rounded-lg">
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Estado</p>
+<p class="text-error font-semibold text-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">skull</span>
+                                    Fallecido
+                                </p>
+</div>
+</div>
+</div>
+<!-- Hecho Clave Section -->
+<div class="neomorphic-raised rounded-xl p-6 bg-background border-l-4 border-tertiary">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full neomorphic-inset flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h3 class="text-lg font-semibold text-on-surface">Hecho Clave</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+<span class="font-bold text-on-surface block mb-2">La Ruina de Nargothrond</span>
+                            Describe how he bewitched Túrin and Nienor, freezing them with his hypnotic glare and weaving a web of lies that led to their tragic downfall and the ultimate destruction of the hidden kingdom.
+                        </p>
+</div>
+</div>
+<!-- Legacy Full-Width Card -->
+<div class="md:col-span-12">
+<div class="neomorphic-raised rounded-xl p-8 bg-background relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">flare</span>
+</div>
+<h3 class="text-2xl font-bold mb-6 text-primary">Legacy</h3>
+<div class="grid md:grid-cols-2 gap-8 relative z-10">
+<div class="flex gap-4">
+<div class="neomorphic-raised w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">architecture</span>
+</div>
+<div>
+<h4 class="font-semibold text-on-surface mb-2">Model for the Future</h4>
+<p class="text-on-surface-variant">He served as the biological and magical template for all future dragons of Middle-earth, including the winged Great Wyrms like Ancalagon.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="neomorphic-raised w-12 h-12 rounded-lg flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div>
+<h4 class="font-semibold text-on-surface mb-2">Mind Slavery</h4>
+<p class="text-on-surface-variant">The "Glaurung effect" became the standard for draconic malice—not just scorching the earth, but enslaving the minds of the strongest heroes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Artifact Connection (Bonus Contextual Section) -->
+<div class="md:col-span-12 lg:col-span-6">
+<div class="neomorphic-raised rounded-xl p-6 bg-background h-full">
+<h3 class="text-lg font-semibold mb-4 text-on-surface">Connected Artifacts</h3>
+<div class="flex items-center gap-4 p-4 neomorphic-inset rounded-xl">
+<img alt="The Dragon-helm of Dor-lómin" class="w-16 h-16 rounded-lg object-cover" data-alt="A dark, menacing fantasy helmet forged from ancient black iron, intricately engraved with runes of shadow. It sits on a stone plinth in a dimly lit chamber, exuding an aura of dread and ancient power. The lighting is low and atmospheric, emphasizing the sharp, jagged edges of the metal. Neomorphic shadows surround the base." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQPA5As8wwiLPIm4lkeiAX_nqqD_iP8MoOsjT8rql0x-UpeY7KibwktukN-AQAyrfdgBJBXB7f-_xSxPublpox_VFH6XCPHZP4AKnJGEc4KOgHrjs2Y46wdbt69kFoaXcBNEzeutEzpp0OGZHqQOkeV2FW6Dvg5XfAkB4k4MQ6zw18k2-DiQ7YMq_7NG8BdeLsHDUAzEQixbM97uS1BY-HmYXM0nc-s8MK04l5D8YwJ9CxGwHHRHa8MOLzJRxwF0eLqznkvE0BhQ">
+<div>
+<h4 class="font-bold text-on-surface">The Dragon-helm of Dor-lómin</h4>
+<p class="text-sm text-on-surface-variant">Forged by Telchar, featuring a crest in the image of Glaurung.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategic Influence Map (Bonus Contextual Section) -->
+<div class="md:col-span-12 lg:col-span-6">
+<div class="neomorphic-raised rounded-xl p-6 bg-background h-full">
+<h3 class="text-lg font-semibold mb-4 text-on-surface">Area of Influence</h3>
+<div class="h-24 neomorphic-inset rounded-xl overflow-hidden relative">
+<!-- This mimics a map location as requested -->
+<div class="absolute inset-0 flex items-center justify-center bg-surface-container/50">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary mb-1">map</span>
+<p class="text-xs font-bold uppercase text-on-surface-variant">Central Beleriand</p>
+</div>
+</div>
+</div>
+<p class="mt-4 text-sm text-on-surface-variant italic text-center">From the gates of Angband to the falls of Nargothrond.</p>
+</div>
+</div>
+</div></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>

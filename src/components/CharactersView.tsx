@@ -81,6 +81,18 @@ const valarPagesMap: Record<string, string> = {
   "Elwing la Blanca": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_elwing_silk/code.html",
   "Elwing the White": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_elwing_silk/code.html",
   "Lúthien Tinúviel": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_l_thien_silk/code.html",
+  // ── La Sombra: Criaturas de la Oscuridad ──────────────────
+  "Sauron (Mairon/Gorthaur)": "/characters/Shadow/ficha_de_personaje_sauron_silk/code.html",
+  "Gothmog": "/characters/Shadow/ficha_de_personaje_gothmog_silk/code.html",
+  "Ungoliant (La Gran Araña)": "/characters/Shadow/ficha_de_personaje_ungoliant_silk/code.html",
+  "Ungoliant (The Great Spider)": "/characters/Shadow/ficha_de_personaje_ungoliant_silk/code.html",
+  "Glaurung (Padre de Dragones)": "/characters/Shadow/ficha_de_personaje_glaurung_silk/code.html",
+  "Glaurung (Father of Dragons)": "/characters/Shadow/ficha_de_personaje_glaurung_silk/code.html",
+  "Ancalagon el Negro": "/characters/Shadow/ficha_de_personaje_ancalagon_silk/code.html",
+  "Ancalagon the Black": "/characters/Shadow/ficha_de_personaje_ancalagon_silk/code.html",
+  "Carcharoth (Anfauglir)": "/characters/Shadow/ficha_de_personaje_carcharoth_silk/code.html",
+  "Thuringwethil (Mensajera de Sauron)": "/characters/Shadow/ficha_de_personaje_thuringwethil_silk/code.html",
+  "Thuringwethil (Messenger of Sauron)": "/characters/Shadow/ficha_de_personaje_thuringwethil_silk/code.html",
 };
 
 interface CharactersViewProps {
