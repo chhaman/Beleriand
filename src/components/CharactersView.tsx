@@ -68,6 +68,19 @@ const valarPagesMap: Record<string, string> = {
   "Galadriel": "/characters/Elf/Quendi/ficha_de_personaje_galadriel_silk/code.html",
   "Orodreth": "/characters/Elf/Quendi/ficha_de_personaje_orodreth_silk/code.html",
   "Finduilas": "/characters/Elf/Quendi/ficha_de_personaje_finduilas_silk/code.html",
+  // ── Elfos: Vanyar, Sindar, Teleri y Nandor ────────────────
+  "Thingol (Elwë Singollo)": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_elu_thingol_silk/code.html",
+  "Elu Thingol": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_elu_thingol_silk/code.html",
+  "Celeborn": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_celeborn_silk/code.html",
+  "Círdan el Carpintero de Barcos": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_c_rdan_silk/code.html",
+  "Círdan the Shipwright": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_c_rdan_silk/code.html",
+  "Indis": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_indis_la_bella_silk/code.html",
+  "Olwë (Rey de Alqualondë)": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_olw_silk/code.html",
+  "Olwë (King of Alqualondë)": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_olw_silk/code.html",
+  "Dior Eluchíl": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_dior_silk/code.html",
+  "Elwing la Blanca": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_elwing_silk/code.html",
+  "Elwing the White": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_elwing_silk/code.html",
+  "Lúthien Tinúviel": "/characters/Elf/Vanyar Sindar Teleri nandor/ficha_de_personaje_l_thien_silk/code.html",
 };
 
 interface CharactersViewProps {

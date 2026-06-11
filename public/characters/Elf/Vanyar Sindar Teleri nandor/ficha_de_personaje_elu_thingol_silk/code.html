@@ -1,0 +1,288 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Elu Thingol - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><div class="max-w-6xl mx-auto">
+<!-- Hero Section -->
+<div class="relative w-full h-[500px] rounded-3xl overflow-hidden neomorphic-raised mb-12">
+<img alt="El Rey Mantogrís: Elu Thingol" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoz2qD7P6SdGE6y0-JGtl7mdYEBifkseCog1F5I66BulPHGiTWG0P639VCieC2agTZbb3_AVcT7NTDtO_tB9wlbwS7Hq8yK5K1iHzrprKWfapqq6xPLpt26SJ1AAVuKXSTs2xc-alTrhbQItP-aw-7tym1P7xBkUh_qeOT8XoVveClnoNnuLSW-ntT8t1gjiD90WsPy4Q-AHvP7AMhYNk0KaB-DPIpduWBu0aOyT5m7V8gskEPBiRapc-kFJPQqJTUkpdIHiJTLg">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10">
+<h1 class="text-5xl font-semibold text-on-surface tracking-tight mb-2">El Rey Mantogrís: Elu Thingol</h1>
+<p class="text-xl text-primary font-medium">Alto Rey de los Sindar y Señor de las Mil Cavernas</p>
+</div>
+</div>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Info Column -->
+<div class="md:col-span-4 space-y-8">
+<!-- Attributes Card -->
+<div class="neomorphic-raised p-8 rounded-3xl bg-background">
+<h3 class="text-lg font-semibold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">id_card</span> Atributos Reales
+                        </h3>
+<ul class="space-y-4">
+<li class="flex justify-between items-center pb-2 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Raza</span>
+<span class="font-medium">Elf (Teleri/Sindar)</span>
+</li>
+<li class="flex justify-between items-center pb-2 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Arma</span>
+<span class="font-medium text-tertiary">Aranrúth</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="text-on-surface-variant">Estado</span>
+<span class="font-medium px-3 py-1 neomorphic-inset rounded-full text-xs uppercase">Fallecido en Menegroth</span>
+</li>
+</ul>
+</div>
+<!-- Quote Card -->
+<div class="neomorphic-inset p-8 rounded-3xl bg-background border border-white/40">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">format_quote</span>
+<p class="text-lg italic leading-relaxed text-on-surface mb-4">
+                            "Cómo osáis vosotros de raza ruda exigirle algo a Elu Thingol, el Señor de Beleriand, cuyo linaje se remonta a los días anteriores a la aparición de la Luna y que habita aquí en el reino de Doriath, más allá del alcance de vuestra mano?"
+                        </p>
+<div class="text-right text-sm font-semibold text-on-surface-variant">— Elu Thingol ante los Enanos</div>
+</div>
+</div>
+<!-- Main Narrative Content -->
+<div class="md:col-span-8 space-y-8">
+<!-- Narrative Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="neomorphic-raised p-8 rounded-3xl bg-background hover:scale-[1.01] transition-transform cursor-default">
+<h2 class="text-xl font-semibold mb-4 text-primary">Soberano de la Tierra Media</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                                Como uno de los tres embajadores que contemplaron la luz de los Árboles en Valinor, Thingol regresó a Beleriand con una majestad inigualable entre los Moriquendi. Su estatura y sabiduría marcaron el amanecer de los Sindar.
+                            </p>
+</div>
+<div class="neomorphic-raised p-8 rounded-3xl bg-background hover:scale-[1.01] transition-transform cursor-default">
+<h2 class="text-xl font-semibold mb-4 text-tertiary">El Guardián de la Joya</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                                Su destino quedó entrelazado con el Silmaril de Lúthien. La obsesión por la joya y la creciente desconfianza hacia otros pueblos sembraron las semillas de la tragedia, atrayendo la codicia de los artesanos de Nogrod.
+                            </p>
+</div>
+</div>
+<!-- Timeline / Facts -->
+<div class="neomorphic-raised p-10 rounded-3xl bg-background">
+<h2 class="text-2xl font-semibold mb-8">Hechos Memorables</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-2xl neomorphic-inset flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">gavel</span>
+</div>
+<div>
+<h4 class="font-semibold text-lg">La Prohibición del Quenya</h4>
+<p class="text-on-surface-variant">Tras conocer la matanza de Alqualondë, Thingol prohibió el uso del Quenya en sus tierras, consolidando el Sindarin como la lengua de Beleriand.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-2xl neomorphic-inset flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">flight_takeoff</span>
+</div>
+<div>
+<h4 class="font-semibold text-lg">La Construcción de Menegroth</h4>
+<p class="text-on-surface-variant">Inspirado por la visión de Melian y ayudado por los Enanos, esculpió las Mil Cavernas, la ciudad subterránea más bella que jamás existió.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-2xl neomorphic-inset flex items-center justify-center">
+<span class="material-symbols-outlined text-error text-3xl">local_fire_department</span>
+</div>
+<div>
+<h4 class="font-semibold text-lg">El Fin del Rey</h4>
+<p class="text-on-surface-variant">Asesinado en las profundidades de su propio palacio por la traición de los Enanos, un final trágico que marcó el inicio del fin de Doriath.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Legacy Card -->
+<div class="relative overflow-hidden neomorphic-raised rounded-3xl p-10 bg-background group">
+<div class="absolute -right-10 -bottom-10 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<h2 class="text-2xl font-semibold mb-4">El legado del Señor de Doriath</h2>
+<p class="text-on-surface-variant leading-relaxed max-w-2xl">
+                            Thingol representó la unión mística de lo divino y lo mortal a través de su matrimonio con Melian la Maia. Su linaje, portador de la luz de los Árboles y la sangre de los Ainur, persistiría en los Reyes de Númenor y en la esperanza misma de la Tierra Media.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Gallery Section (Implicit from SideNav) -->
+<section class="mt-16">
+<h2 class="text-2xl font-semibold mb-8 text-center">Crónicas Visuales</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="aspect-square rounded-2xl overflow-hidden neomorphic-raised p-2 bg-background">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500" data-alt="A cinematic low-angle shot of a majestic ancient forest with massive, silver-barked trees reaching towards a twilight sky. The lighting is ethereal and soft, reflecting the Silk design system's cool grey and indigo palette. The atmosphere is mystical and serene, suggesting the protected realm of Doriath during the First Age." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHdC06X33YAcVl2GGSEbLcr8tOk0tlUTojjluFG7-d074ZyugneuMY5RGFKaZwHm1-clwTeGIYwgchRUvuikamyt4F-eAIdZKxTXSO9LI2HnkrZcuFrx7ZKkUavLjdqvrX7Z5w8iy0e-Lbs2Q2O1EyJbF43yzs59sJCiIxlzyYySnZJ5oVXl5ORpXqzB8gedSk3U-GMZ67RH7igXKXYQOZ6vpZE_x66nFhs4xlWraYR1KJih8WzJfYpwlo9Ns7wGCOwzgw85pAww">
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden neomorphic-raised p-2 bg-background">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500" data-alt="Intricate silver metalwork detail of an ancient elven crown encrusted with small glowing blue gems. The piece rests on a smooth grey stone surface, illuminated by a single soft spotlight. The style is high-end fantasy minimalism, emphasizing clean lines and the soft shadows of the Silk aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqKub_kp7Jq8LgUF7y3WxTi5HMVav8rNytWO_0lyNR29zR5lP-3A4xoL-pWRbEyPeAI5lz0g_0FJ9z9zDbMQyGC2KxNvOuKv8fh23FeihyrRWuVI_V7QJyECKprdGq38uwPy2EG8zZkp9yLT-yrEYkljCvGKqCMfCkBohhff4Ax2NiwO-kHUGfpnnvo-H-r5V8htaZaGzvvV0NJYx3MzyIs31EUsYfTnb51TAsOjuJV7QnHKpYKV5eMwxXzHEr_68c487Nmqyyxw">
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden neomorphic-raised p-2 bg-background">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500" data-alt="A wide view of a grand subterranean hall with towering columns carved directly from the rock. The architecture is organic and fluid, reminiscent of elven design. Soft blue bioluminescent moss grows in the crevices, providing a cool, dim light that matches the Wiki's primary indigo and background grey theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDVW1WFzP5Qio_B7vlpIqJ701h3DqBrAclhkgOF_1VTY2hDSiubawKi5ab6isEijxUX1ZYTTXJxdMJ-V8hSRN5WWu8MEzOxjhZAhzwj6KhlxiNGMrdhJHin4dYpvwN8l8p7U6U2Wn3o6fXif_Klfka-bcVBGB6Z1vkaJ-ckCOQPbDYfWJmo1Y0N6-eu9wf8SwegxN2oec1S_FwKdQ_nedwDIM1Pr-3VlPzTbUhCaork0Q0MPJkP1kJ0lVUEOaFeeYpysf9uLnULA">
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden neomorphic-raised p-2 bg-background">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500" data-alt="A close-up of a single glowing crystal pendant hanging from a silver chain. The crystal emits a brilliant white light that reflects off a misty, dark blue background. This conceptual image represents a Silmaril, executed with the soft, tactile shadows of the Silk design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD97jiVAUoAJP86j2TOCwrMbdDDOl9lw4twUqMx7gxH0JTm5ptZwdwx0ehrjBnlxWqSKSqCX_5rJnC6CnVdR6uHx_RxcxLm_E_P4FSXftdKCm9-3bUTjeDePrZSbOis14vS8DULPJ_ARw5WDO-L9_0vBSEqgC7Eh5y2EHlnu7pjWmXxX899EYtM-3kQVUtNKWcsE2VU0WQlHYH4823XLOIx8muhLYFTympZh2pakn0ix0xTqlv9N4cFg2oUNCyWrupnl5X7qm5b6w">
+</div>
+</div>
+</section>
+</div></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>

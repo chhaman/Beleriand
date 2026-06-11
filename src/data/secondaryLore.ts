@@ -141,6 +141,8 @@ export const secondaryCategories: Category[] = [
         title: { es: "Los Sindar y Teleri", en: "The Sindar & Teleri" },
         members: [
           { name: "Thingol (Elwë Singollo)" },
+          { name: "Dior Eluchíl" },
+          { name: "Olwë (Rey de Alqualondë)", en: "Olwë (King of Alqualondë)" },
           { name: "Celeborn" },
           { name: "Círdan el Carpintero de Barcos", en: "Círdan the Shipwright" },
           { name: "Beleg Cúthalion" },

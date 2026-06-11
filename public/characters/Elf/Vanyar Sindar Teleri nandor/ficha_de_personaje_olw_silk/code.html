@@ -1,0 +1,253 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Olwë - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section -->
+<section class="mb-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 space-y-4">
+<span class="px-4 py-1.5 rounded-full neomorph-inset text-primary font-semibold text-xs tracking-wider uppercase">Ficha de Personaje</span>
+<h1 class="text-5xl font-extrabold text-on-surface leading-tight">El Rey de los Cisnes: Olwë</h1>
+<p class="text-xl text-on-surface-variant font-medium">Rey de los Teleri de Aman</p>
+<div class="flex flex-wrap gap-4 mt-8">
+<div class="neomorph-raised p-4 rounded-2xl bg-background flex flex-col gap-1 min-w-[120px]">
+<span class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Raza</span>
+<span class="text-on-surface font-semibold">Elf (Teleri)</span>
+</div>
+<div class="neomorph-raised p-4 rounded-2xl bg-background flex flex-col gap-1 min-w-[120px]">
+<span class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Atributo</span>
+<span class="text-on-surface font-semibold">Las naves blancas</span>
+</div>
+<div class="neomorph-raised p-4 rounded-2xl bg-background flex flex-col gap-1 min-w-[120px]">
+<span class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Estado</span>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<span class="text-on-surface font-semibold">Activo en Alqualondë</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="neomorph-raised p-3 rounded-[2.5rem] bg-background">
+<img alt="Olwë de Alqualondë" class="rounded-[2rem] w-full h-[450px] object-cover shadow-inner" data-alt="High-fantasy illustration of Olwë, King of the Teleri of Alqualondë. A noble Elf with hair of silver-white, standing on the deck of a magnificent white ship carved in the shape of a swan. Background: the pearl-strewn beaches of Eldamar and the lighthouse of the Teleri. Professional digital art, Silk design system aesthetic (maritime, luminous, peaceful)." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr05eZG8sql1tK7EStX4Ac7zFQg6bVr6_BmE2KVSu27meOwdE95tO8ID35ssytNHeDGZnysUU3jEM3kolHSQ60NCIb8-fzY4-07GWk-PDulQOitmCKzGy7F-3F0ir93PgkUf81hl8YpV5rIe9uzaiNJFuVZ1VDBBFD3xfNuBSsQxLKb8ZtrVE2gQGDosUZ81rVjySyX54yrdKPFE22_3JNKOp50V6MIeL0TId7xigaLXx6oW7Jt1l1W09Ypw0rxDIyPlxef-0q-A">
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Hecho Clave -->
+<div class="md:col-span-2 neomorph-raised p-8 rounded-[2rem] bg-gradient-to-br from-background to-surface-container flex flex-col justify-center border-l-4 border-primary">
+<div class="flex items-center gap-4 mb-4">
+<div class="neomorph-inset p-3 rounded-full">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<h3 class="text-2xl font-bold">La Defensa de las Naves</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        Un momento definitorio de lealtad y resistencia ante la locura de Fëanor. Olwë se negó a entregar las preciadas naves blancas de su pueblo, enfrentando la tragedia de la Primera Matanza de Hermanos con una entereza inquebrantable, protegiendo el legado náutico de los Teleri.
+                    </p>
+</div>
+<!-- Líder de la Hueste -->
+<div class="neomorph-raised p-8 rounded-[2rem] bg-background">
+<div class="neomorph-inset w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary">sailing</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Líder de la Hueste Teleri</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Guió a su pueblo en la gran marcha hacia el Oeste, superando las dudas y el amor por las Tierras Medias para alcanzar finalmente Tol Eressëa, cruzando los mares sobre la isla flotante.
+                    </p>
+</div>
+<!-- Fundador -->
+<div class="neomorph-raised p-8 rounded-[2rem] bg-background">
+<div class="neomorph-inset w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">anchor</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Fundador de Alqualondë</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Arquitecto del Puerto de los Cisnes, donde las naves de mármol blanco y proas de ave descansan sobre aguas iluminadas por las estrellas de Eldamar.
+                    </p>
+</div>
+<!-- Legado Card (Asymmetric) -->
+<div class="md:col-span-2 neomorph-raised p-10 rounded-[2.5rem] bg-background relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary opacity-5 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-8 items-start">
+<div class="flex-grow">
+<h3 class="text-3xl font-bold mb-4">El legado del Señor de las Espumas</h3>
+<p class="text-on-surface-variant mb-6 text-lg">
+                                Su reinado estableció la cultura náutica definitiva de los Elfos de Aman, una mezcla de arte, devoción a Ulmo y una lealtad inquebrantable a los Valar.
+                            </p>
+<div class="flex gap-4">
+<span class="neomorph-inset px-4 py-2 rounded-full text-xs font-bold text-tertiary">NAVEGACIÓN</span>
+<span class="neomorph-inset px-4 py-2 rounded-full text-xs font-bold text-tertiary">LEALTAD</span>
+<span class="neomorph-inset px-4 py-2 rounded-full text-xs font-bold text-tertiary">ARTE</span>
+</div>
+</div>
+<div class="shrink-0 neomorph-raised p-2 rounded-3xl bg-background hidden md:block">
+<div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-primary/20 to-tertiary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">waves</span>
+</div>
+</div>
+</div>
+</div>
+</section></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>

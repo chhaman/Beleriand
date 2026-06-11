@@ -1,0 +1,276 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Círdan - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+<div class="lg:col-span-7">
+<span class="px-4 py-1 rounded-full neomorphic-inset text-primary font-semibold text-sm mb-6 inline-block">El Señor de las Falas: Círdan</span>
+<h1 class="text-5xl lg:text-7xl font-headline font-semibold text-on-surface leading-tight mb-4">Guardián del Último Navío</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-8 max-w-2xl">
+                    Círdan el Carpintero de Barcos, uno de los más sabios y antiguos entre los Primeros Nacidos. Señor de los Puertos Grises y visionario que custodió el paso hacia el Occidente.
+                </p>
+<div class="flex flex-wrap gap-4">
+<div class="neomorphic-raised p-6 rounded-2xl flex-1 min-w-[200px] flex flex-col gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="face">face</span>
+<span class="text-xs text-on-surface-variant uppercase tracking-wider">Raza</span>
+<span class="font-semibold text-on-surface">Elf (Sindar)</span>
+</div>
+<div class="neomorphic-raised p-6 rounded-2xl flex-1 min-w-[200px] flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="visibility">visibility</span>
+<span class="text-xs text-on-surface-variant uppercase tracking-wider">Atributo</span>
+<span class="font-semibold text-on-surface">Barba larga y visión de futuro</span>
+</div>
+<div class="neomorphic-raised p-6 rounded-2xl flex-1 min-w-[200px] flex flex-col gap-2">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="sailing">sailing</span>
+<span class="text-xs text-on-surface-variant uppercase tracking-wider">Estado</span>
+<span class="font-semibold text-on-surface">Partida al Oeste</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative p-3 neomorphic-raised rounded-[2.5rem] bg-background">
+<img alt="Círdan the Shipwright" class="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1LvZ6XA_GGdaK7iX3wSHqauzAqrQSH0wUsR9-2sN0TZptjeBg_rKH-ds9t9EhvwUiz7fmvJkFZhdqG48lh-Sr4E2ea_leZRbKUTnUX213Ryl0K7MLslPqmpoafnw0nsy4vTCzyUapK3wwMbMIDDAQaLT5yIBcJsnZNl_CjuyJkXcNp13NNrg4a59tVVMBo3tRqyIan0gupNFqZiZuze4zywoJTWoqfrHhBPRrlBizJStlSzckU69A5qWYMdQMDIMdFF76QFmJgw">
+<div class="absolute -bottom-6 -left-6 p-6 neomorphic-raised rounded-2xl bg-background max-w-[240px]">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="star" data-weight="fill">star</span>
+<span class="font-bold text-on-surface">Hecho Clave</span>
+</div>
+<p class="text-sm text-on-surface-variant">"El Custodio de Narya": entrega del anillo de fuego a Gandalf a su llegada a la Tierra Media.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Sections -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- Section 1 -->
+<div class="md:col-span-2 neomorphic-raised p-10 rounded-[2rem] relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-xl neomorphic-inset flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="explore">explore</span>
+</div>
+<h2 class="text-3xl font-semibold text-on-surface">El más grande de los navegantes</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-6">
+                        Desde los Días Antiguos en las costas de Beleriand, Círdan fue el maestro de las mareas y el viento. Sus manos dieron forma a los navíos que cruzaron el Belegaer, conectando los destinos de los Elfos con las tierras imperecederas de Valinor. Su conocimiento de la carpintería naval no tenía parangón en la Tierra Media.
+                    </p>
+<div class="flex gap-4">
+<span class="px-4 py-2 rounded-lg neomorphic-inset text-sm text-secondary">Eglarest</span>
+<span class="px-4 py-2 rounded-lg neomorphic-inset text-sm text-secondary">Brithombar</span>
+<span class="px-4 py-2 rounded-lg neomorphic-inset text-sm text-secondary">Mithlond</span>
+</div>
+</div>
+</div>
+<!-- Image Accent Card -->
+<div class="neomorphic-raised p-3 rounded-[2rem]">
+<div class="w-full h-full rounded-[1.5rem] overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A serene coastal landscape at dusk, featuring a quiet harbor with calm, silvery-blue water. In the background, the silhouettes of ancient, elegant white-stone architectural structures reminiscent of Elven ports are visible under a pale twilight sky. The lighting is soft and ethereal, using a palette of light wood tones, cool greys, and indigo accents consistent with a Silk UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK0nD3lorHXy_IdpQQxqBfV99CZv9d23kgwxtp4ddLbUQjSaV92XukulVu5zRMmgvfF4oipryzYRT0kbJTKNY_sanfNzonLDsGWXFD3MUqwP13GdJjeyrwgU_UC0IoJpztEfCKkrZ-UtPyk6hqH_0t94Rh9A6dPvZQPe4twJM0imVVpSeNqoWjFc0-GJXmKgmx-HTlOulit3pDNcTHMpKXj35_JBOMpugxIZPRbZVBsl_Wm5ZmeX9-ujVkkvHwmgymj7x4KRAPZQ">
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent flex items-end p-8">
+<p class="text-on-surface font-semibold italic">"Por encima de todo, su mirada estaba siempre puesta en el Oeste."</p>
+</div>
+</div>
+</div>
+<!-- Section 2 -->
+<div class="neomorphic-raised p-10 rounded-[2rem] flex flex-col justify-center text-center">
+<div class="w-16 h-16 rounded-full neomorphic-inset flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="castle">castle</span>
+</div>
+<h2 class="text-2xl font-semibold text-on-surface mb-4">Refugio en los Puertos Grises</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Mithlond se convirtió en el bastión de la esperanza y la melancolía. Allí, Círdan acogió a los exiliados y preparó los barcos para aquellos que sentían la llamada del mar.
+                </p>
+</div>
+<!-- Section 3 -->
+<div class="md:col-span-2 neomorphic-raised p-10 rounded-[2rem] bg-surface-container-lowest relative">
+<div class="flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-grow">
+<h2 class="text-3xl font-semibold text-on-surface mb-6">El legado del Maestro Astillero</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                            Su salvación de los pueblos libres no se limitó a la construcción de barcos; su sabiduría fue el cimiento sobre el cual se alzaron resistencias contra la sombra. Al entregar Narya a Gandalf, demostró una humildad y previsión que alteró el curso de la historia de la Tierra Media para siempre.
+                        </p>
+<div class="flex items-center gap-6">
+<div class="flex -space-x-3">
+<div class="w-12 h-12 rounded-full border-4 border-background bg-secondary flex items-center justify-center text-white text-xs font-bold shadow-sm">G</div>
+<div class="w-12 h-12 rounded-full border-4 border-background bg-primary flex items-center justify-center text-white text-xs font-bold shadow-sm">E</div>
+<div class="w-12 h-12 rounded-full border-4 border-background bg-tertiary flex items-center justify-center text-white text-xs font-bold shadow-sm">G</div>
+</div>
+<span class="text-sm text-on-surface-variant font-medium">Aliados históricos: Gandalf, Elrond, Galadriel</span>
+</div>
+</div>
+<div class="w-full md:w-48 h-48 neomorphic-inset rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-6xl" data-icon="auto_awesome" data-weight="fill">auto_awesome</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Decor -->
+<footer class="mt-20 text-center py-12 border-t border-outline-variant/30">
+<p class="text-on-surface-variant text-sm font-medium mb-4">Crónica autorizada por el Concilio Blanco</p>
+<div class="flex justify-center gap-6">
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+<div class="w-2 h-2 rounded-full bg-primary/30"></div>
+</div>
+</footer></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>
