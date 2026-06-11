@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+# Imagen usada como og:image (debe seguir accesible para crawlers)
+Allow: /characters/galer_a_completa_de_personajes_de_beleriand_silk/screen.png
+# Carpetas legacy con contenido duplicado de las fichas de personajes
+Disallow: /characters/ficha_de_personaje_
+Disallow: /characters/galer_a_completa_
+Disallow: /characters/high_fantasy_illustration_
+
+Sitemap: https://beleriand.pages.dev/sitemap.xml
