@@ -1,9 +1,9 @@
-<!DOCTYPE html><html class="light" lang="es"><head>
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Ficha de Personaje: Finduilas (Silk)</title>
+<title>Finduilas - Beleriand Archive</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
@@ -12,53 +12,53 @@
             theme: {
                 extend: {
                     "colors": {
-                        "on-surface": "#2e3040",
-                        "outline-variant": "#d0d2dc",
-                        "on-tertiary-fixed-variant": "#5b21b6",
-                        "inverse-surface": "#2e3040",
-                        "surface-container": "#e2e4ea",
-                        "surface-dim": "#d4d6dc",
-                        "surface-container-highest": "#d6d8de",
-                        "inverse-primary": "#a5b4fc",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed-variant": "#404252",
-                        "on-secondary-container": "#585a68",
-                        "tertiary-container": "#a78bfa",
-                        "surface": "#e8eaf0",
-                        "on-primary": "#ffffff",
-                        "on-tertiary-container": "#3b1f63",
-                        "on-tertiary-fixed": "#2e1065",
-                        "primary-fixed-dim": "#a5b4fc",
-                        "on-secondary-fixed": "#1a1b26",
-                        "surface-container-low": "#e5e7ed",
-                        "surface-container-high": "#dcdee4",
-                        "on-primary-fixed": "#1e1b4b",
-                        "primary-fixed": "#e0e2ff",
-                        "error-container": "#fee2e2",
-                        "on-surface-variant": "#585a68",
-                        "on-primary-fixed-variant": "#4338ca",
-                        "inverse-on-surface": "#e8eaf0",
-                        "surface-container-lowest": "#f0f2f8",
-                        "primary-container": "#818cf8",
                         "primary": "#6366f1",
-                        "on-secondary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "on-background": "#2e3040",
-                        "surface-variant": "#dcdee4",
-                        "secondary-fixed-dim": "#b8baca",
-                        "on-error-container": "#991b1b",
-                        "error": "#dc2626",
-                        "secondary-container": "#d8dae6",
-                        "on-primary-container": "#e0e2ff",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
                         "surface-tint": "#6366f1",
                         "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
                         "tertiary-fixed-dim": "#c4b5fd",
-                        "outline": "#8a8c9a",
-                        "background": "#e8eaf0",
-                        "tertiary-fixed": "#ede9fe",
-                        "tertiary": "#7c3aed",
+                        "inverse-surface": "#2e3040",
                         "surface-bright": "#edeef4",
-                        "secondary": "#6c6e7e"
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.5rem",
@@ -80,53 +80,27 @@
         body {
             background-color: #e8eaf0;
             font-family: 'Plus Jakarta Sans', sans-serif;
-            overflow-x: hidden;
+            color: #2e3040;
         }
-        .neomorph-raised {
+        .neomorphic-raised {
             box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
         }
-        .neomorph-inset {
+        .neomorphic-inset {
             box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
         }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
-        .silk-gradient-overlay {
-            background: linear-gradient(to bottom, transparent 0%, rgba(232, 234, 240, 0.8) 100%);
-        }
     </style>
 </head>
-<body class="text-on-surface">
-<!-- Top Navigation Bar -->
-<nav class="bg-surface w-full top-0 sticky z-50 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-full">
-<div class="flex items-center gap-4">
-<span class="text-2xl font-semibold tracking-tight text-on-surface">Silk Index</span>
-</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Eras</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Geography</a>
-<a class="text-primary border-b-2 border-primary pb-1 font-semibold" href="#">Characters</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Artifacts</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="p-2 rounded-xl neomorph-raised hover:scale-105 transition-transform active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)]">
-<span class="material-symbols-outlined text-primary">menu_book</span>
-</button>
-<button class="p-2 rounded-xl neomorph-raised hover:scale-105 transition-transform active:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)]">
-<span class="material-symbols-outlined text-primary">history_edu</span>
-</button>
-<div class="w-10 h-10 rounded-full neomorph-raised border-2 border-surface overflow-hidden">
-<img alt="Scholar profile avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUyl15IOu1BHiPdnT4fzj_yEBsc4MMrosXQeVVzUdMUFsRle3Od0WfFdsA1mwo5nPKtRt9YmPNQIjELgp-_ZmOCIQC1r-zxaZYoFYCAHtsPGHqTBYyohhuajWMTMXgHaNs5azpjpbyY21yQZqoNAhqD_c3Noa4Emqncj-81UeJbfejocEROfgeD1XpFOjzg0QP7eCunCxjU6ZDpnODEEZQ3CgFkHbsmANzRvYdoe9lH8RIV-RJn4OBMezB4QnTagziFcZBWkz6RA">
-</div>
-</div>
-</div>
-</nav>
-<main class="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-12">
-<!-- Left Side: Character Card & Essential Stats -->
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Left Side: Character Card & Essential Stats -->
 <aside class="w-full lg:w-1/3 flex flex-col gap-8">
 <!-- Main Character Card -->
 <div class="bg-surface p-6 rounded-xl neomorph-raised flex flex-col items-center text-center">
@@ -246,54 +220,66 @@
                     Relatos Relacionados
                 </button>
 </div>
-</section>
-</main>
+</section></main>
 <!-- Footer -->
-<footer class="w-full bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06)] mt-24">
-<div class="flex flex-col items-center py-12 px-4 gap-6">
-<span class="text-lg font-medium text-on-surface-variant">Silk Index</span>
-<div class="flex flex-wrap justify-center gap-8 text-sm font-medium">
-<a class="text-on-secondary-container hover:text-primary transition-colors" href="#">The Silmarillion</a>
-<a class="text-on-secondary-container hover:text-primary transition-colors" href="#">Unfinished Tales</a>
-<a class="text-on-secondary-container hover:text-primary transition-colors" href="#">Quenta Silmarillion</a>
-<a class="text-on-secondary-container hover:text-primary transition-colors" href="#">Genealogies</a>
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
 </div>
-<p class="text-sm text-on-surface-variant max-w-xl text-center opacity-80">
-                © 3019 Third Age Publishing. All lore derived from the Red Book of Westmarch. Diseñado con el sistema Silk para una experiencia luminosa y delicada.
-            </p>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
 </div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
 </footer>
-<!-- Side Navigation (Mobile/Floating Context) -->
-<div class="fixed left-4 bottom-4 lg:left-6 lg:top-1/2 lg:-translate-y-1/2 flex flex-col gap-4 z-40">
-<button class="w-12 h-12 rounded-full bg-surface neomorph-raised flex items-center justify-center text-primary hover:scale-110 active:scale-90 transition-transform">
-<span class="material-symbols-outlined">stars</span>
-</button>
-<button class="w-12 h-12 rounded-full bg-surface neomorph-raised flex items-center justify-center text-tertiary hover:scale-110 active:scale-90 transition-transform">
-<span class="material-symbols-outlined">map</span>
-</button>
-<button class="w-12 h-12 rounded-full bg-surface neomorph-raised flex items-center justify-center text-secondary hover:scale-110 active:scale-90 transition-transform">
-<span class="material-symbols-outlined">inventory_2</span>
-</button>
-</div>
-<!-- Floating Action Button (Optional Context) -->
-<button class="fixed right-8 bottom-8 w-14 h-14 rounded-full bg-primary text-on-primary shadow-lg flex items-center justify-center hover:scale-110 active:scale-90 transition-transform z-50">
-<span class="material-symbols-outlined">add</span>
-</button>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
 <script>
-        // Simple micro-interaction for neomorphic elements
-        document.querySelectorAll('.neomorph-raised').forEach(el => {
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
             el.addEventListener('mousedown', () => {
-                el.classList.remove('neomorph-raised');
-                el.classList.add('neomorph-inset');
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
             });
             el.addEventListener('mouseup', () => {
-                el.classList.remove('neomorph-inset');
-                el.classList.add('neomorph-raised');
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
             });
             el.addEventListener('mouseleave', () => {
-                el.classList.remove('neomorph-inset');
-                el.classList.add('neomorph-raised');
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
             });
         });
     </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
 </body></html>

@@ -1,80 +1,80 @@
-<!DOCTYPE html><html class="light" lang="es"><head>
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Silk Archives - Fingon the Valiant</title>
+<title>Fingon el Valiente - Beleriand Archive</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                "surface-bright": "#edeef4",
-                "tertiary-fixed-dim": "#c4b5fd",
-                "inverse-surface": "#2e3040",
-                "on-error-container": "#991b1b",
-                "on-secondary": "#ffffff",
-                "surface-container-highest": "#d6d8de",
-                "surface-container-high": "#dcdee4",
-                "on-primary-fixed-variant": "#4338ca",
-                "surface-tint": "#6366f1",
-                "secondary-fixed": "#d8dae6",
-                "primary-fixed-dim": "#a5b4fc",
-                "surface-container": "#e2e4ea",
-                "primary": "#6366f1",
-                "surface": "#e8eaf0",
-                "primary-container": "#818cf8",
-                "on-tertiary": "#ffffff",
-                "error-container": "#fee2e2",
-                "inverse-on-surface": "#e8eaf0",
-                "tertiary-container": "#a78bfa",
-                "on-surface": "#2e3040",
-                "on-surface-variant": "#585a68",
-                "on-primary-container": "#e0e2ff",
-                "background": "#e8eaf0",
-                "secondary-fixed-dim": "#b8baca",
-                "on-tertiary-container": "#3b1f63",
-                "outline": "#8a8c9a",
-                "on-tertiary-fixed-variant": "#5b21b6",
-                "surface-dim": "#d4d6dc",
-                "on-tertiary-fixed": "#2e1065",
-                "tertiary-fixed": "#ede9fe",
-                "secondary-container": "#d8dae6",
-                "inverse-primary": "#a5b4fc",
-                "secondary": "#6c6e7e",
-                "surface-container-low": "#e5e7ed",
-                "on-primary": "#ffffff",
-                "on-background": "#2e3040",
-                "error": "#dc2626",
-                "primary-fixed": "#e0e2ff",
-                "on-primary-fixed": "#1e1b4b",
-                "tertiary": "#7c3aed",
-                "surface-container-lowest": "#f0f2f8",
-                "on-secondary-fixed": "#1a1b26",
-                "surface-variant": "#dcdee4",
-                "on-secondary-fixed-variant": "#404252",
-                "on-error": "#ffffff",
-                "outline-variant": "#d0d2dc",
-                "on-secondary-container": "#585a68"
-            },
-            "borderRadius": {
-                "DEFAULT": "0.5rem",
-                "lg": "1rem",
-                "xl": "1.5rem",
-                "full": "9999px"
-            },
-            "fontFamily": {
-                "headline": ["Plus Jakarta Sans"],
-                "display": ["Plus Jakarta Sans"],
-                "body": ["Plus Jakarta Sans"],
-                "label": ["Plus Jakarta Sans"]
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
             }
-          }
         }
-      }
     </script>
 <style>
         body {
@@ -82,46 +82,25 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
             color: #2e3040;
         }
-        .neomorph-raised {
+        .neomorphic-raised {
             box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
         }
-        .neomorph-inset {
+        .neomorphic-inset {
             box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
         }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .active-nav {
-            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
-        }
     </style>
 </head>
-<body class="bg-background text-on-surface overflow-x-hidden">
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
 <!-- TopNavBar -->
-<header class="w-full top-0 sticky z-50 bg-background shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
-<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-<div class="flex items-center gap-4">
-<span class="text-xl font-headline font-semibold text-primary">Silk Archives</span>
-</div>
-<div class="hidden md:flex items-center gap-2">
-<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Eras</a>
-<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Geography</a>
-<a class="text-primary shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-lg px-3 py-1" href="#">Characters</a>
-<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Artifacts</a>
-</div>
-<div class="flex items-center gap-4">
-<div class="hidden lg:flex items-center bg-background neomorph-inset px-4 py-2 rounded-full">
-<span class="material-symbols-outlined text-primary text-sm mr-2">search</span>
-<input class="bg-transparent border-none outline-none text-sm placeholder-on-surface-variant" placeholder="Search the First Age..." type="text">
-</div>
-<button class="neomorph-raised p-2 rounded-full text-primary active:scale-95 transition-transform">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
-</header>
-<main class="max-w-7xl mx-auto px-6 py-12 space-y-16">
-<!-- Hero Section -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section -->
 <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 <div class="lg:col-span-7 space-y-6">
 <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full neomorph-inset text-primary font-medium text-sm">
@@ -258,47 +237,66 @@
 <p class="text-sm text-on-surface-variant">La armadura azul y plata que brillaba más que cualquier joya en Beleriand.</p>
 </div>
 </div>
-</section>
-</main>
+</section></main>
 <!-- Footer -->
-<footer class="w-full mt-auto bg-background border-t border-outline-variant/30">
-<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-4 max-w-7xl mx-auto">
-<div class="flex flex-col items-center md:items-start gap-2">
-<span class="text-lg font-headline font-semibold text-on-surface">Silk Archives</span>
-<p class="font-body text-on-surface-variant text-sm text-center md:text-left max-w-sm">© First Age Chronicles. All lore from The Silmarillion by J.R.R. Tolkien.</p>
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
 </div>
-<div class="flex gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Archives</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Contact</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Timeline</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Privacy</a>
-</div>
-<button class="neomorph-raised p-3 rounded-full text-primary hover:opacity-80 transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-<span class="material-symbols-outlined">arrow_upward</span>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
 </button>
 </div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
 </footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
 <script>
-        // Micro-interaction: Dynamic Shadow tracking
-        document.addEventListener('mousemove', (e) => {
-            const elements = document.querySelectorAll('.neomorph-raised');
-            const mouseX = e.clientX / window.innerWidth;
-            const mouseY = e.clientY / window.innerHeight;
-            
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                const centerX = rect.left + rect.width / 2;
-                const centerY = rect.top + rect.height / 2;
-                
-                // Subtle shadow shift based on cursor
-                const shiftX = (e.clientX - centerX) / 50;
-                const shiftY = (e.clientY - centerY) / 50;
-                
-                // Only apply if very close to maintain the style
-                if (Math.abs(shiftX) < 10 && Math.abs(shiftY) < 10) {
-                    // el.style.transform = `translate(${shiftX}px, ${shiftY}px)`;
-                }
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
             });
         });
     </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
 </body></html>

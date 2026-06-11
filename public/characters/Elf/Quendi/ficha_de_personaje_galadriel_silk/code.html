@@ -1,7 +1,7 @@
-<!DOCTYPE html><html lang="es"><head>
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Ficha de Personaje: Galadriel (Silk)</title>
+<title>Galadriel - Beleriand Archive</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
@@ -12,53 +12,53 @@
             theme: {
                 extend: {
                     "colors": {
-                        "on-surface": "#2e3040",
-                        "outline-variant": "#d0d2dc",
-                        "on-tertiary-fixed-variant": "#5b21b6",
-                        "inverse-surface": "#2e3040",
-                        "surface-container": "#e2e4ea",
-                        "surface-dim": "#d4d6dc",
-                        "surface-container-highest": "#d6d8de",
-                        "inverse-primary": "#a5b4fc",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed-variant": "#404252",
-                        "on-secondary-container": "#585a68",
-                        "tertiary-container": "#a78bfa",
-                        "surface": "#e8eaf0",
-                        "on-primary": "#ffffff",
-                        "on-tertiary-container": "#3b1f63",
-                        "on-tertiary-fixed": "#2e1065",
-                        "primary-fixed-dim": "#a5b4fc",
-                        "on-secondary-fixed": "#1a1b26",
-                        "surface-container-low": "#e5e7ed",
-                        "surface-container-high": "#dcdee4",
-                        "on-primary-fixed": "#1e1b4b",
-                        "primary-fixed": "#e0e2ff",
-                        "error-container": "#fee2e2",
-                        "on-surface-variant": "#585a68",
-                        "on-primary-fixed-variant": "#4338ca",
-                        "inverse-on-surface": "#e8eaf0",
-                        "surface-container-lowest": "#f0f2f8",
-                        "primary-container": "#818cf8",
                         "primary": "#6366f1",
-                        "on-secondary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "on-background": "#2e3040",
-                        "surface-variant": "#dcdee4",
-                        "secondary-fixed-dim": "#b8baca",
-                        "on-error-container": "#991b1b",
-                        "error": "#dc2626",
-                        "secondary-container": "#d8dae6",
-                        "on-primary-container": "#e0e2ff",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
                         "surface-tint": "#6366f1",
                         "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
                         "tertiary-fixed-dim": "#c4b5fd",
-                        "outline": "#8a8c9a",
-                        "background": "#e8eaf0",
-                        "tertiary-fixed": "#ede9fe",
-                        "tertiary": "#7c3aed",
+                        "inverse-surface": "#2e3040",
                         "surface-bright": "#edeef4",
-                        "secondary": "#6c6e7e"
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.5rem",
@@ -82,81 +82,25 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
             color: #2e3040;
         }
-        .neomorph-raised {
+        .neomorphic-raised {
             box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
         }
-        .neomorph-inset {
+        .neomorphic-inset {
             box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
         }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .active-tab {
-            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
-        }
     </style>
 </head>
-<body class="bg-surface selection:bg-primary-container/30">
-<nav class="w-full top-0 sticky bg-surface z-50 flex justify-between items-center px-8 py-4 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
-<div class="text-2xl font-semibold tracking-tight text-on-surface">Silk Index</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Eras</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Geography</a>
-<a class="text-primary border-b-2 border-primary pb-1" href="#">Characters</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Artifacts</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="p-2 rounded-xl neomorph-raised active:scale-95 transition-transform flex items-center justify-center">
-<span class="material-symbols-outlined text-on-surface-variant">menu_book</span>
-</button>
-<button class="p-2 rounded-xl neomorph-raised active:scale-95 transition-transform flex items-center justify-center">
-<span class="material-symbols-outlined text-on-surface-variant">history_edu</span>
-</button>
-<div class="w-10 h-10 rounded-full overflow-hidden neomorph-raised p-0.5 ml-2">
-<img alt="Scholar profile avatar" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdkSWNU_Js_3FNYamLYPlgrrcwZQH47JfmSUvtB-dW5Gdg0ltxdK03bamYEFcn4Br4YHhHHQMEVzrdod5dmvYuvnRMRrqqPrBAO2JoMgwl7swspUoAj5fR5PObm0MHB527iNeZWcmJ9mds-XKvCLOd_jVhHYHhPdHviFYB4MQE0OkGN0v3xtrHQ_W1zIdpItPhf4oz0KxLqa1uc4hHYfA3-tERhcuXcKOose8g4-Y0VaJVCY9GFI8NI6v-I-SaQfZQR71kwhKi-g">
-</div>
-</div>
-</nav>
-<div class="flex min-h-screen">
-<aside class="hidden lg:flex flex-col h-[calc(100vh-76px)] w-64 sticky top-[76px] py-6 border-r-0 bg-surface shadow-[6px_0_12px_rgba(0,0,0,0.05)]">
-<div class="px-6 mb-8">
-<h2 class="text-xl font-semibold text-on-surface">Chronicle of Arda</h2>
-<p class="text-xs text-on-surface-variant">First Age Master Index</p>
-</div>
-<nav class="flex-1 space-y-1">
-<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
-<span class="material-symbols-outlined">stars</span>
-<span class="font-medium">Ages of the Stars</span>
-</a>
-<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
-<span class="material-symbols-outlined">brightness_low</span>
-<span class="font-medium">Years of the Sun</span>
-</a>
-<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
-<span class="material-symbols-outlined">map</span>
-<span class="font-medium">Beleriand Maps</span>
-</a>
-<a class="bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary font-semibold rounded-xl m-2 p-3 flex items-center gap-3" href="#">
-<span class="material-symbols-outlined">auto_stories</span>
-<span class="font-medium">High King Lineage</span>
-</a>
-</nav>
-<div class="px-4 mt-auto">
-<button class="w-full py-3 mb-6 rounded-xl neomorph-raised text-primary font-semibold text-sm hover:shadow-[8px_8px_16px_rgba(0,0,0,0.1)] transition-all active:scale-95">
-                    Contribute Lore
-                </button>
-<div class="flex gap-2 justify-center pb-4">
-<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined">settings</span>
-</button>
-<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined">inventory_2</span>
-</button>
-</div>
-</div>
-</aside>
-<main class="flex-1 p-6 md:p-12 max-w-7xl mx-auto overflow-hidden">
-<header class="mb-12">
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><header class="mb-12">
 <div class="flex flex-col md:flex-row gap-8 items-start">
 <div class="w-full md:w-1/3 lg:w-1/4">
 <div class="aspect-[3/4] rounded-3xl overflow-hidden neomorph-raised p-3">
@@ -364,35 +308,66 @@
 <span class="material-symbols-outlined text-[240px]">nature_people</span>
 </div>
 </div>
-</section>
-</main>
+</section></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
 </div>
-<footer class="w-full bottom-0 bg-surface flex flex-col items-center py-12 px-4 gap-6 shadow-[-6px_-6px_12px_rgba(255,255,255,0.6)]">
-<div class="text-lg font-medium text-on-surface-variant">Silk Index • Arda Archive</div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">The Silmarillion</a>
-<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">Unfinished Tales</a>
-<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">Quenta Silmarillion</a>
-<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">Genealogies</a>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
 </div>
-<p class="text-sm text-on-surface-variant opacity-80 text-center">
-            © 3019 Third Age Publishing. All lore derived from the Red Book of Westmarch.
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
         </p>
 </footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
 <script>
-        document.querySelectorAll('.neomorph-raised').forEach(el => {
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
             el.addEventListener('mousedown', () => {
-                el.classList.add('neomorph-inset');
-                el.classList.remove('neomorph-raised');
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
             });
             el.addEventListener('mouseup', () => {
-                el.classList.remove('neomorph-inset');
-                el.classList.add('neomorph-raised');
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
             });
             el.addEventListener('mouseleave', () => {
-                el.classList.remove('neomorph-inset');
-                el.classList.add('neomorph-raised');
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
             });
         });
     </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
 </body></html>

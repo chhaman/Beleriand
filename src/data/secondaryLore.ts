@@ -94,6 +94,8 @@ export const secondaryCategories: Category[] = [
           {
             title: { es: "CASA DE FINWË", en: "HOUSE OF FINWË" },
             members: [
+              { name: "Finwë" },
+              { name: "Míriel Serindë" },
               { name: "Fëanor (Curufinwë)", id: "feanor" },
               { name: "Maedhros" },
               { name: "Maglor" },
@@ -119,9 +121,11 @@ export const secondaryCategories: Category[] = [
             members: [
               { name: "Finarfin" },
               { name: "Finrod Felagund" },
-              { name: "Angrod & Aegnor" },
+              { name: "Angrod" },
+              { name: "Aegnor" },
               { name: "Galadriel" },
-              { name: "Orodreth" }
+              { name: "Orodreth" },
+              { name: "Finduilas" }
             ]
           }
         ]
