@@ -31,6 +31,19 @@ const valarPagesMap: Record<string, string> = {
   "Vána the Ever-young": "/characters/vana-la-siempre-joven.html",
   "Nessa la Bailarina": "/characters/nessa-la-bailarina.html",
   "Nessa the Dancer": "/characters/nessa-la-bailarina.html",
+  "Melian (Reina de Doriath)": "/characters/maiar/ficha_de_personaje_melian_silk/code.html",
+  "Melian (Queen of Doriath)": "/characters/maiar/ficha_de_personaje_melian_silk/code.html",
+  "Eönwë": "/characters/maiar/ficha_de_personaje_e_nw_silk/code.html",
+  "Ilmarë": "/characters/maiar/ficha_de_personaje_ilmar_silk/code.html",
+  "Ossë": "/characters/maiar/ficha_de_personaje_oss_silk/code.html",
+  "Uinen": "/characters/maiar/ficha_de_personaje_uinen_silk/code.html",
+  "Olórin (Gandalf)": "/characters/maiar/ficha_de_personaje_ol_rin_gandalf_silk/code.html",
+  "Arien": "/characters/maiar/ficha_de_personaje_arien_silk/code.html",
+  "Tilion": "/characters/maiar/ficha_de_personaje_tilion_silk/code.html",
+  "Cúrunír (Saruman)": "/characters/maiar/ficha_de_personaje_curun_r_silk/code.html",
+  "Cúrunír": "/characters/maiar/ficha_de_personaje_curun_r_silk/code.html",
+  "Radagast el Pardo": "/characters/maiar/ficha_de_personaje_radagast_silk/code.html",
+  "Radagast the Brown": "/characters/maiar/ficha_de_personaje_radagast_silk/code.html",
 };
 
 interface CharactersViewProps {

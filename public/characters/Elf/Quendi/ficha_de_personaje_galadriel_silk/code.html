@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ficha de Personaje: Galadriel (Silk)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#2e3040",
+                        "outline-variant": "#d0d2dc",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "inverse-surface": "#2e3040",
+                        "surface-container": "#e2e4ea",
+                        "surface-dim": "#d4d6dc",
+                        "surface-container-highest": "#d6d8de",
+                        "inverse-primary": "#a5b4fc",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-secondary-container": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "surface": "#e8eaf0",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-tertiary-fixed": "#2e1065",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-secondary-fixed": "#1a1b26",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-container-high": "#dcdee4",
+                        "on-primary-fixed": "#1e1b4b",
+                        "primary-fixed": "#e0e2ff",
+                        "error-container": "#fee2e2",
+                        "on-surface-variant": "#585a68",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "inverse-on-surface": "#e8eaf0",
+                        "surface-container-lowest": "#f0f2f8",
+                        "primary-container": "#818cf8",
+                        "primary": "#6366f1",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#2e3040",
+                        "surface-variant": "#dcdee4",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-error-container": "#991b1b",
+                        "error": "#dc2626",
+                        "secondary-container": "#d8dae6",
+                        "on-primary-container": "#e0e2ff",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "outline": "#8a8c9a",
+                        "background": "#e8eaf0",
+                        "tertiary-fixed": "#ede9fe",
+                        "tertiary": "#7c3aed",
+                        "surface-bright": "#edeef4",
+                        "secondary": "#6c6e7e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-tab {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container/30">
+<nav class="w-full top-0 sticky bg-surface z-50 flex justify-between items-center px-8 py-4 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="text-2xl font-semibold tracking-tight text-on-surface">Silk Index</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Eras</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Geography</a>
+<a class="text-primary border-b-2 border-primary pb-1" href="#">Characters</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-xl neomorph-raised active:scale-95 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">menu_book</span>
+</button>
+<button class="p-2 rounded-xl neomorph-raised active:scale-95 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">history_edu</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden neomorph-raised p-0.5 ml-2">
+<img alt="Scholar profile avatar" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdkSWNU_Js_3FNYamLYPlgrrcwZQH47JfmSUvtB-dW5Gdg0ltxdK03bamYEFcn4Br4YHhHHQMEVzrdod5dmvYuvnRMRrqqPrBAO2JoMgwl7swspUoAj5fR5PObm0MHB527iNeZWcmJ9mds-XKvCLOd_jVhHYHhPdHviFYB4MQE0OkGN0v3xtrHQ_W1zIdpItPhf4oz0KxLqa1uc4hHYfA3-tERhcuXcKOose8g4-Y0VaJVCY9GFI8NI6v-I-SaQfZQR71kwhKi-g">
+</div>
+</div>
+</nav>
+<div class="flex min-h-screen">
+<aside class="hidden lg:flex flex-col h-[calc(100vh-76px)] w-64 sticky top-[76px] py-6 border-r-0 bg-surface shadow-[6px_0_12px_rgba(0,0,0,0.05)]">
+<div class="px-6 mb-8">
+<h2 class="text-xl font-semibold text-on-surface">Chronicle of Arda</h2>
+<p class="text-xs text-on-surface-variant">First Age Master Index</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
+<span class="material-symbols-outlined">stars</span>
+<span class="font-medium">Ages of the Stars</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
+<span class="material-symbols-outlined">brightness_low</span>
+<span class="font-medium">Years of the Sun</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-medium">Beleriand Maps</span>
+</a>
+<a class="bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary font-semibold rounded-xl m-2 p-3 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-medium">High King Lineage</span>
+</a>
+</nav>
+<div class="px-4 mt-auto">
+<button class="w-full py-3 mb-6 rounded-xl neomorph-raised text-primary font-semibold text-sm hover:shadow-[8px_8px_16px_rgba(0,0,0,0.1)] transition-all active:scale-95">
+                    Contribute Lore
+                </button>
+<div class="flex gap-2 justify-center pb-4">
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">inventory_2</span>
+</button>
+</div>
+</div>
+</aside>
+<main class="flex-1 p-6 md:p-12 max-w-7xl mx-auto overflow-hidden">
+<header class="mb-12">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="w-full md:w-1/3 lg:w-1/4">
+<div class="aspect-[3/4] rounded-3xl overflow-hidden neomorph-raised p-3">
+<img class="w-full h-full object-cover rounded-2xl shadow-inner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC92-OsDvc7tMWoGLnknnmr1k1dmSw0e4Sa_J4tB2L6M2eucNf47y-Srhf4r3VH_K2gYhKAwweo5r_GBU8l_aCFx5Vv82_5BEm-L--gOpAs7N9gPgn-2l6OQWdGh0UqZZpslD7KJjisFpGXRh3iTYRBf7rUTtrVsa6cRhZKMg3qGD43G_D_bjTtm7MKWS0_S21zvhMsk8TJpqpOwyQEWIr8Rz0Ipuez5wDEIWmXEu-qya5PKiviUP-vczaRRnTVTfbc-fEQWFe55A">
+</div>
+</div>
+<div class="flex-1 pt-4">
+<div class="inline-block px-4 py-1.5 rounded-full neomorph-inset text-primary text-xs font-bold uppercase tracking-widest mb-4">
+                            Noldor • Sindar • Telerin
+                        </div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-on-surface mb-2">
+                            Ficha de Personaje: <span class="text-primary">Galadriel</span>
+</h1>
+<p class="text-xl text-on-surface-variant font-medium">
+                            La Dama de la Luz, Guardiana de la Sabiduría • Elf (Noldor)
+                        </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+<div class="p-4 rounded-2xl neomorph-raised bg-surface text-center">
+<p class="text-[10px] uppercase font-bold text-on-surface-variant mb-1">Estatura</p>
+<p class="text-lg font-semibold text-primary">1.93 m</p>
+</div>
+<div class="p-4 rounded-2xl neomorph-raised bg-surface text-center">
+<p class="text-[10px] uppercase font-bold text-on-surface-variant mb-1">Cabello</p>
+<p class="text-lg font-semibold text-primary">Oro y Plata</p>
+</div>
+<div class="p-4 rounded-2xl neomorph-raised bg-surface text-center">
+<p class="text-[10px] uppercase font-bold text-on-surface-variant mb-1">Residencia</p>
+<p class="text-lg font-semibold text-primary">Lothlórien</p>
+</div>
+<div class="p-4 rounded-2xl neomorph-raised bg-surface text-center">
+<p class="text-[10px] uppercase font-bold text-on-surface-variant mb-1">Objeto</p>
+<p class="text-lg font-semibold text-primary">Nenya</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+<div class="lg:col-span-8 space-y-8">
+<section class="p-8 rounded-3xl neomorph-raised bg-surface">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-tertiary">history_edu</span>
+<h2 class="text-2xl font-semibold text-on-surface">Crónicas de la Primera Edad</h2>
+</div>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<div class="flex gap-4">
+<div class="w-1 bg-tertiary rounded-full opacity-30"></div>
+<p>Hija de Finarfin y Eärwen, Galadriel fue una de las líderes de la rebelión de los Noldor contra los Valar, impulsada por un deseo de ver las tierras de la Tierra Media y gobernarlas según su propia voluntad. Su orgullo era tan grande como su sabiduría, rechazando el perdón de los Valar tras la Guerra de la Cólera.</p>
+</div>
+<div class="flex gap-4">
+<div class="w-1 bg-primary rounded-full opacity-30"></div>
+<p>Durante los años oscuros en Beleriand, encontró refugio en el reino de Doriath. Allí fue discípula de Melian la Maia, de quien aprendió gran parte de su profunda sabiduría y el arte de la protección mágica que más tarde usaría para defender su propio reino.</p>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 rounded-3xl neomorph-raised bg-surface flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full neomorph-inset flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">auto_fix_high</span>
+</div>
+<h3 class="text-lg font-semibold text-on-surface mb-2">Espejo de Galadriel</h3>
+<p class="text-sm text-on-surface-variant">Capaz de mostrar cosas que fueron, cosas que son y cosas que aún no han ocurrido.</p>
+</div>
+<div class="p-8 rounded-3xl neomorph-raised bg-surface flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full neomorph-inset flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-tertiary text-3xl">shield</span>
+</div>
+<h3 class="text-lg font-semibold text-on-surface mb-2">Resistencia a Sauron</h3>
+<p class="text-sm text-on-surface-variant">Fue de las pocas que percibió la sombra de Annatar (Sauron) desde el principio, oponiéndose a él sin descanso.</p>
+</div>
+</section>
+<section class="p-8 rounded-3xl neomorph-raised bg-surface">
+<h2 class="text-2xl font-semibold text-on-surface mb-6">Linaje y Conexiones</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="text-center group cursor-pointer">
+<div class="w-20 h-20 mx-auto rounded-full overflow-hidden neomorph-raised p-1 mb-3 group-hover:scale-105 transition-transform">
+<img alt="Finarfin" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a regal elven lord with flowing golden hair and ancient wisdom in his eyes, soft cinematic lighting in a celestial palace, light-mode palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiDfqFRCUc4teCQXa-KL6zh9rEQL4w1BGi-_rZavp458EC7A23_YohBN3PmG5jNnzJ_78CGR0deu9V5kGC-hvu7W9xBaWnYRq1l7vsk-fKa89S23NgKFKbgRYigJSOmtg6-Q3Ppf91WSCXTAJ-f0RZYzg7Es4dxuk1Y4B9vCzDchRRmxtd07XKsQGDpOFfSkTNZeBSkqU6B01niGODKewkUoRJ1mIH8ebSn2lkNlvwBoOQkgqBja8b3e0IbZDCAY09NnxzqGbPnw">
+</div>
+<p class="text-xs font-bold text-on-surface uppercase tracking-tighter">Finarfin</p>
+<p class="text-[10px] text-on-surface-variant">Padre</p>
+</div>
+<div class="text-center group cursor-pointer">
+<div class="w-20 h-20 mx-auto rounded-full overflow-hidden neomorph-raised p-1 mb-3 group-hover:scale-105 transition-transform">
+<img alt="Celeborn" class="w-full h-full object-cover rounded-full" data-alt="Stately elven king with silver hair, dressed in shimmering grey robes, standing amidst a silver forest of Lothlórien, ethereal atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUMAjJ2UUl4qv1Sx3pUk59U1EpKjUORazgzG1KcZLELme_BvCbkuTgRHmin_UZA5mdasEV_ftFeuWWZYepjcTlyHyo3UQcTtHvmQPy_11YgRmYRVxpSJsjlF_NuWCTXKbmKNL5NZv4t3oaR6kpy7PyZXShYnQd3XSEhPrU9uAQsUmJk_2MaOGyC4ZjrWwdSvQZA1jP3w74KOydALpskdNTZ6HZyVXBOUWm7k-CG2369lE2DuRdKyPyfyXAqD8l-_IZfAvhrjMAww">
+</div>
+<p class="text-xs font-bold text-on-surface uppercase tracking-tighter">Celeborn</p>
+<p class="text-[10px] text-on-surface-variant">Esposo</p>
+</div>
+<div class="text-center group cursor-pointer">
+<div class="w-20 h-20 mx-auto rounded-full overflow-hidden neomorph-raised p-1 mb-3 group-hover:scale-105 transition-transform">
+<img alt="Celebrían" class="w-full h-full object-cover rounded-full" data-alt="Elegant elven maiden with mixed golden and silver hair, wearing delicate jewelry, serene expression, bright light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdfB3z6IOtLB8T8dBMc8_CkX9UgbMfleGa74Zq4A7nyz3SnXuu9Zj7rEdo4XhN_8ZVs-CgiVsQYw7lDcaLx-65Fz7YmXS9wr3jhQL-OYwQ3w0rPntvLRZ--_S9jFzrThWKRjxU8IP62UrJzsyvzZmLzDfxVlGDGEd7b8phf5atA4qdXp_DOkMt9du6BsCpLwZBAeDcP3WPYQZeEw1tZd6PeJQK7UKK3Rs96CkFkBrU_KPo5_CV7N6vxE0LnMJCYbWPrWcBrKwSDA">
+</div>
+<p class="text-xs font-bold text-on-surface uppercase tracking-tighter">Celebrían</p>
+<p class="text-[10px] text-on-surface-variant">Hija</p>
+</div>
+<div class="text-center group cursor-pointer">
+<div class="w-20 h-20 mx-auto rounded-full overflow-hidden neomorph-raised p-1 mb-3 group-hover:scale-105 transition-transform">
+<img alt="Elrond" class="w-full h-full object-cover rounded-full" data-alt="Venerable elven lord with a circlet, eyes that have seen three ages of the world, standing in a library of Rivendell, warm but bright tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAikfqeKVjs1012qpCXfbK8HR4hVlz7iwtr3kUcGuQIJjwEdpEMmUImTSxLpBrYPGH8hDXDnHgRdvibySkVcll1VmjtN9_hM-Szk5WkgpCPg6FHxSmlG3KbLu98H8AX68S36ILP9j-QSPLIxVOgtx6q5Y11zvpKFz4xjfesVCzzhbzIfQ4sEFyvWaScvTWRy1PVawV14lVijzrf3uIi2weJC087pFSFJAZ8y8cKYQL-vQ-BWsLVWDrJhgTGFNKDhOqe7O6PyIb6w">
+</div>
+<p class="text-xs font-bold text-on-surface uppercase tracking-tighter">Elrond</p>
+<p class="text-[10px] text-on-surface-variant">Yerno</p>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-4 space-y-8">
+<section class="p-8 rounded-3xl neomorph-raised bg-surface overflow-hidden relative">
+<div class="absolute -right-10 -top-10 opacity-5">
+<span class="material-symbols-outlined text-[160px]">diamond</span>
+</div>
+<h2 class="text-xl font-bold text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">flare</span>
+                            Atributos Divinos
+                        </h2>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest">
+<span>Sabiduría</span>
+<span>100%</span>
+</div>
+<div class="h-3 w-full neomorph-inset rounded-full p-0.5">
+<div class="h-full bg-primary rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest">
+<span>Poder Espiritual</span>
+<span>98%</span>
+</div>
+<div class="h-3 w-full neomorph-inset rounded-full p-0.5">
+<div class="h-full bg-tertiary rounded-full" style="width: 98%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest">
+<span>Presciencia</span>
+<span>95%</span>
+</div>
+<div class="h-3 w-full neomorph-inset rounded-full p-0.5">
+<div class="h-full bg-secondary rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold text-on-surface-variant mb-2 uppercase tracking-widest">
+<span>Resistencia Corrupción</span>
+<span>99%</span>
+</div>
+<div class="h-3 w-full neomorph-inset rounded-full p-0.5">
+<div class="h-full bg-primary rounded-full shadow-[0_0_8px_rgba(99,102,241,0.5)]" style="width: 99%"></div>
+</div>
+</div>
+</div>
+<div class="mt-10 p-4 rounded-2xl neomorph-inset bg-surface-container-low italic text-sm text-on-secondary-container border-l-4 border-primary">
+                            "En lugar de un Señor Oscuro tendríais una Reina. ¡No una oscura, sino hermosa y terrible como la Mañana y la Noche!"
+                        </div>
+</section>
+<section class="p-8 rounded-3xl neomorph-raised bg-surface">
+<h2 class="text-xl font-bold text-on-surface mb-6">Aliados del Consejo</h2>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 p-3 rounded-2xl neomorph-raised bg-surface hover:shadow-inner transition-shadow cursor-pointer">
+<div class="w-10 h-10 rounded-full neomorph-inset flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Gandalf el Gris</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Estrategia y Guía</p>
+</div>
+</li>
+<li class="flex items-center gap-4 p-3 rounded-2xl neomorph-raised bg-surface hover:shadow-inner transition-shadow cursor-pointer">
+<div class="w-10 h-10 rounded-full neomorph-inset flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">diamond</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Elrond de Rivendel</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Sabiduría y Sanación</p>
+</div>
+</li>
+<li class="flex items-center gap-4 p-3 rounded-2xl neomorph-raised bg-surface hover:shadow-inner transition-shadow cursor-pointer">
+<div class="w-10 h-10 rounded-full neomorph-inset flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">visibility</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Círdan el Carpintero</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Visión y Puertos</p>
+</div>
+</li>
+</ul>
+</section>
+</div>
+</div>
+<section class="w-full mb-12">
+<div class="p-12 rounded-[40px] neomorph-raised bg-surface relative overflow-hidden">
+<div class="relative z-10 text-center max-w-2xl mx-auto">
+<span class="material-symbols-outlined text-5xl text-primary opacity-20 mb-6">water_drop</span>
+<h2 class="text-3xl font-bold text-on-surface mb-4">El Legado de Nenya</h2>
+<p class="text-on-surface-variant text-lg">
+                            Portadora del Anillo del Agua, uno de los Tres Anillos de los Elfos. Con su poder, Galadriel pudo preservar la belleza de Lothlórien, deteniendo el paso del tiempo y protegiendo el bosque de toda incursión de la sombra de Sauron.
+                        </p>
+<button class="mt-8 px-10 py-4 rounded-full neomorph-raised text-primary font-bold hover:shadow-[10px_10px_20px_rgba(0,0,0,0.12)] transition-all active:scale-95 group">
+                            Explorar Lothlórien
+                            <span class="material-symbols-outlined align-middle ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="absolute top-0 right-0 p-8 opacity-5">
+<span class="material-symbols-outlined text-[240px]">nature_people</span>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="w-full bottom-0 bg-surface flex flex-col items-center py-12 px-4 gap-6 shadow-[-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="text-lg font-medium text-on-surface-variant">Silk Index • Arda Archive</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">The Silmarillion</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">Unfinished Tales</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">Quenta Silmarillion</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors text-sm" href="#">Genealogies</a>
+</div>
+<p class="text-sm text-on-surface-variant opacity-80 text-center">
+            © 3019 Third Age Publishing. All lore derived from the Red Book of Westmarch.
+        </p>
+</footer>
+<script>
+        document.querySelectorAll('.neomorph-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.add('neomorph-inset');
+                el.classList.remove('neomorph-raised');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+        });
+    </script>
+</body></html>

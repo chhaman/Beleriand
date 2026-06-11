@@ -66,12 +66,16 @@ export const secondaryCategories: Category[] = [
       {
         title: { es: "Los Maiar", en: "The Maiar" },
         members: [
-          { name: "Melian (Reina de Doriath)", en: "Melian (Queen of Doriath)" },
-          { name: "Eönwë" },
-          { name: "Ilmarë" },
-          { name: "Ossë & Uinen" },
-          { name: "Olórin (Gandalf)" },
-          { name: "Arien & Tilion" }
+          { name: "Melian (Reina de Doriath)", en: "Melian (Queen of Doriath)", id: "melian" },
+          { name: "Eönwë", id: "eonwe" },
+          { name: "Ilmarë", id: "ilmare" },
+          { name: "Ossë", id: "osse" },
+          { name: "Uinen", id: "uinen" },
+          { name: "Olórin (Gandalf)", id: "olorin" },
+          { name: "Arien", id: "arien" },
+          { name: "Tilion", id: "tilion" },
+          { name: "Cúrunír (Saruman)", en: "Cúrunír (Saruman)", id: "curunir" },
+          { name: "Radagast el Pardo", en: "Radagast the Brown", id: "radagast" }
         ]
       }
     ]

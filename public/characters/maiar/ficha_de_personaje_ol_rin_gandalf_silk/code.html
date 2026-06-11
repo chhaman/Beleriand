@@ -1,0 +1,286 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Olórin (Gandalf) - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
+<div class="lg:col-span-7 order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full neomorph-inset mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-semibold tracking-wider text-secondary uppercase">Perfil de Personaje</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-semibold text-on-surface tracking-tight leading-tight mb-4">
+                    El Peregrino Gris: <span class="text-primary">Olórin</span>
+</h1>
+<p class="text-xl text-on-surface-variant mb-8 font-medium italic">
+                    Istar (Mago) y Guardian de el Anillo de Fuego.
+                </p>
+<!-- Quote Block -->
+<div class="neomorph-raised p-8 rounded-xl bg-background border-l-4 border-primary relative overflow-hidden mb-8">
+<span class="material-symbols-outlined absolute -top-4 -right-4 text-9xl opacity-5 text-primary pointer-events-none">format_quote</span>
+<p class="text-lg text-on-surface font-medium leading-relaxed italic mb-4">
+                        "De Nienna aprendió la compasión y la paciencia, pues ella habita en los salones del llanto, y quienes allí moran aprenden que el dolor no solo es amargo, sino que también otorga sabiduría."
+                    </p>
+<cite class="text-sm font-semibold text-secondary">— El Silmarillion, Quenta Silmarillion</cite>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary opacity-20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700"></div>
+<div class="relative neomorph-raised p-4 rounded-xl bg-background">
+<img alt="Portrait of Olórin" class="w-full aspect-[4/5] object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC4VJNLc8clCd7wmLwTGJXOqKGWOBsWeVOUwW67734g7wnfERlq3SeRm990MYG7-oYjEus_9TIx0fTL1wYtXP5eZXWXAX9_5N4CB7CRWQFuxBasGQoNaxsHltr_ZvJkACOuav0hLPKNU4FSI1qqvl_lre7o5t-HvRlGiRLN62zqcaTdcs8IJFd0FcbxxTuB_y05pUmPU3PkRK4vQoKJaqUiE1YeILwIe8PBm3_uEIGwfIPZa1DCa0ozMahVKsP1cKwtJZ-2VeSYw">
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Section: El Aprendiz de la Piedad -->
+<div class="md:col-span-2 neomorph-raised p-10 rounded-xl bg-background group hover:shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.8)] transition-all duration-300">
+<div class="flex items-center gap-4 mb-6">
+<div class="neomorph-inset p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<h2 class="text-2xl font-semibold text-on-surface">El Aprendiz de la Piedad</h2>
+</div>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p>
+                        Antes de cruzar el Gran Mar hacia la Tierra Media, Olórin era el más sabio de los Maiar. Habitaba en los jardines de Lórien en Aman, pero frecuentaba las estancias de Nienna, la Vala de la compasión y el duelo. Fue allí donde forjó su carácter: no a través de la fuerza o el mando, sino a través de la comprensión del sufrimiento ajeno.
+                    </p>
+<p>
+                        Esta educación espiritual fue fundamental para su misión. Mientras otros Istari sucumbían al deseo de poder o al aislamiento, Olórin se mantuvo fiel a la lección de la piedad. Su fuerza no residía en su vara, sino en su capacidad para encender la esperanza en corazones que se habían enfriado por el miedo.
+                    </p>
+</div>
+<div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="neomorph-inset p-4 rounded-lg text-center">
+<span class="block text-2xl font-bold text-primary mb-1">Maira</span>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-semibold">Origen</span>
+</div>
+<div class="neomorph-inset p-4 rounded-lg text-center">
+<span class="block text-2xl font-bold text-primary mb-1">Aman</span>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-semibold">Residencia</span>
+</div>
+<div class="neomorph-inset p-4 rounded-lg text-center">
+<span class="block text-2xl font-bold text-primary mb-1">Wisdom</span>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-semibold">Atributo</span>
+</div>
+<div class="neomorph-inset p-4 rounded-lg text-center">
+<span class="block text-2xl font-bold text-primary mb-1">Fire</span>
+<span class="text-[10px] uppercase tracking-widest text-secondary font-semibold">Afinidad</span>
+</div>
+</div>
+</div>
+<!-- Stats/Artifacts Sidebar -->
+<div class="space-y-8">
+<!-- Narya Card -->
+<div class="neomorph-raised p-8 rounded-xl bg-background border-t-4 border-tertiary">
+<h3 class="text-xl font-semibold text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">local_fire_department</span>
+                        Narya: El Anillo Rojo
+                    </h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Entregado por Círdan a su llegada a los Puertos Grises, este anillo de poder permitió a Olórin resistir el cansancio y dar valor a otros.
+                    </p>
+<button class="w-full neomorph-raised neomorph-button py-3 rounded-lg text-tertiary font-semibold text-sm transition-all">
+                        Explorar Artefacto
+                    </button>
+</div>
+<!-- Legacy Box -->
+<div class="neomorph-raised p-8 rounded-xl bg-background overflow-hidden relative">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary opacity-5 rounded-full -mr-12 -mt-12"></div>
+<h3 class="text-xl font-semibold text-on-surface mb-4">El legado del Sabio de los Valar</h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span class="text-sm text-on-surface-variant">Guía espiritual de los Pueblos Libres.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span class="text-sm text-on-surface-variant">Único Istar que regresó a Aman tras su misión.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span class="text-sm text-on-surface-variant">Portador del fuego secreto de Anor.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Aesthetic Visual Section -->
+<section class="mt-20">
+<h2 class="text-3xl font-semibold text-on-surface text-center mb-12">Visiones del Camino</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="neomorph-raised rounded-xl overflow-hidden aspect-square group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A misty, ethereal forest scene at dawn with soft morning light filtering through ancient oak trees. The atmosphere is filled with a gentle grey fog and hints of pale green moss, capturing a serene and wise mystical mood consistent with a high-fantasy setting. The lighting is soft and diffused, creating a calm, meditative light-mode aesthetic with low contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT4Fq5aLe7Fk_B65vsLsVhpqQZXaoosr59k-YfPvw3VglqnPv6Vm_Wvsjn3A7Sxy7SQQQ8yTGqElIxgQbNimmx-1fcDfTpnLff8nN_Xl4-FlENKI8TXT9OCdpswWjh_ZLNPKijuzp9K22RgFwuz0UG4SCF_vZ6vFH7vY8ke6AN4RTuUHNKXfYqK5BDqy19sxWGXrVYBUl3H_ysSRgvj9eRIUaf_n8zVslpE8q_PMwLYgMRfPB67R5TcTB233wiYfX2wHZ5H-Irkg">
+</div>
+<div class="neomorph-raised rounded-xl overflow-hidden aspect-square group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vibrant mountain peaks shrouded in clouds at twilight, illuminated by a faint, magical blue glow from an unseen source. The style is painterly and epic, using a palette of soft greys and deep indigo. The image conveys a sense of ancient wisdom and the vast scale of an epic journey across middle-earth landscapes, maintaining a sophisticated and modern visual quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJkluera01M7Ew7O9nogZi5SU5LpcFyr82jpIaInE0cEeB3S7fcxym8qibyjf8aiGyplPYQFstVdc8ai3HwYD8BE67W1pzisqHNZ_XCSIgDtTUeeEWuMR-arvORP58Wg8L4HmBZhrIE-pPeFafoqGaAGOnfaLG_WXqm8QBavPZdokJitfg4a_XvCUfnJgXnZcpJDLhSpCUiVK9gf1z1Oyxb0la6LSdztNalU7UUdE5dtG15UlCMBaDogZdWKqsTqwLN5btAizgqg">
+</div>
+<div class="neomorph-raised rounded-xl overflow-hidden aspect-square group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A close-up shot of an ancient, weathered wooden staff leaning against a stone wall covered in delicate white flowers. Sunlight catches the intricate textures of the grain. The lighting is warm and golden, creating a sense of peace and companionship. The aesthetic is tactile and soft, focusing on organic materials and high-key brightness in a neomorphic context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADTAjcu01nJZvKLxIyEu857gWk4qrgvON_j7-APTwBV9VO_kxI1YkbZYWrPZoKi4ykEPvFZjOC0zsZAeWnM8R4M6oZ6x3RaIapox6tVujO7kiEnDGyuWUbrcBH0ARoRnngRHXs_MNvxepsbIn6ADbkag-ISxB1bIhgKimrCSU3ryZMu56i7KXqI4xeOwy442TFBk-CiTlZMUCSFhdMCUN-TogaWunHUjdFMoraVS7H8AoJUM4T4tuGIGhbvbEsd14IRir-o59TWQ">
+</div>
+<div class="neomorph-raised rounded-xl overflow-hidden aspect-square group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A macro shot of a single, glowing red gemstone set in an ornate silver ring resting on a bed of grey ash. The contrast between the cold metal and the warm, internal fire of the stone is striking. The lighting is cinematic, highlighting the depth and translucency of the jewel, reflecting a theme of hidden power and enduring hope within a soft UI framework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKkVaTufv20iNl8c3eUQuJaH3bv0a4g0-RbSpmzmbkS15DVQaLDcqiHUmcJs4nOe1NKRiVm-UYNdA8rw_wU6G_0q15-_rXD20Y4ECukR-41EvfRfjZhRj3ZPzYKGO5-4GaGea8bSlasZmN7ZYN6ZRS2M9daoVqC8vJHI-JRgVpcCVj5g5kHRaT4_VByGmngwWgTRJ1aTXrcfQZHDVgWvpLfSZJlIVDTfaHnWmlCxkxpIKyM52bWhqZDjmJoWoBA4n1UWnul5QSUQ">
+</div>
+</div>
+</section></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>

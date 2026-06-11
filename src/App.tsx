@@ -112,51 +112,72 @@ export default function App() {
       </div>
 
       <footer className="bg-surface-container py-12 md:py-16 border-t border-outline-variant/30 mt-16 mt-auto">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6 text-center">
-          <div className="font-headline text-3xl font-black italic text-primary tracking-tighter select-none">
-            {lang === "es" ? "Archivo de Beleriand" : "Beleriand Archive"}
+        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-8 text-center">
+          <div className="font-headline text-3xl md:text-4xl font-black tracking-tighter select-none">
+            <span className="text-on-surface">{lang === "es" ? "Beleriand" : "Beleriand"}</span>
+            <span className="text-primary ml-2">{lang === "es" ? "Archivo" : "Archive"}</span>
           </div>
 
-          <nav className="flex flex-wrap justify-center gap-8 text-on-surface-variant font-medium text-xs md:text-sm">
+          <nav className="flex flex-wrap justify-center gap-6 md:gap-12 text-on-surface-variant font-medium text-sm md:text-base">
             <button
               onClick={() => handleTabChange("encyclopedia")}
               className="hover:text-primary transition-all cursor-pointer"
             >
-              {lang === "es" ? "Archivos" : "Archives"}
+              {lang === "es" ? "Enciclopedia" : "Encyclopedia"}
             </button>
             <button
               onClick={() => handleTabChange("timeline")}
               className="hover:text-primary transition-all cursor-pointer"
             >
-              {lang === "es" ? "El Silmarillion" : "The Silmarillion"}
+              {lang === "es" ? "Cronología" : "Timeline"}
+            </button>
+            <button
+              onClick={() => handleTabChange("characters")}
+              className="hover:text-primary transition-all cursor-pointer"
+            >
+              {lang === "es" ? "Personajes" : "Characters"}
             </button>
             <button
               onClick={() => handleTabChange("atlas")}
               className="hover:text-primary transition-all cursor-pointer"
             >
-              {lang === "es" ? "Mapa de Beleriand" : "Map of Beleriand"}
+              {lang === "es" ? "Atlas" : "Atlas"}
             </button>
           </nav>
 
-          <div className="h-0.5 w-16 bg-outline-variant/30 rounded-full neo-pressed"></div>
-
-          <div className="text-on-surface-variant/85 text-xs md:text-sm font-medium leading-relaxed max-w-xl">
-            {t.firstAgeSociety}
+          <div className="text-on-surface-variant/75 text-xs md:text-sm font-medium leading-relaxed max-w-2xl">
+            © {lang === "es" ? "SOCIEDAD DE SABIOS DE LA PRIMERA EDAD. TODAS LAS INSCRIPCIONES EN QUENYA." : "FIRST AGE SCHOLARLY SOCIETY. ALL INSCRIPTIONS IN QUENYA."}
           </div>
 
-          <div className="flex gap-4 mt-2">
-            <div
-              onClick={() => handleTabChange("timeline")}
-              className="w-10 h-10 neo-button rounded-full flex items-center justify-center text-primary cursor-pointer hover:opacity-85 select-none"
-            >
-              <span className="material-symbols-outlined text-sm">history_edu</span>
-            </div>
-            <div
+          <div className="flex gap-4 md:gap-6">
+            <button
               onClick={() => handleTabChange("encyclopedia")}
-              className="w-10 h-10 neo-button rounded-full flex items-center justify-center text-primary cursor-pointer hover:opacity-85 select-none"
+              className="w-10 h-10 md:w-12 md:h-12 neo-button rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-all cursor-pointer hover:opacity-85 select-none"
+              title={lang === "es" ? "Enciclopedia" : "Encyclopedia"}
             >
-              <span className="material-symbols-outlined text-sm">auto_stories</span>
-            </div>
+              <span className="material-symbols-outlined text-lg">menu_book</span>
+            </button>
+            <button
+              onClick={() => handleTabChange("timeline")}
+              className="w-10 h-10 md:w-12 md:h-12 neo-button rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-all cursor-pointer hover:opacity-85 select-none"
+              title={lang === "es" ? "Cronología" : "Timeline"}
+            >
+              <span className="material-symbols-outlined text-lg">history_toggle_off</span>
+            </button>
+            <button
+              onClick={() => handleTabChange("characters")}
+              className="w-10 h-10 md:w-12 md:h-12 neo-button rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-all cursor-pointer hover:opacity-85 select-none"
+              title={lang === "es" ? "Personajes" : "Characters"}
+            >
+              <span className="material-symbols-outlined text-lg">group</span>
+            </button>
+            <button
+              onClick={() => handleTabChange("atlas")}
+              className="w-10 h-10 md:w-12 md:h-12 neo-button rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-all cursor-pointer hover:opacity-85 select-none"
+              title={lang === "es" ? "Atlas" : "Atlas"}
+            >
+              <span className="material-symbols-outlined text-lg">library_books</span>
+            </button>
           </div>
         </div>
       </footer>

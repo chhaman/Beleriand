@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#e0e2ff",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "tertiary-container": "#a78bfa",
+                        "surface-container-high": "#dcdee4",
+                        "primary": "#6366f1",
+                        "surface-container-lowest": "#f0f2f8",
+                        "secondary-container": "#d8dae6",
+                        "tertiary-fixed": "#ede9fe",
+                        "inverse-on-surface": "#e8eaf0",
+                        "surface-container-low": "#e5e7ed",
+                        "tertiary": "#7c3aed",
+                        "on-secondary-fixed-variant": "#404252",
+                        "inverse-surface": "#2e3040",
+                        "error-container": "#fee2e2",
+                        "on-secondary-container": "#585a68",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-container": "#818cf8",
+                        "on-error-container": "#991b1b",
+                        "secondary": "#6c6e7e",
+                        "surface-container-highest": "#d6d8de",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1a1b26",
+                        "surface-variant": "#dcdee4",
+                        "surface-tint": "#6366f1",
+                        "on-surface-variant": "#585a68",
+                        "on-tertiary-fixed": "#2e1065",
+                        "surface": "#e8eaf0",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#2e3040",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "inverse-primary": "#a5b4fc",
+                        "on-error": "#ffffff",
+                        "surface-container": "#e2e4ea",
+                        "surface-bright": "#edeef4",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "outline-variant": "#d0d2dc",
+                        "outline": "#8a8c9a",
+                        "on-surface": "#2e3040",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-fixed": "#1e1b4b",
+                        "surface-dim": "#d4d6dc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorph-active:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+            transform: scale(0.98);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center px-8 py-4 w-full sticky top-0 z-50 bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="text-2xl font-headline font-semibold text-primary">Valaquenta</div>
+<div class="hidden md:flex gap-8 items-center font-body font-semibold text-on-surface">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Eras</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Geography</a>
+<a class="text-primary font-semibold border-b-2 border-primary pb-1" href="#">Characters</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-lg neomorph-active text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<img alt="Estë the Gentle profile icon" class="w-10 h-10 rounded-full neomorph-raised border-2 border-surface" data-alt="A portrait of a serene female figure, Estë the Gentle, with soft ethereal features and flowing silver-white robes. She is surrounded by a gentle, misty aura of soft violet and indigo light. The lighting is low-key and soothing, reflecting a peaceful sanctuary in Valinor. The art style is refined and neomorphic with soft shadows and highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy0_jVzalL1Hy_xzZNVcineV10oK2iDbyUrw9tOpZJDFly2ZpxGe1k1wisUmPYRnYhNKkxTY2WVBuUmXRA-VVYZ48DVF2duSGGb5MCopJwYs4zSOZUNrRlfY3xI6FFGRUweDV6vN2IE0Quf56ry8oZv7kCuU-BUVELXMQXCum2-ilNOtHT4VRrtdD6RfKSqrD3H0NkGcxUV2mUMzp214JcQAcNkqiZ1tckD8FsLV1lPOfiKmep4NRso6l0a7_Ly6ktrJGPsRU43w">
+</div>
+</nav>
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex fixed left-0 top-0 h-full w-64 flex-col py-24 bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] z-40">
+<div class="px-6 mb-8 text-center">
+<div class="w-16 h-16 mx-auto mb-4 rounded-xl neomorph-raised flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-primary text-3xl">person</span>
+</div>
+<h3 class="font-headline text-lg font-semibold text-on-surface">Estë the Gentle</h3>
+<p class="font-body text-xs text-on-surface-variant uppercase tracking-widest">Lady of Rest</p>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<a class="flex items-center gap-3 bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary rounded-lg p-3 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-body font-medium">Character Bio</span>
+</a>
+<a class="flex items-center gap-3 text-on-surface-variant p-3 hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-lg transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-body font-medium">Valar Council</span>
+</a>
+<a class="flex items-center gap-3 text-on-surface-variant p-3 hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-lg transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">waves</span>
+<span class="font-body font-medium">Lore of Lórien</span>
+</a>
+<a class="flex items-center gap-3 text-on-surface-variant p-3 hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-lg transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">star</span>
+<span class="font-body font-medium">Stellar Connections</span>
+</a>
+</nav>
+<div class="px-6 mt-auto space-y-4">
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-semibold neomorph-raised neomorph-active">
+                    View Genealogy
+                </button>
+<div class="flex justify-around border-t border-outline-variant pt-4">
+<button class="p-2 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined">settings</span></button>
+<button class="p-2 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined">menu_book</span></button>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 lg:ml-64 p-4 md:p-8 lg:p-12">
+<div class="max-w-6xl mx-auto space-y-12">
+<!-- Hero Section: Profile Header -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5">
+<div class="relative rounded-2xl neomorph-raised p-2 bg-surface aspect-[3/4] overflow-hidden group">
+<img alt="Maglor the Minstrel" class="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQHPUPWgVCfBFUI2ehmKEOMcK-y0YrE4okfERbdAgk3OGklvZ16Urv2XbJLF9HORpEs9TepYQgw5mocw5jd5abUMobjHiHdgRTXv0C375Fs5RmwWnQ_mUhQGhFC_HbqIJuxSDoRD-3v4kO787L31NXOOqSEGxDaQFl8QhJpyCRremwezM89WaRa5lhuKPS0LKmVOtM8rCgYL79L_xZwfi_YnMnXOVbohEnVejEBTfIxRPOLR8Q5huUykNgrYic12jhz01rSpjjNw">
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60"></div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-6 pt-4">
+<div class="space-y-1">
+<h1 class="text-4xl md:text-6xl font-headline font-extrabold text-on-surface tracking-tight">El Poeta Errante: Maglor</h1>
+<p class="text-xl md:text-2xl font-body font-medium text-primary">Minstrel de los Noldor • Elf (Noldor)</p>
+</div>
+<div class="neomorph-inset p-6 rounded-xl bg-surface">
+<h2 class="text-primary font-semibold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined">music_note</span>
+                                Key Fact
+                            </h2>
+<p class="text-2xl font-headline font-bold text-on-surface">El Canto del Lamento</p>
+<p class="text-on-surface-variant mt-1">Composed the Noldolantë, the Fall of the Noldor, a song of unparalleled grief and beauty.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="neomorph-raised p-6 rounded-xl bg-surface flex flex-col justify-between h-full">
+<h3 class="text-on-surface font-bold text-lg mb-2">Un Corazón Arrepentido</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Among the sons of Fëanor, Maglor was the one who most truly regretted the terrible Oath that bound them to ruin.</p>
+<div class="mt-4 flex justify-end">
+<span class="material-symbols-outlined text-primary-container">favorite</span>
+</div>
+</div>
+<div class="neomorph-raised p-6 rounded-xl bg-surface flex flex-col justify-between h-full">
+<h3 class="text-on-surface font-bold text-lg mb-2">Padre Adoptivo de Esperanza</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">After the raid on Sirion, he took pity on the young Elrond and Elros, raising them with unexpected love and care.</p>
+<div class="mt-4 flex justify-end">
+<span class="material-symbols-outlined text-primary-container">child_care</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Memorable Acts & Legacy -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 neomorph-raised p-8 rounded-2xl bg-surface relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold mb-4 flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-tertiary">auto_stories</span>
+                                Memorable Acts
+                            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-4 neomorph-inset rounded-lg">
+<h4 class="font-bold text-primary mb-2">La Muerte de Uldor</h4>
+<p class="text-sm text-on-surface-variant">In the heat of the Nirnaeth Arnoediad, Maglor slew the traitor Uldor the Accursed, though victory was already lost.</p>
+</div>
+<div class="p-4 neomorph-inset rounded-lg">
+<h4 class="font-bold text-primary mb-2">El Silmaril del Mar</h4>
+<p class="text-sm text-on-surface-variant">Unable to bear the burning of the holy jewel in his palm, he cast the Silmaril into the sea and wandered in despair.</p>
+</div>
+</div>
+</div>
+<div class="absolute -right-16 -bottom-16 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">water</span>
+</div>
+</div>
+<div class="neomorph-raised p-8 rounded-2xl bg-surface flex flex-col justify-center text-center group transition-all duration-300 hover:scale-[1.02]">
+<span class="material-symbols-outlined text-tertiary text-5xl mb-4 transition-transform group-hover:rotate-12">waves</span>
+<h3 class="text-xl font-headline font-bold text-on-surface mb-2">Legacy</h3>
+<p class="text-primary font-semibold mb-4">El legado de la Canción Perdida</p>
+<p class="text-sm text-on-surface-variant italic">"It is said he still wanders the lonely shores of the world, singing forever to the waves."</p>
+</div>
+</section>
+<!-- Interactive Quote Box -->
+<section class="neomorph-inset p-10 rounded-3xl text-center bg-surface-container-lowest max-w-3xl mx-auto">
+<p class="text-2xl font-body italic text-secondary leading-relaxed">
+                        "Great was his skill in music, and he had a voice that could calm the wind, yet his heart was a sea of shadows."
+                    </p>
+<div class="mt-6 flex justify-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary/40"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary/40"></div>
+</div>
+</section>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-8 px-12 flex flex-col md:flex-row justify-between items-center mt-auto bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)]">
+<p class="font-body text-sm text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">© First Age Encyclopedia - The Silmarillion Chronicles</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Terms of Lore</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-sm text-on-surface-variant hover:text-tertiary transition-colors" href="#">Contact Mandos</a>
+</div>
+</footer>
+<!-- Mobile BottomNavBar -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface shadow-[6px_-6px_12px_rgba(0,0,0,0.08)] flex justify-around items-center z-50">
+<button class="p-2 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+</button>
+<button class="p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">explore</span>
+</button>
+<button class="p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">library_books</span>
+</button>
+<button class="p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</body></html>

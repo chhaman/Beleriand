@@ -1,0 +1,276 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>La Dama Blanca: Aredhel | Silk Archives</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#edeef4",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "on-error-container": "#991b1b",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "surface-container-high": "#dcdee4",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "surface-container": "#e2e4ea",
+                        "primary": "#6366f1",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-surface-variant": "#585a68",
+                        "on-primary-container": "#e0e2ff",
+                        "background": "#e8eaf0",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-tertiary-container": "#3b1f63",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "surface-dim": "#d4d6dc",
+                        "on-tertiary-fixed": "#2e1065",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "inverse-primary": "#a5b4fc",
+                        "secondary": "#6c6e7e",
+                        "surface-container-low": "#e5e7ed",
+                        "on-primary": "#ffffff",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-button:active {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+            transform: scale(0.98);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-background">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-background shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-headline font-semibold text-primary">Silk Archives</div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Eras</a>
+<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Geography</a>
+<a class="text-primary shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-lg px-3 py-1" href="#">Characters</a>
+<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="neomorphic-inset rounded-full px-4 py-2 flex items-center gap-2 group">
+<span class="material-symbols-outlined text-outline group-focus-within:text-primary">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm font-body outline-none" placeholder="Search archives..." type="text">
+</div>
+<button class="neomorphic-raised p-2 rounded-lg text-primary neomorphic-button">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 py-12 space-y-12">
+<!-- Hero Section: Bento Style -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Hero Image Block -->
+<div class="lg:col-span-7 neomorphic-raised rounded-xl overflow-hidden relative group min-h-[400px] lg:min-h-[500px]">
+<img alt="Aredhel Ar-Feiniel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_6IZbgwWqN4Q2Jy1pQ22LixygnYANOwjXXOD28vdTc9dQPzfnR9usyYDgICNNJdDRJV3elWP5a3qX3o0xdKwWjGVI0TQtZlhP2LikSn0FPRXk2Wi9WsrfzAraNtY9Jx6A98hHUTHGXAtHWhspqEWw6E1aPwX9FZkmRXvb_v2cNOCAcYiK4UQ5N4AebGKz4S4gFgtNAjYZ7h9MJYrn2XPxeG3tGm3-pRjlPIA2aew2lIVP2ntBPjFl9ObcuhkRHIWFwwtinftbmA">
+<div class="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="bg-surface-bright/90 backdrop-blur-md px-4 py-1 rounded-full text-xs font-semibold tracking-wider text-primary uppercase shadow-sm">Princesa de los Noldor • Elf (Noldor)</span>
+<h1 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mt-2 drop-shadow-sm">La Dama Blanca: Aredhel</h1>
+</div>
+</div>
+<!-- Profile Sidebar Block -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Attributes Card -->
+<div class="neomorphic-raised rounded-xl p-8 bg-background h-full flex flex-col justify-between">
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<span class="text-on-surface-variant font-medium">Race</span>
+<span class="text-on-surface font-semibold">Elf (Noldor)</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<span class="text-on-surface-variant font-medium">Attributes</span>
+<span class="text-on-surface font-semibold">Vestiduras de Plata y Blanco</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<span class="text-on-surface-variant font-medium">Status</span>
+<span class="text-tertiary font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                                Fallecida
+                            </span>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="text-sm font-bold text-outline-variant uppercase tracking-widest mb-4">Key Fact</h3>
+<div class="neomorphic-inset rounded-lg p-6 bg-background">
+<p class="text-on-surface-variant italic leading-relaxed">
+                                "El Encuentro en Nan Elmoth" — Marcó su destino al perderse en las sombras del bosque de Eöl.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Blocks: Asymmetric Layout -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Hunting Skills -->
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="neomorphic-raised w-12 h-12 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">forest</span>
+</div>
+<h2 class="text-2xl font-headline font-semibold text-on-surface">The Huntress of Oromë</h2>
+</div>
+<div class="neomorphic-raised rounded-xl p-8 bg-background">
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                        Aredhel, conocida como la Dama Blanca de los Noldor, no era una princesa convencional de las cortes. Su espíritu ardía con una pasión salvaje por la libertad y los espacios abiertos. Era una experta jinete y cazadora, a menudo cabalgando junto a los hijos de Fëanor en las vastas tierras de Beleriand.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed">
+                        Sus vestiduras, siempre de un blanco inmaculado o plata brillante, contrastaban con las sombras de los bosques que solía frecuentar. Su destreza con el arco era legendaria entre su pueblo, combinando la gracia élfica con una determinación feroz.
+                    </p>
+</div>
+</div>
+<!-- Nan Elmoth Section -->
+<div class="space-y-6 md:mt-12">
+<div class="flex items-center gap-4">
+<div class="neomorphic-raised w-12 h-12 rounded-lg flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">nightlight</span>
+</div>
+<h2 class="text-2xl font-headline font-semibold text-on-surface">The Dark Forest Shadow</h2>
+</div>
+<div class="neomorphic-raised rounded-xl p-8 bg-background border-l-4 border-tertiary/20">
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                        El tiempo que Aredhel pasó en el bosque de Nan Elmoth define la tragedia de su linaje. Tras alejarse de sus compañeros en busca de los hijos de Fëanor, se vio envuelta en los encantamientos del Elfo Oscuro, Eöl. 
+                    </p>
+<p class="text-on-surface-variant leading-relaxed">
+                        Durante años, su luz quedó velada por la penumbra de los altos árboles, donde la voluntad del bosque y la de su captor la mantuvieron lejos del sol que tanto amaba. Fue allí donde nació Maeglin, el hijo que llevaría consigo tanto la nobleza de los Noldor como la oscuridad de su padre.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Legacy Section: Centered Soft Panel -->
+<section class="max-w-4xl mx-auto py-8">
+<div class="neomorphic-raised rounded-2xl p-10 bg-background text-center relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-tertiary/5 rounded-full blur-3xl"></div>
+<h2 class="text-sm font-bold text-primary tracking-[0.3em] uppercase mb-6">Legacy</h2>
+<h3 class="text-3xl font-headline font-semibold text-on-surface mb-6">El legado de la Voluntad Indomable</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
+                    Aredhel Ar-Feiniel permanece en los anales de la Primera Edad como un símbolo de la búsqueda incesante de libertad. Su regreso a Gondolin y su sacrificio final para salvar a su hijo Maeglin demuestran que, a pesar de las sombras, el corazón de los Noldor nunca se doblega completamente.
+                </p>
+<div class="mt-10 flex justify-center gap-4">
+<button class="neomorphic-raised px-8 py-3 rounded-full text-primary font-semibold neomorphic-button flex items-center gap-2">
+<span class="material-symbols-outlined">auto_stories</span>
+                        Read Chronicles
+                    </button>
+<button class="neomorphic-inset px-8 py-3 rounded-full text-on-surface-variant font-medium neomorphic-button">
+                        Timeline
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-background border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-4 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<div class="text-lg font-headline font-semibold text-on-surface">Silk Archives</div>
+<p class="text-sm font-body text-on-surface-variant">© First Age Chronicles. All lore from The Silmarillion by J.R.R. Tolkien.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body" href="#">Archives</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body" href="#">Timeline</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body" href="#">Privacy</a>
+</div>
+<div class="flex gap-4">
+<button class="neomorphic-raised w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-all duration-300">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+<button class="neomorphic-raised w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-all duration-300">
+<span class="material-symbols-outlined text-xl">bookmark</span>
+</button>
+</div>
+</div>
+</footer>
+<!-- Micro-interaction Script -->
+<script>
+        document.querySelectorAll('.neomorphic-button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.remove('neomorphic-raised');
+                button.classList.add('neomorphic-inset');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('neomorphic-inset');
+                button.classList.add('neomorphic-raised');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('neomorphic-inset');
+                button.classList.add('neomorphic-raised');
+            });
+        });
+
+        // Add a subtle parallax effect to hero image
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImg = document.querySelector('img[src*="IMAGE_110"]');
+            if(heroImg) {
+                heroImg.style.transform = `translateY(${scrolled * 0.05}px) scale(${1 + scrolled * 0.0001})`;
+            }
+        });
+    </script>
+</body></html>

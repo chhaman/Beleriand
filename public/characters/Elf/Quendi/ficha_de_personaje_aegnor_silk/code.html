@@ -1,0 +1,314 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ficha de Personaje: Aegnor (Silk)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#2e3040",
+                        "outline-variant": "#d0d2dc",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "inverse-surface": "#2e3040",
+                        "surface-container": "#e2e4ea",
+                        "surface-dim": "#d4d6dc",
+                        "surface-container-highest": "#d6d8de",
+                        "inverse-primary": "#a5b4fc",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-secondary-container": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "surface": "#e8eaf0",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-tertiary-fixed": "#2e1065",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-secondary-fixed": "#1a1b26",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-container-high": "#dcdee4",
+                        "on-primary-fixed": "#1e1b4b",
+                        "primary-fixed": "#e0e2ff",
+                        "error-container": "#fee2e2",
+                        "on-surface-variant": "#585a68",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "inverse-on-surface": "#e8eaf0",
+                        "surface-container-lowest": "#f0f2f8",
+                        "primary-container": "#818cf8",
+                        "primary": "#6366f1",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#2e3040",
+                        "surface-variant": "#dcdee4",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-error-container": "#991b1b",
+                        "error": "#dc2626",
+                        "secondary-container": "#d8dae6",
+                        "on-primary-container": "#e0e2ff",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "outline": "#8a8c9a",
+                        "background": "#e8eaf0",
+                        "tertiary-fixed": "#ede9fe",
+                        "tertiary": "#7c3aed",
+                        "surface-bright": "#edeef4",
+                        "secondary": "#6c6e7e"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #e8eaf0;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-tab {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+<!-- TopNavBar (Shared Component) -->
+<header class="w-full top-0 sticky z-50 bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-full">
+<div class="flex items-center gap-4">
+<span class="text-2xl font-semibold tracking-tight text-on-surface">Silk Index</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Eras</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Geography</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-semibold" href="#">Characters</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Artifacts</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-2 rounded-xl text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined">menu_book</span>
+</button>
+<button class="neomorphic-raised p-2 rounded-xl text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined">history_edu</span>
+</button>
+<div class="w-10 h-10 rounded-full neomorphic-raised overflow-hidden border-2 border-surface">
+<img alt="Scholar profile avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC0j0COmv-Cr_WCXiFQF3ElKu-KpHpOkrouRJXRpVADqx-zcMqkPzzdtASyML1zM5OlorIBjRCeX7fewLwQsYvwFGWxYfDyjtTB_8dnIKsHC0RMIDlNNme0rXczy58Y7UA9w8RPCDJ26OZbTNPvGd9qrUQxqimUuDVR8RDtk16HsGLoZi_KMSX0bS_d-LD44D5ABDSUrGDgWui5tivjoTdSYni29xjvY3gO41-P-HF6renPiWDJUGISprh33B0EFqNR9QnwAaNkg">
+</div>
+</div>
+</div>
+</header>
+<div class="flex">
+<!-- SideNavBar (Shared Component) -->
+<aside class="hidden lg:flex flex-col h-screen w-64 left-0 fixed bg-surface py-6 shadow-[6px_0_12px_rgba(0,0,0,0.05)] overflow-y-auto">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-lg neomorphic-raised flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<h2 class="text-xl font-semibold text-on-surface">Chronicle of Arda</h2>
+</div>
+<p class="text-xs text-on-surface-variant px-1">First Age Master Index</p>
+</div>
+<nav class="flex-1 px-2">
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
+<span class="material-symbols-outlined">stars</span>
+<span class="font-medium">Ages of the Stars</span>
+</a>
+<a class="bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary font-semibold rounded-xl m-2 p-3 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">brightness_low</span>
+<span class="font-medium">Years of the Sun</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-medium">Beleriand Maps</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-all" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-medium">High King Lineage</span>
+</a>
+</nav>
+<div class="px-4 mt-auto">
+<button class="w-full py-3 px-4 mb-6 rounded-xl neomorphic-raised text-primary font-semibold hover:shadow-lg transition-all active:scale-95">
+                    Contribute Lore
+                </button>
+<div class="border-t border-outline-variant/30 pt-4">
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)]" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-3 m-2 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)]" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span>Archives</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 lg:ml-64 p-4 md:p-8">
+<!-- Hero Bento Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-7xl mx-auto">
+<!-- Main Character Portrait (Large Card) -->
+<section class="md:col-span-8 rounded-xl neomorphic-raised overflow-hidden p-0 relative group">
+<div class="aspect-[16/10] w-full overflow-hidden">
+<img alt="Aegnor the Fierce Flame" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjFg25Oc2OjwV_lg2ujtsb4NnCaLD9BsMykDTddR8Zczrf7TWA6l3KkfQur11zKDFozzMwOTdRJv0SKua1kdpitF8vDJTRuZlRLhVcnDn45USnRsArcVeuRC5woF_5OOhY4GzPCMn6qYzQIxlyK6zPFALxh5IZcGGPd7EctF15u_4JtLbaqEnmTrDsDXiu-jWH5liqoW_7uQVCOw4bD7j47PjW9D_9iJAuH7X53B6lCNw8axa7E9u1RQaW291y0M1wA4EOSFmuMA">
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-on-surface/80 via-on-surface/40 to-transparent">
+<h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-2">Aegnor: The Fierce Flame</h1>
+<p class="text-primary-fixed-dim text-lg font-medium">La Llama Feroz • Elf (Noldor)</p>
+</div>
+</section>
+<!-- Profile Identity Card -->
+<section class="md:col-span-4 flex flex-col gap-6">
+<div class="flex-1 p-8 rounded-xl neomorphic-raised bg-surface">
+<h3 class="text-xs font-bold uppercase tracking-widest text-primary mb-4">Etimología</h3>
+<h2 class="text-2xl font-bold text-on-surface mb-2">Fuego Penetrante</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                            Su nombre es una profecía de su naturaleza. Un espíritu guerrero inextinguible que brilló con intensidad en las horas más oscuras de Beleriand.
+                        </p>
+</div>
+<div class="flex-1 p-8 rounded-xl neomorphic-raised bg-surface">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">shield</span>
+<h3 class="text-xs font-bold uppercase tracking-widest text-tertiary">Estatus de Linaje</h3>
+</div>
+<p class="text-on-surface font-medium">Casa de Finarfin</p>
+<p class="text-sm text-on-surface-variant">Hermano de Galadriel, Finrod y Angrod.</p>
+</div>
+</section>
+<!-- Detailed Lore Bento -->
+<section class="md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- The Vigil -->
+<div class="p-8 rounded-xl neomorphic-raised bg-surface relative overflow-hidden">
+<div class="absolute -right-4 -top-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">visibility</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">visibility</span>
+                            Vigilancia Eterna
+                        </h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Desde las laderas septentrionales de Dorthonion, Aegnor mantuvo su mirada fija en <span class="font-semibold text-on-surface">Ard-galen</span>. Su vigilancia era legendaria, un centinela incansable ante la sombra creciente de Angband.
+                        </p>
+</div>
+<!-- The Warrior Spirit -->
+<div class="p-8 rounded-xl neomorphic-raised bg-surface-container-low border border-white/40">
+<h3 class="text-lg font-bold text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-error">local_fire_department</span>
+                            Espíritu Bélico
+                        </h3>
+<div class="p-4 rounded-xl neomorphic-inset mb-4 bg-surface text-sm italic text-on-surface-variant">
+                            "Su rostro era una llama y sus ojos quemaban con el fuego de los Eldar en su apogeo."
+                        </div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            No era un elfo de paz, sino de acción. Su energía era tan abrasadora que incluso sus aliados a menudo se apartaban de su camino en la batalla.
+                        </p>
+</div>
+<!-- The Final Battle -->
+<div class="p-8 rounded-xl neomorphic-raised bg-surface relative">
+<div class="w-12 h-12 rounded-full neomorphic-inset flex items-center justify-center text-error mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">skull</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-2">Dagor Bragollach</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                            En la Batalla de la Llama Súbita, Aegnor encontró su final. Su fuego se extinguió luchando contra las mareas de lava y acero que Morgoth desató sobre el mundo.
+                        </p>
+<div class="flex items-center gap-2 text-xs font-bold text-on-surface-variant uppercase">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                            Año 455 de la Primera Edad
+                        </div>
+</div>
+</section>
+<!-- Narrative Arc Section -->
+<section class="md:col-span-12 p-10 rounded-xl neomorphic-raised bg-surface">
+<div class="max-w-3xl mx-auto text-center">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Análisis Histórico</span>
+<h2 class="text-3xl font-bold text-on-surface mt-2 mb-6">El Eco de Dorthonion</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed text-lg">
+<p>
+                                Aegnor personifica la tragedia de los Noldor: la nobleza entrelazada con una furia implacable. Mientras sus hermanos buscaban la paz y la sabiduría, él eligió el filo de la espada y el calor de la vigilancia. Su caída en la Dagor Bragollach marcó no solo la pérdida de un gran señor, sino el fin de la esperanza en las tierras del norte.
+                            </p>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<button class="px-6 py-3 rounded-full neomorphic-raised text-primary font-semibold flex items-center gap-2 hover:shadow-lg transition-all">
+<span class="material-symbols-outlined">share</span> Compartir Lore
+                            </button>
+<button class="px-6 py-3 rounded-full neomorphic-raised bg-primary text-white font-semibold flex items-center gap-2 hover:brightness-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined">auto_fix</span> Generar Genealogía
+                            </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+<!-- Footer (Shared Component) -->
+<footer class="w-full bg-surface shadow-[-6px_-6px_12px_rgba(255,255,255,0.6)] mt-12">
+<div class="flex flex-col items-center py-12 px-4 gap-6">
+<span class="text-lg font-medium text-on-surface-variant">Silk Index Archives</span>
+<div class="flex flex-wrap justify-center gap-8 text-on-secondary-container">
+<a class="hover:text-primary transition-colors" href="#">The Silmarillion</a>
+<a class="hover:text-primary transition-colors" href="#">Unfinished Tales</a>
+<a class="hover:text-primary transition-colors" href="#">Quenta Silmarillion</a>
+<a class="hover:text-primary transition-colors" href="#">Genealogies</a>
+</div>
+<p class="text-sm text-secondary text-center max-w-lg">
+                © 3019 Third Age Publishing. All lore derived from the Red Book of Westmarch.
+            </p>
+<div class="neomorphic-inset p-1 rounded-full flex gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-on-surface-variant">language</span></button>
+<button class="p-2 rounded-full hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-on-surface-variant">dark_mode</span></button>
+</div>
+</div>
+</footer>
+<!-- Interactive Layer -->
+<script>
+        // Add subtle hover effects and micro-interactions
+        document.querySelectorAll('.neomorphic-raised').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-2px)';
+                card.style.transition = 'all 0.3s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Simple tab switching logic for navigation
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                navLinks.forEach(l => {
+                    l.classList.remove('text-primary', 'border-b-2', 'border-primary', 'font-semibold');
+                    l.classList.add('text-on-surface-variant');
+                });
+                link.classList.add('text-primary', 'border-b-2', 'border-primary', 'font-semibold');
+                link.classList.remove('text-on-surface-variant');
+            });
+        });
+    </script>
+</body></html>

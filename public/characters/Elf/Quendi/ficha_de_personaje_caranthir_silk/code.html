@@ -1,0 +1,279 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Valaquenta - Caranthir the Dark</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#e0e2ff",
+                    "tertiary-fixed-dim": "#c4b5fd",
+                    "tertiary-container": "#a78bfa",
+                    "surface-container-high": "#dcdee4",
+                    "primary": "#6366f1",
+                    "surface-container-lowest": "#f0f2f8",
+                    "secondary-container": "#d8dae6",
+                    "tertiary-fixed": "#ede9fe",
+                    "inverse-on-surface": "#e8eaf0",
+                    "inverse-surface": "#2e3040",
+                    "error-container": "#fee2e2",
+                    "on-secondary-container": "#585a68",
+                    "error": "#dc2626",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#d8dae6",
+                    "primary-container": "#818cf8",
+                    "on-error-container": "#991b1b",
+                    "secondary": "#6c6e7e",
+                    "surface-container-highest": "#d6d8de",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#1a1b26",
+                    "surface-variant": "#dcdee4",
+                    "surface-tint": "#6366f1",
+                    "on-surface-variant": "#585a68",
+                    "on-tertiary-fixed": "#2e1065",
+                    "surface": "#e8eaf0",
+                    "primary-fixed-dim": "#a5b4fc",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#2e3040",
+                    "background": "#e8eaf0",
+                    "on-tertiary-container": "#3b1f63",
+                    "on-primary-fixed-variant": "#4338ca",
+                    "inverse-primary": "#a5b4fc",
+                    "on-error": "#ffffff",
+                    "surface-container": "#e2e4ea",
+                    "surface-bright": "#edeef4",
+                    "on-tertiary-fixed-variant": "#5b21b6",
+                    "outline-variant": "#d0d2dc",
+                    "outline": "#8a8c9a",
+                    "on-surface": "#2e3040",
+                    "on-primary-container": "#e0e2ff",
+                    "secondary-fixed-dim": "#b8baca",
+                    "on-primary-fixed": "#1e1b4b",
+                    "surface-dim": "#d4d6dc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="flex justify-between items-center px-8 py-4 w-full sticky top-0 z-50 bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="text-2xl font-headline font-semibold text-primary">Valaquenta</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Eras</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Geography</a>
+<a class="text-primary font-semibold border-b-2 border-primary pb-1" href="#">Characters</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="neomorph-inset p-2 rounded-full hidden md:block">
+<span class="material-symbols-outlined text-secondary block" data-icon="search">search</span>
+</div>
+<button class="neomorph-raised p-2 rounded-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary block" data-icon="menu">menu</span>
+</button>
+<img alt="Estë the Gentle profile icon" class="w-10 h-10 rounded-full neomorph-raised p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLkVEhrWMPF2aSwf5W7-iitLc2ABu6P_164zKkGIiLBJROZKt7jcPj3mosIIuaIRHaO4jNjgx_4swrCpTfKa2PIXxcs3BR-4ofW1FWlLYHYk0cMyXAf_gpGPKosF-EDgy8cleh4FMbh9t6AfvNVEy54v4tQjCLe3b7lFD3b2JbiFkQ0HZVK7P-r-hZzovL9eocajdMWUoGbilZL6EgNmxzaowRtl4PdvLT8HooRNXYUDD0t60X46_BkVyU4QrshpwwvfjxL-Iosg">
+</div>
+</nav>
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-18 h-[calc(100vh-72px)] w-64 flex flex-col py-6 bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-r-xl z-40">
+<div class="px-6 mb-8 flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl neomorph-raised flex items-center justify-center overflow-hidden">
+<img alt="Estë Silhouette" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnNHYAWw0QwHvrhQnUdydnubSsQdP6o66fYUdVki6KE9F4f6FfuR_Sm9Uny3lFIPSET7czb9RJ0XngFELYVGps74A3wqLINazNS8szOvHRER1qmuMBCSCk_TiGr80xAj55hg-ujHEPA_-agsp76nrozclDYTiquJ8sk3H1GzWmJuLZ-tEGVSCzxslZsOFQN6uPlI2_zzPzRSm2Hhe_OhUp1jhCPJopISoMXbFJMdGhq74gUliveiht0DUUc77E-6-W_GZgVNPhPQ">
+</div>
+<div>
+<h3 class="font-headline text-lg font-semibold text-on-surface">Estë the Gentle</h3>
+<p class="text-xs text-on-surface-variant">Lady of Rest</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary rounded-lg m-2 p-3 flex items-center gap-3 active:scale-95 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-body font-medium">Character Bio</span>
+</a>
+<a class="text-on-surface-variant p-3 m-2 hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-lg transition-all flex items-center gap-3 hover:text-tertiary active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-body font-medium">Valar Council</span>
+</a>
+<a class="text-on-surface-variant p-3 m-2 hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-lg transition-all flex items-center gap-3 hover:text-tertiary active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="waves">waves</span>
+<span class="font-body font-medium">Lore of Lórien</span>
+</a>
+<a class="text-on-surface-variant p-3 m-2 hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-lg transition-all flex items-center gap-3 hover:text-tertiary active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="font-body font-medium">Stellar Connections</span>
+</a>
+</nav>
+<div class="px-4 mt-auto space-y-4">
+<button class="w-full neomorph-raised py-3 px-4 rounded-xl text-primary font-semibold hover:text-tertiary active:scale-95 transition-all text-sm">
+                    View Genealogy
+                </button>
+<div class="pt-4 space-y-2 border-t border-outline-variant/30">
+<a class="flex items-center gap-3 p-2 text-on-surface-variant text-sm hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="settings">settings</span> Settings
+                    </a>
+<a class="flex items-center gap-3 p-2 text-on-surface-variant text-sm hover:text-tertiary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="menu_book">menu_book</span> Glossary
+                    </a>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 flex-1 p-8">
+<!-- Hero Section -->
+<header class="mb-12 relative">
+<div class="neomorph-raised rounded-3xl overflow-hidden mb-8 aspect-[2.4/1]">
+<img class="w-full h-full object-cover object-top filter contrast-110 brightness-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvy4uXctpEJ2DQXzrobtQsgLu8GBJW9OrMLghN1uAAG3_LKCibWvUV_jptkd46dp1BZx9WjSqhYjpfmc3vNa-B94COQEpmL4yIuarGbNxzQLAK48MMw68oI5OrLw1MzR3tYKKvlMlsL9v9aohsMOdC1t-Gz74j9ibzZpYgYWr2QSiwhzcbpcTOXSGhKPVpIcyUQvqNPXZaPQCuYvs2VVZ2lkwU7HosT_8F5UmQg9FfDrr2N8t09EcWeiNbAv1fOm7AsgG-o7Xphw">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="inline-block px-4 py-1.5 neomorph-raised bg-surface text-tertiary text-xs font-bold rounded-full mb-4 uppercase tracking-widest">Profile: Fourth Son of Fëanor</span>
+<h1 class="text-5xl font-headline font-extrabold text-on-surface mb-2">El Señor de las Riquezas: Caranthir</h1>
+<p class="text-xl text-on-surface-variant font-medium">Señor de Thargelion • Elf (Noldor)</p>
+</div>
+</div>
+</header>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Key Fact: El Áspero -->
+<div class="md:col-span-4 neomorph-raised rounded-2xl p-8 bg-surface border-l-4 border-error">
+<div class="flex items-center gap-4 mb-6">
+<div class="neomorph-inset p-3 rounded-xl">
+<span class="material-symbols-outlined text-error text-3xl" data-icon="bolt">bolt</span>
+</div>
+<h2 class="text-xl font-semibold text-on-surface">Key Fact</h2>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4">El Áspero</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                        Known as Moryfinwë in Quenya, Caranthir was the most quick to anger of all the brothers. His stern nature defined his rule over the wild lands of the East.
+                    </p>
+<div class="neomorph-inset p-4 rounded-xl italic text-sm text-secondary">
+                        "He was the harshest of the brothers and the most quick to anger."
+                    </div>
+</div>
+<!-- Alineación Ambivalente -->
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="neomorph-raised rounded-2xl p-8 bg-surface h-full">
+<div class="flex items-center gap-4 mb-6">
+<div class="neomorph-inset p-3 rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="shield">shield</span>
+</div>
+<h2 class="text-xl font-semibold text-on-surface">Alineación Ambivalente</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            Despite his rough exterior, Caranthir offered protection to the People of Haleth when they were besieged by Orcs. While he viewed them as lesser, his intervention saved their lineage from total destruction in Thargelion.
+                        </p>
+</div>
+<!-- Alianza con los Enanos -->
+<div class="neomorph-raised rounded-2xl p-8 bg-surface h-full">
+<div class="flex items-center gap-4 mb-6">
+<div class="neomorph-inset p-3 rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="payments">payments</span>
+</div>
+<h2 class="text-xl font-semibold text-on-surface">Alianza con los Enanos</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            He established a controlled but lucrative trade route with the Dwarves of Nogrod and Belegost. His mastery over commerce made him the wealthiest of the Noldor princes, though the alliance was based on mutual profit rather than friendship.
+                        </p>
+</div>
+</div>
+<!-- Memorable Acts: Wide Section -->
+<div class="md:col-span-12 neomorph-raised rounded-3xl p-10 bg-surface relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-6 mb-8">
+<div class="neomorph-inset p-4 rounded-2xl">
+<span class="material-symbols-outlined text-on-surface text-4xl" data-icon="history_edu">history_edu</span>
+</div>
+<div>
+<h2 class="text-3xl font-bold text-on-surface">Memorable Acts</h2>
+<p class="text-on-surface-variant">Defining moments of his legacy in Middle-earth</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<div class="space-y-4">
+<h4 class="text-error font-bold text-lg uppercase tracking-tight">La Ruina de Thargelion</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    The invasion by the hosts of Morgoth that devastated his realm, leading to the desperate battle where he discovered the bravery of Haleth and her people.
+                                </p>
+</div>
+<div class="space-y-4 border-l border-outline-variant/30 pl-10">
+<h4 class="text-primary font-bold text-lg uppercase tracking-tight">The Oath Fulfilled</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    Bound by the Oath of Fëanor, Caranthir participated in the tragic kinslayings, driven by the inescapable fire of his father's vow and the pursuit of the Silmarils.
+                                </p>
+</div>
+<div class="space-y-4 border-l border-outline-variant/30 pl-10">
+<h4 class="text-tertiary font-bold text-lg uppercase tracking-tight">Master of the East</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                    Fortifying the hills of Helevorn, he became the primary buffer between the North and the trade routes, consolidating elven power through economic dominance.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Decorative background icon -->
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[200px] opacity-5 select-none" data-icon="gavel">gavel</span>
+</div>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-8 px-12 flex flex-col md:flex-row justify-between items-center mt-20 shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] opacity-80 hover:opacity-100 transition-opacity">
+<p class="font-body text-sm text-on-surface-variant mb-4 md:mb-0">© First Age Encyclopedia - The Silmarillion Chronicles</p>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-tertiary transition-colors text-sm font-medium" href="#">Terms of Lore</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors text-sm font-medium" href="#">Contact Mandos</a>
+</div>
+</footer>
+<script>
+        // Micro-interaction for hover states on neomorphic elements
+        document.querySelectorAll('.neomorph-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorph-raised');
+                el.classList.add('neomorph-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+        });
+    </script>
+</body></html>

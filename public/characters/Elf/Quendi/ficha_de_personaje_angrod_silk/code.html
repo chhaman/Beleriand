@@ -1,0 +1,301 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ficha de Personaje: Angrod (Silk)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#2e3040",
+                        "outline-variant": "#d0d2dc",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "inverse-surface": "#2e3040",
+                        "surface-container": "#e2e4ea",
+                        "surface-dim": "#d4d6dc",
+                        "surface-container-highest": "#d6d8de",
+                        "inverse-primary": "#a5b4fc",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-secondary-container": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "surface": "#e8eaf0",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#3b1f63",
+                        "on-tertiary-fixed": "#2e1065",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-secondary-fixed": "#1a1b26",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-container-high": "#dcdee4",
+                        "on-primary-fixed": "#1e1b4b",
+                        "primary-fixed": "#e0e2ff",
+                        "error-container": "#fee2e2",
+                        "on-surface-variant": "#585a68",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "inverse-on-surface": "#e8eaf0",
+                        "surface-container-lowest": "#f0f2f8",
+                        "primary-container": "#818cf8",
+                        "primary": "#6366f1",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#2e3040",
+                        "surface-variant": "#dcdee4",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-error-container": "#991b1b",
+                        "error": "#dc2626",
+                        "secondary-container": "#d8dae6",
+                        "on-primary-container": "#e0e2ff",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "outline": "#8a8c9a",
+                        "background": "#e8eaf0",
+                        "tertiary-fixed": "#ede9fe",
+                        "tertiary": "#7c3aed",
+                        "surface-bright": "#edeef4",
+                        "secondary": "#6c6e7e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #e8eaf0; }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="text-on-surface bg-surface min-h-screen">
+<!-- TopNavBar (Shared Component) -->
+<nav class="w-full top-0 sticky z-50 bg-surface flex justify-between items-center px-8 py-4 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="text-2xl font-semibold tracking-tight text-on-surface">Silk Index</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 Plus Jakarta Sans medium" href="#">Eras</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 Plus Jakarta Sans medium" href="#">Geography</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-semibold" href="#">Characters</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 Plus Jakarta Sans medium" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-xl neomorph-raised active:scale-95 transition-all text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+</button>
+<button class="p-2 rounded-xl neomorph-raised active:scale-95 transition-all text-primary">
+<span class="material-symbols-outlined">history_edu</span>
+</button>
+<img alt="Scholar profile avatar" class="w-10 h-10 rounded-full neomorph-raised p-0.5 bg-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzb66mUjMT6uCB9808wSgGVR4UBE_xggaYjN1BnkPUu4k1ovfoeIQ4-KzSlaw0mNTN-okW-EptUqb0rPC_3OTsuRe19c5CU1STiACabxXVE3bkeAtjf17zSh1yd1BrFJDR72Fe6uhOy7vqoEg28a2vvSLUsyoHVrOpdFT84gCcnMFXUzVWsWPhP9KnUJ-3iz-BPBJSLISgzY7ubGA2Z15b8C_ta-N0zLhJhg9mGKNowfnGKwE8pOwm6IePgZSayaEhXI_2tAz03w">
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-4 py-8 md:py-12 flex flex-col md:flex-row gap-8">
+<!-- Left Column: Character Image & Stats -->
+<aside class="w-full md:w-1/3 flex flex-col gap-8">
+<div class="neomorph-raised rounded-xl overflow-hidden bg-surface p-4">
+<div class="aspect-[3/4] relative rounded-lg overflow-hidden neomorph-inset">
+<img alt="Angrod of the Noldor" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIdwP-4OlpHhuQ4WxKd-KQpImKEmcX4slPeHL7u4zRCUw7WF4Zi4UoTOOL03T6xMoRyzmGm9fGMU8C-LnHOhMOLlXmRIoulE9Gw907ocIzlizdff75Tm6Uv-Qk6qLxrVldLXRl7_Z8ABnnsjuKC1UrG_cwXTgVoKyUYMKoGkQ2HAx9zVy-52AIIwnMxLdzynkbicyl9EdWHvbyhxmvuKkX0HmBkLUEMf3H2CHOwXyeCvuq-t5ag-EVCOfgZBAL_xyNFaaasFMUHw">
+</div>
+<div class="mt-6 flex flex-col items-center text-center">
+<h1 class="text-3xl font-semibold text-on-surface mb-1">Angrod</h1>
+<p class="text-on-surface-variant font-medium">El Señor de las Alturas</p>
+<div class="flex gap-2 mt-4">
+<span class="px-3 py-1 rounded-full neomorph-inset text-xs font-semibold text-tertiary">Noldor</span>
+<span class="px-3 py-1 rounded-full neomorph-inset text-xs font-semibold text-primary">House of Finarfin</span>
+</div>
+</div>
+</div>
+<!-- Attributes Bento Section -->
+<div class="grid grid-cols-2 gap-4">
+<div class="neomorph-raised p-4 rounded-xl flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 1;">shield</span>
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Defensa</p>
+<p class="text-lg font-semibold text-on-surface">Sobresaliente</p>
+</div>
+<div class="neomorph-raised p-4 rounded-xl flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-tertiary mb-2" style="font-variation-settings: 'FILL' 1;">verified</span>
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Lealtad</p>
+<p class="text-lg font-semibold text-on-surface">Inquebrantable</p>
+</div>
+<div class="neomorph-raised p-4 rounded-xl flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-secondary mb-2">campaign</span>
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Rol</p>
+<p class="text-lg font-semibold text-on-surface">Mensajero</p>
+</div>
+<div class="neomorph-raised p-4 rounded-xl flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary mb-2">landscape</span>
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Reino</p>
+<p class="text-lg font-semibold text-on-surface">Dorthonion</p>
+</div>
+</div>
+</aside>
+<!-- Right Column: Content & History -->
+<section class="w-full md:w-2/3 flex flex-col gap-8">
+<!-- Hero Title Card -->
+<div class="neomorph-raised p-8 rounded-xl bg-surface relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl font-semibold text-on-surface leading-tight mb-2">Ficha de Personaje: Angrod (Silk)</h2>
+<p class="text-on-surface-variant text-lg">El Señor de las Alturas, El Mensajero • Elf (Noldor)</p>
+</div>
+<!-- Background decoration -->
+<div class="absolute -right-8 -bottom-8 opacity-5">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'wght' 200;">forest</span>
+</div>
+</div>
+<!-- Core Biography Sections -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Guardian Profile -->
+<div class="neomorph-raised p-6 rounded-xl bg-surface">
+<div class="flex items-center gap-3 mb-4">
+<div class="p-2 rounded-lg neomorph-inset">
+<span class="material-symbols-outlined text-primary">fort</span>
+</div>
+<h3 class="text-xl font-semibold text-on-surface">Guardián de Dorthonion</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                        Junto a su hermano Aegnor, Angrod mantuvo la guardia más peligrosa sobre las tierras altas de Dorthonion. Su valentía y estoicismo fueron el primer muro de contención contra las sombras del norte, protegiendo los pasos que descendían hacia Beleriand.
+                    </p>
+</div>
+<!-- Truth Seeker -->
+<div class="neomorph-raised p-6 rounded-xl bg-surface">
+<div class="flex items-center gap-3 mb-4">
+<div class="p-2 rounded-lg neomorph-inset">
+<span class="material-symbols-outlined text-tertiary">record_voice_over</span>
+</div>
+<h3 class="text-xl font-semibold text-on-surface">La Voz de la Verdad</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                        Destacado por su honestidad radical, fue Angrod quien reveló a Thingol la verdadera naturaleza de la rebelión de los Noldor y el Fratricidio de Alqualondë. No buscó el poder mediante el engaño, sino que aceptó la carga de la verdad.
+                    </p>
+</div>
+</div>
+<!-- The Defense Section -->
+<div class="neomorph-raised p-8 rounded-xl bg-surface">
+<h3 class="text-2xl font-semibold text-on-surface mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">swords</span>
+                    La Defensa de las Fronteras del Norte
+                </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="neomorph-inset p-4 rounded-lg">
+<p class="text-primary font-semibold mb-2">Resistencia</p>
+<p class="text-sm text-on-surface-variant">Inmóvil ante el empuje de las legiones de Angband durante siglos de sitio.</p>
+</div>
+<div class="neomorph-inset p-4 rounded-lg">
+<p class="text-primary font-semibold mb-2">Sacrificio</p>
+<p class="text-sm text-on-surface-variant">Luchó hasta el último aliento en la Dagor Bragollach defendiendo su hogar.</p>
+</div>
+<div class="neomorph-inset p-4 rounded-lg">
+<p class="text-primary font-semibold mb-2">Legado</p>
+<p class="text-sm text-on-surface-variant">Recordado como uno de los príncipes más valerosos de la Casa de Finarfin.</p>
+</div>
+</div>
+</div>
+<!-- Interactivity: Action Buttons -->
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="neomorph-raised px-6 py-3 rounded-xl bg-surface text-primary font-semibold flex items-center gap-2 hover:shadow-lg transition-all active:neomorph-inset">
+<span class="material-symbols-outlined">auto_stories</span>
+                    Ver Crónicas
+                </button>
+<button class="neomorph-raised px-6 py-3 rounded-xl bg-surface text-on-surface-variant font-semibold flex items-center gap-2 hover:shadow-lg transition-all active:neomorph-inset">
+<span class="material-symbols-outlined">map</span>
+                    Explorar Dorthonion
+                </button>
+<button class="neomorph-raised px-6 py-3 rounded-xl bg-surface text-tertiary font-semibold flex items-center gap-2 hover:shadow-lg transition-all active:neomorph-inset">
+<span class="material-symbols-outlined">account_tree</span>
+                    Linaje Real
+                </button>
+</div>
+</section>
+</main>
+<!-- SideNavBar (Mobile Trigger/Desktop Hidden logic implied via JSON structure but styled as fixed for full page experience) -->
+<div class="fixed left-0 top-0 h-screen w-16 md:w-64 bg-surface flex flex-col py-6 shadow-[6px_0_12px_rgba(0,0,0,0.05)] z-40 hidden md:flex">
+<div class="px-6 mb-10 flex items-center gap-3">
+<img alt="First Age Crest" class="w-10 h-10 rounded-xl neomorph-raised bg-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRnN49pfkSdpFSEd96cgITlkFq02QJvNU1OUJO77Zb8yLud2iU7SaFbFPW1yMxO4YdhUcf0425BDkY53bpptUUgA0fqEb2b0zg-igadRKXHCpvCFvaRAo_yb0MSZDZOWkTRXupbY5b566QJCA-KafLYskst94qzMxFAcLpzyQmviMk1MUiBs9890PDoAOQ_yyPCIyilH2JpLR-Zt6SkpvIdByfMPoPulVn0U_B6DdlRJEEAaVd_j8_fymugHM9okmiCtcU9XB7qQ">
+<div class="hidden md:block">
+<p class="text-sm font-semibold text-on-surface">Chronicle of Arda</p>
+<p class="text-[10px] text-on-surface-variant">First Age Master Index</p>
+</div>
+</div>
+<nav class="flex-1 px-2 space-y-2">
+<a class="text-on-surface-variant flex items-center gap-3 p-3 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-shadow" href="#">
+<span class="material-symbols-outlined">stars</span>
+<span class="hidden md:block font-medium">Ages of the Stars</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-3 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-shadow" href="#">
+<span class="material-symbols-outlined">brightness_low</span>
+<span class="hidden md:block font-medium">Years of the Sun</span>
+</a>
+<a class="bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary font-semibold rounded-xl p-3 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="hidden md:block">Beleriand Maps</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-3 rounded-xl hover:shadow-[6px_6px_12px_rgba(0,0,0,0.05)] transition-shadow" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="hidden md:block font-medium">High King Lineage</span>
+</a>
+</nav>
+<div class="px-4 mt-auto space-y-2">
+<button class="w-full neomorph-raised p-3 rounded-xl text-primary font-semibold flex items-center justify-center gap-2 mb-6">
+<span class="material-symbols-outlined text-sm">edit</span>
+<span class="hidden md:block">Contribute Lore</span>
+</button>
+<div class="border-t border-outline-variant pt-4 space-y-1">
+<a class="text-on-surface-variant flex items-center gap-3 p-2 rounded-lg text-sm hover:text-primary" href="#">
+<span class="material-symbols-outlined text-base">settings</span>
+<span class="hidden md:block">Settings</span>
+</a>
+<a class="text-on-surface-variant flex items-center gap-3 p-2 rounded-lg text-sm hover:text-primary" href="#">
+<span class="material-symbols-outlined text-base">inventory_2</span>
+<span class="hidden md:block">Archives</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Footer (Shared Component) -->
+<footer class="w-full bg-surface flex flex-col items-center py-12 px-4 gap-6 shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06)] mt-12">
+<div class="text-lg font-medium text-on-surface-variant">Silk Index Archives</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-on-secondary-container hover:text-primary transition-colors Plus Jakarta Sans text-sm" href="#">The Silmarillion</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors Plus Jakarta Sans text-sm" href="#">Unfinished Tales</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors Plus Jakarta Sans text-sm" href="#">Quenta Silmarillion</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors Plus Jakarta Sans text-sm" href="#">Genealogies</a>
+</div>
+<p class="text-on-surface-variant text-center opacity-80 Plus Jakarta Sans text-sm max-w-2xl">
+            © 3019 Third Age Publishing. All lore derived from the Red Book of Westmarch. Reproducción permitida solo para eruditos de la Ciudad Blanca.
+        </p>
+</footer>
+<script>
+        // Micro-interactions
+        document.querySelectorAll('.neomorph-raised').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Turgon the Wise | Silk Archives</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#edeef4",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "on-error-container": "#991b1b",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "surface-container-high": "#dcdee4",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "surface-container": "#e2e4ea",
+                        "primary": "#6366f1",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-surface-variant": "#585a68",
+                        "on-primary-container": "#e0e2ff",
+                        "background": "#e8eaf0",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-tertiary-container": "#3b1f63",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "surface-dim": "#d4d6dc",
+                        "on-tertiary-fixed": "#2e1065",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "inverse-primary": "#a5b4fc",
+                        "secondary": "#6c6e7e",
+                        "surface-container-low": "#e5e7ed",
+                        "on-primary": "#ffffff",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            color: #2e3040;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-background shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-headline font-semibold text-primary">Silk Archives</div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Eras</a>
+<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Geography</a>
+<a class="text-primary shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] rounded-lg px-3 py-1" href="#">Characters</a>
+<a class="text-on-surface-variant px-3 py-1 hover:text-primary transition-all duration-300" href="#">Artifacts</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="neomorph-inset rounded-full px-4 py-1.5 hidden lg:flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-40 text-on-surface" placeholder="Search the archives..." type="text">
+</div>
+<button class="neomorph-raised p-2 rounded-lg text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<header class="relative w-full overflow-hidden py-12 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="space-y-2">
+<span class="text-primary font-medium tracking-wider text-sm uppercase">Rey de Gondolin • Elf (Noldor)</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-surface leading-tight tracking-tight">El Rey Oculto: <br><span class="text-primary">Turgon</span></h1>
+</div>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl font-body">
+                        Segundo hijo de Fingolfin, fundador de la joya escondida de Beleriand. Bajo el consejo de Ulmo, Turgon erigió la ciudad de Gondolin, manteniendo su esplendor en secreto durante siglos mientras el resto del mundo sucumbía a la sombra de Morgoth.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="neomorph-raised px-6 py-4 rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_city</span>
+<div>
+<p class="text-xs text-outline font-semibold uppercase">Key Fact</p>
+<p class="text-on-surface font-medium">La Fundación de la Ciudad Escondida</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative group">
+<div class="neomorph-raised p-4 rounded-3xl overflow-hidden bg-background">
+<img alt="Turgon the Wise" class="w-full h-auto object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQMMvwW-hXc68zST7iuap98HDzfO7e13vCFOo74aZIwC5u7oIc4zucuVpKmSMyIPr0Es1YJF-ZtJMOp3H8Rf8D7pPONSZaTGJLIzeEBoWHl38ETbJLO469L-3lS0qYrceHN_U0hM83-VCzK1JLAhMFqo73j05PYBbK4RI4OIZzAm7HFkPADz5jPoPCQEVOmJFCNZ-PXHoOvKGnVZwSQuDIONajgkL1EF26SyMk7LcP0VKx_RucrzUbAga4LpxwfvhZQNQhF-jL0w">
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -bottom-6 -left-6 w-24 h-24 neomorph-raised rounded-2xl bg-background flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Attributes Grid -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="neomorph-raised p-8 rounded-2xl border-none">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">diversity_3</span>
+<h3 class="text-on-surface-variant text-sm font-semibold uppercase mb-1">Race</h3>
+<p class="text-on-surface text-xl font-semibold">Elf (Noldor)</p>
+</div>
+<div class="neomorph-raised p-8 rounded-2xl">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">architecture</span>
+<h3 class="text-on-surface-variant text-sm font-semibold uppercase mb-1">Attribute</h3>
+<p class="text-on-surface text-xl font-semibold">Bastón de Mando / Árboles Sagrados</p>
+</div>
+<div class="neomorph-raised p-8 rounded-2xl">
+<span class="material-symbols-outlined text-error mb-4 text-3xl">skull</span>
+<h3 class="text-on-surface-variant text-sm font-semibold uppercase mb-1">Status</h3>
+<p class="text-on-surface text-xl font-semibold">Fallecido</p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Secret Reign -->
+<div class="md:col-span-8 neomorph-raised p-10 rounded-3xl space-y-6">
+<h2 class="text-3xl font-bold text-on-surface">El Reino Secreto de Gondolin</h2>
+<div class="space-y-4 text-on-surface-variant font-body leading-relaxed">
+<p>Durante siglos, mientras las guerras de Beleriand desgarraban el continente, el valle de Tumladen permaneció como un santuario inexpugnable. Turgon, guiado por la sabiduría del Vala Ulmo, diseñó una red de siete puertas que protegían el paso hacia su reino.</p>
+<p>Bajo su reinado, la cultura Noldor alcanzó su cenit. Gondolin no era solo una fortaleza; era un centro de arte, sabiduría y orfebrería que rivalizaba con la mismísima Tirion de antaño en el Reino Bendecido.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+<div class="neomorph-inset p-6 rounded-2xl">
+<h4 class="text-primary font-bold mb-2">Las Siete Puertas</h4>
+<p class="text-sm">Desde la madera hasta el acero, cada puerta era una prueba de la ingeniería y la determinación de Turgon.</p>
+</div>
+<div class="neomorph-inset p-6 rounded-2xl">
+<h4 class="text-primary font-bold mb-2">El Consejo de Ulmo</h4>
+<p class="text-sm">La armadura dejada en Vinyamar marcó el destino de Turgon y el final de la ciudad.</p>
+</div>
+</div>
+</div>
+<!-- Architecture Box -->
+<div class="md:col-span-4 space-y-8">
+<div class="neomorph-raised p-8 rounded-3xl bg-surface-container-low">
+<h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">foundation</span>
+                            Arquitectura
+                        </h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Gondolin fue construida enteramente en piedra blanca, con fuentes que recordaban a las de Eldamar. La torre del Rey se alzaba como un faro de esperanza en el corazón del valle.
+                        </p>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-sm font-medium">Mármol de las Montañas Circundantes</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-sm font-medium">Réplicas de los Dos Árboles</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-sm font-medium">Incrustaciones de Plata y Diamante</span>
+</div>
+</div>
+</div>
+<!-- Quote Card -->
+<div class="neomorph-inset p-8 rounded-3xl bg-primary text-on-primary">
+<span class="material-symbols-outlined text-4xl opacity-50 mb-4">format_quote</span>
+<p class="text-lg italic font-light leading-snug">"No se ha visto en el mundo una ciudad más hermosa, ni más amada por los corazones de los Elfos."</p>
+<p class="mt-4 text-sm font-semibold opacity-70">— Crónicas de la Primera Edad</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="max-w-7xl mx-auto px-6 py-16 mb-12">
+<div class="neomorph-raised rounded-[2.5rem] p-12 bg-surface-container-highest relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl font-extrabold text-on-surface mb-6">El legado del Arquitecto de Arda</h2>
+<div class="max-w-3xl">
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Aunque la ciudad cayó por la traición de Maeglin, el espíritu de Turgon sobrevivió a través de su linaje. De su hija Idril y Tuor nació Eärendil, quien llevaría la esperanza de los Elfos y los Hombres a las tierras de Occidente. Su maestría arquitectónica y su visión de paz en medio del caos siguen siendo el estándar de la majestuosidad élfica.
+                        </p>
+<button class="neomorph-raised px-8 py-3 rounded-full text-primary font-bold bg-background active:scale-95 transition-all flex items-center gap-3 group">
+                            Explorar Timeline de Gondolin
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Abstract Architectural Decoration -->
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+<div class="w-64 h-64 border-[24px] border-primary rounded-full -mr-20 -mb-20"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-background border-t border-outline-variant/30 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="text-lg font-headline font-semibold text-on-surface">Silk Archives</div>
+<p class="text-on-surface-variant text-sm max-w-sm">© First Age Chronicles. All lore from The Silmarillion by J.R.R. Tolkien.</p>
+</div>
+<div class="flex gap-8">
+<div class="flex flex-col gap-2">
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Navigation</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Archives</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Resources</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Timeline</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Privacy</a>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="neomorph-raised p-3 rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorph-raised p-3 rounded-full text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle neomorphic interaction logic
+        document.querySelectorAll('.neomorph-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorph-raised');
+                el.classList.add('neomorph-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.remove('neomorph-inset');
+                el.classList.add('neomorph-raised');
+            });
+        });
+    </script>
+</body></html>

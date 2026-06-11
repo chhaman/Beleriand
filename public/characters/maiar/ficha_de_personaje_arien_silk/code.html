@@ -1,0 +1,250 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Arien - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section Asymmetric Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Left Profile Image -->
+<div class="lg:col-span-5 relative group">
+<div class="rounded-xl overflow-hidden neomorph-raised p-2 bg-background">
+<img alt="Arien the Maia of the Sun" class="w-full h-auto rounded-lg object-cover aspect-[4/5]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0hj6kKJk0dYy6mHydSTC7dkAYfcvVkkIZRnEz8AwN6t6eJdDVfj7jQ5srkYzx9n4rh4plYPDmROFUo2cNzvtv7RHkfgJqgfnM4YgfAFjZrT_VOa5zhN3PTJmTvBySuYzZ53FYPWMdClODQ2AwS11lhhn8LZnqAotaQuMvoKLfpw8qQwyvnsVT4iSPgFrzRxNAEZ53vgvLQ66Z9ptij3Zc70M8CVe0XAH1A1BNoBX_l9ka7MbNog9i1MnEZVpEtTCbRcjxotgV4A">
+</div>
+<div class="absolute -bottom-6 -right-6 p-6 neomorph-raised bg-background rounded-xl max-w-xs">
+<p class="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Esencia Maia</p>
+<p class="text-on-surface-variant text-sm italic font-medium leading-relaxed">
+                        "Un espíritu de fuego puro que los ojos de los Elfos no podían soportar."
+                    </p>
+</div>
+</div>
+<!-- Right Profile Content -->
+<div class="lg:col-span-7 space-y-8 pt-6">
+<div class="space-y-2">
+<h1 class="text-5xl font-extrabold text-on-surface leading-tight tracking-tight">La Doncella del Sol: Arien</h1>
+<div class="flex gap-3 items-center">
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-tertiary shadow-sm">MAIA</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold text-primary shadow-sm">GUIDE OF ANAR</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 rounded-xl neomorph-raised bg-background">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">brightness_7</span>
+<h3 class="font-semibold text-on-surface">Role</h3>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Guide of Anar (The Sun) and Fear of Shadows. Chosen by the Valar for her incorruptible light.</p>
+</div>
+<div class="p-6 rounded-xl neomorph-raised bg-background">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-tertiary">local_fire_department</span>
+<h3 class="font-semibold text-on-surface">Essence</h3>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Intense, radiant, pure flame. Unlike Tilion, she is not drawn by desire but by duty.</p>
+</div>
+</div>
+<div class="p-8 rounded-xl neomorph-inset bg-background">
+<h2 class="text-2xl font-bold text-on-surface mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-weight="fill">wb_sunny</span>
+                        El Rostro del Día
+                    </h2>
+<p class="text-on-surface-variant leading-loose">
+                        Arien no fue siempre la guía del sol. En los días de la luz de los Árboles en Valinor, ella era una de las doncellas que cuidaba los jardines de Vána. Su espíritu era de fuego, pero su naturaleza era suave, nutriendo las flores con el rocío de Laurelin. Fue solo tras la destrucción de los Árboles que ella aceptó el destino más ardiente: despojarse de su forma física visible para los seres mortales y convertirse en la llama desnuda que conduce el último fruto de oro a través de los cielos.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Bento Grid Section: Legacy and History -->
+<div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 p-8 rounded-xl neomorph-raised bg-background flex flex-col justify-center">
+<h3 class="text-xl font-bold text-on-surface mb-4">De Cuidadora a Guía</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                    Su transición de los tranquilos jardines de Vána a los cielos abrasadores marca uno de los sacrificios más nobles de los Ainur. Para guiar a Anar, Arien abandonó la frescura de la tierra y la compañía de sus iguales, aceptando una soledad radiante para que el mundo no pereciera en la oscuridad de Melkor.
+                </p>
+<div class="flex gap-4">
+<button class="px-6 py-2 rounded-lg neomorph-raised neomorph-raised-hover font-semibold text-primary text-sm">Ver Crónicas</button>
+<button class="px-6 py-2 rounded-lg neomorph-inset font-semibold text-secondary text-sm">Genealogía</button>
+</div>
+</div>
+<div class="p-8 rounded-xl neomorph-raised bg-background bg-gradient-to-br from-transparent to-surface-container-low border-none">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">shield</span>
+<h3 class="text-xl font-bold text-on-surface mb-2">Fear of Shadows</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Morgoth temía a Arien y no podía mirarla a los ojos. Ella es la antítesis de su sombra, una luz que no puede ser extinguida ni contaminada por el vacío.
+                </p>
+</div>
+<div class="p-8 rounded-xl neomorph-raised bg-background">
+<div class="w-12 h-12 rounded-full neomorph-inset flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary">history_edu</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-2">El legado de la Luz Diurna</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    A través de las Edades, el paso de Arien marca el ritmo de la vida en la Tierra Media, recordando a todos los pueblos que la luz siempre prevalecerá sobre la noche más oscura.
+                </p>
+</div>
+<div class="md:col-span-2 relative h-64 rounded-xl overflow-hidden neomorph-raised group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic wide landscape of ancient rolling hills at sunrise, with a powerful golden light breaking through the morning mist. The aesthetic is epic and ethereal, featuring the soft UI tones of light gray, vibrant indigo, and deep orange sunbursts. The lighting is dramatic, casting long shadows and creating a tactile, neomorphic sense of depth across the terrain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrbAPjR38gr01xJN2-8hdiIyKHaBrZHdjkIHySjiAx5dQZEVAfSL18RsaRZ0d5HjXK_Oy1AgUoqJHKAy83K26i-YwOD3vuTraSGbjS4rlbAJUXPbDEAReGsH9U9M7OLgBg7aDT_ThcM474ZqJhzwG6wRWynuupLLnUXLjTEdPKzKuXiEd83oC9o6Qkz_OjeNkQJXgws9VTuz3oX1Ezz3f5EYQzOjENl-mDj8f72htEGGEGobJ_SjWMmBpuIPI1UjMvHoi0nA-z6Q">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-bold text-xl">El Primer Amanecer</h4>
+<p class="text-white/80 text-sm">El momento en que el miedo de Melkor se hizo absoluto.</p>
+</div>
+</div>
+</div></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>

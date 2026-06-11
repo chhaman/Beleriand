@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Valaquenta - Amrod y Amras</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#e0e2ff",
+                    "tertiary-fixed-dim": "#c4b5fd",
+                    "tertiary-container": "#a78bfa",
+                    "surface-container-high": "#dcdee4",
+                    "primary": "#6366f1",
+                    "surface-container-lowest": "#f0f2f8",
+                    "secondary-container": "#d8dae6",
+                    "tertiary-fixed": "#ede9fe",
+                    "inverse-on-surface": "#e8eaf0",
+                    "surface-container-low": "#e5e7ed",
+                    "tertiary": "#7c3aed",
+                    "on-secondary-fixed-variant": "#404252",
+                    "inverse-surface": "#2e3040",
+                    "error-container": "#fee2e2",
+                    "on-secondary-container": "#585a68",
+                    "error": "#dc2626",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#d8dae6",
+                    "primary-container": "#818cf8",
+                    "on-error-container": "#991b1b",
+                    "secondary": "#6c6e7e",
+                    "surface-container-highest": "#d6d8de",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#1a1b26",
+                    "surface-variant": "#dcdee4",
+                    "surface-tint": "#6366f1",
+                    "on-surface-variant": "#585a68",
+                    "on-tertiary-fixed": "#2e1065",
+                    "surface": "#e8eaf0",
+                    "primary-fixed-dim": "#a5b4fc",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#2e3040",
+                    "background": "#e8eaf0",
+                    "on-tertiary-container": "#3b1f63",
+                    "on-primary-fixed-variant": "#4338ca",
+                    "inverse-primary": "#a5b4fc",
+                    "on-error": "#ffffff",
+                    "surface-container": "#e2e4ea",
+                    "surface-bright": "#edeef4",
+                    "on-tertiary-fixed-variant": "#5b21b6",
+                    "outline-variant": "#d0d2dc",
+                    "outline": "#8a8c9a",
+                    "on-surface": "#2e3040",
+                    "on-primary-container": "#e0e2ff",
+                    "secondary-fixed-dim": "#b8baca",
+                    "on-primary-fixed": "#1e1b4b",
+                    "surface-dim": "#d4d6dc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { background-color: #e8eaf0; color: #2e3040; overflow-x: hidden; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neomorph-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorph-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .transition-soft { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-panel {
+            background: rgba(232, 234, 240, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center px-8 py-4 w-full sticky top-0 z-50 bg-surface dark:bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
+<div class="text-2xl font-headline font-semibold text-primary dark:text-primary">Valaquenta</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Eras</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Geography</a>
+<a class="text-primary font-semibold border-b-2 border-primary pb-1 transition-colors duration-300" href="#">Characters</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Artifacts</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="neomorph-raised p-2 rounded-lg text-primary active:scale-95 transition-soft">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="w-10 h-10 rounded-full neomorph-raised border-2 border-surface overflow-hidden">
+<img alt="Estë the Gentle profile icon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa8mQW-BvVu-H4cypusSR3wRyLC_92GGBqV361V82EC5XBgYNs-Up_MvAXXQJKk7s8JEnhq87R4ZozaagA62YIlhnsErbd9lse79pT0lHz-o8vQon9IWapOgy_w3-iDMWcs7bDo8YDwRHvyMrXUhHNN24h8EL9A0Q0kiWNllmyQJi9Yhrwu0pz8ycfcbnqXin9kxXJHdRM6IIhT6qJBynzCuPOTHJYzKwiokw7pSxgZ8LngPkYi_sY_XV50K0oePql3_37WlXVdQ">
+</div>
+</div>
+</header>
+<div class="flex">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-18 h-[calc(100vh-4.5rem)] hidden lg:flex flex-col py-6 w-64 bg-surface dark:bg-surface shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] z-40 rounded-r-xl">
+<div class="px-6 mb-8 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-2xl neomorph-raised mb-4 overflow-hidden flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-4xl text-primary">spa</span>
+</div>
+<h3 class="font-headline text-lg font-semibold text-on-surface">Estë the Gentle</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Lady of Rest</p>
+</div>
+<nav class="flex-grow">
+<div class="bg-surface dark:bg-surface shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] text-primary rounded-lg m-2 p-3 flex items-center gap-3 cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-medium">Character Bio</span>
+</div>
+<div class="text-on-surface-variant p-3 m-2 hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] rounded-lg transition-all flex items-center gap-3 cursor-pointer group">
+<span class="material-symbols-outlined group-hover:text-tertiary">groups</span>
+<span class="font-medium group-hover:text-tertiary">Valar Council</span>
+</div>
+<div class="text-on-surface-variant p-3 m-2 hover:shadow-[6_6_12px_rgba(0,0,0,0.08),-6_-6_12px_rgba(255,255,255,0.6)] rounded-lg transition-all flex items-center gap-3 cursor-pointer group">
+<span class="material-symbols-outlined group-hover:text-tertiary">waves</span>
+<span class="font-medium group-hover:text-tertiary">Lore of Lórien</span>
+</div>
+<div class="text-on-surface-variant p-3 m-2 hover:shadow-[6_6_12px_rgba(0,0,0,0.08),-6_-6_12px_rgba(255,255,255,0.6)] rounded-lg transition-all flex items-center gap-3 cursor-pointer group">
+<span class="material-symbols-outlined group-hover:text-tertiary">star</span>
+<span class="font-medium group-hover:text-tertiary">Stellar Connections</span>
+</div>
+</nav>
+<div class="mt-auto px-4 pb-4">
+<button class="w-full py-3 neomorph-raised rounded-xl text-primary font-semibold text-sm hover:text-tertiary active:scale-95 transition-soft">
+                    View Genealogy
+                </button>
+<div class="mt-6 flex justify-around border-t border-outline-variant pt-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">settings</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">menu_book</span>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-grow lg:ml-64 p-4 md:p-8 lg:p-12">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1">
+<span class="inline-block px-4 py-1.5 neomorph-inset rounded-full text-xs font-semibold text-tertiary tracking-widest uppercase mb-6">Fëanorian Princes</span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-on-surface leading-tight mb-4">Los Señores del Bosque: <span class="text-primary">Amrod y Amras</span></h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-8 leading-relaxed">Cazadores de Beleriand • Elf (Noldor)</p>
+<div class="flex flex-wrap gap-4">
+<div class="neomorph-raised p-6 rounded-2xl flex-1 min-w-[200px]">
+<span class="material-symbols-outlined text-primary mb-2">content_copy</span>
+<h4 class="font-semibold text-on-surface">Los Gemelos</h4>
+<p class="text-sm text-on-surface-variant mt-1">Identical in face and humor. The youngest sons of Fëanor, inseparable through the ages.</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-30 group-hover:opacity-50 transition-soft"></div>
+<div class="relative neomorph-raised p-4 rounded-[2rem] bg-surface">
+<img alt="Amrod and Amras Twins" class="w-full h-auto rounded-[1.5rem] object-cover shadow-inner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5_0Yv0jwkTrm8RJeUyjivinxhpzMQpMBxCk4hfwbOLQJwILjgHw56x5e7dxSvHQ8KVlsl0MqJtHgtcwyyB9REYue_4i2dUwY8Fn5zroo5wqeLbGjP_Wu9QDcicm053_ilwiWFGVNSIRbepXXWmp89s0OKkjEyILDt2055ZLGhvlx8Tg2TGdIjGFwuiciWsYv9p3KweWk7teBmosl4TuJRyllItU0ukRrZY7FsiY3ZddW-t199E7spE7N9WJDPpi8Sg_lAp3e5ZQ">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Section -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- La Guardia del Sur -->
+<div class="md:col-span-2 neomorph-raised p-8 rounded-3xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">forest</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-4 mb-6">
+<div class="neomorph-inset p-3 rounded-xl">
+<span class="material-symbols-outlined text-tertiary">shield</span>
+</div>
+<h2 class="text-2xl font-headline font-bold">La Guardia del Sur</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed max-w-xl">
+                            Masters of the woodland realm, they monitored the borders of Ossiriand and the southern marches of Beleriand. Their keen elven eyes and unmatched stealth made them the true protectors of the shadowed groves, maintaining a silent vigil against the darkness that crept from the North.
+                        </p>
+<div class="mt-8 flex gap-3">
+<span class="px-4 py-2 neomorph-inset rounded-lg text-xs font-medium">Beleriand Sur</span>
+<span class="px-4 py-2 neomorph-inset rounded-lg text-xs font-medium">Ossiriand</span>
+</div>
+</div>
+</div>
+<!-- Memorable Acts -->
+<div class="neomorph-raised p-8 rounded-3xl bg-surface flex flex-col justify-between">
+<div>
+<div class="neomorph-inset w-12 h-12 flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-4">El Destino Final en Sirion</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            The tragic climax of their story unfolded during the Third Kinslaying. Bound by their father's oath, they met their end at the Havens of Sirion, a silent conclusion to a life defined by loyalty and shadows.
+                        </p>
+</div>
+<button class="mt-8 py-3 w-full neomorph-inset rounded-xl text-primary font-bold hover:shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)] transition-soft">
+                        Read Chronicles
+                    </button>
+</div>
+<!-- Final Silencioso (Data Card) -->
+<div class="neomorph-raised p-8 rounded-3xl flex flex-col items-center text-center">
+<div class="w-16 h-16 neomorph-inset rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-error text-3xl">heart_broken</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-2">Final Silencioso</h3>
+<p class="text-sm text-on-surface-variant mb-6">Their story ended where the great river meets the sea.</p>
+<div class="space-y-4 w-full">
+<div class="flex justify-between items-center text-xs p-3 neomorph-inset rounded-xl">
+<span class="font-semibold uppercase opacity-60">Status</span>
+<span class="text-error font-bold">Fallen at Sirion</span>
+</div>
+<div class="flex justify-between items-center text-xs p-3 neomorph-inset rounded-xl">
+<span class="font-semibold uppercase opacity-60">Legacy</span>
+<span class="text-tertiary font-bold">The Last Twins</span>
+</div>
+</div>
+</div>
+<!-- Lore Details -->
+<div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="neomorph-raised p-6 rounded-2xl">
+<h4 class="font-headline font-bold text-primary mb-3">Estilo de Combate</h4>
+<p class="text-sm text-on-surface-variant">Exceptional archers and trackers. They utilized the dense foliage of Beleriand to ambush their foes, appearing and disappearing like forest ghosts.</p>
+</div>
+<div class="neomorph-raised p-6 rounded-2xl">
+<h4 class="font-headline font-bold text-tertiary mb-3">Rasgos Distintivos</h4>
+<p class="text-sm text-on-surface-variant">Known for their reddish-brown hair (rare among Noldor) and a synchronicity of action that suggested a single mind in two bodies.</p>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full py-12 px-12 flex flex-col md:flex-row justify-between items-center mt-auto shadow-[inset_4px_4px_8px_rgba(0,0,0,0.06),inset_-4px_-4px_8px_rgba(255,255,255,0.5)] bg-surface">
+<div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+<span class="font-body text-sm text-on-surface-variant font-semibold mb-2">© First Age Encyclopedia - The Silmarillion Chronicles</span>
+<div class="flex gap-6 mt-2">
+<a class="text-on-surface-variant hover:text-tertiary transition-colors text-xs font-medium uppercase tracking-tighter" href="#">Terms of Lore</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors text-xs font-medium uppercase tracking-tighter" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors text-xs font-medium uppercase tracking-tighter" href="#">Contact Mandos</a>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="neomorph-raised w-10 h-10 rounded-full flex items-center justify-center text-secondary hover:text-primary transition-soft">
+<span class="material-symbols-outlined text-sm">share</span>
+</button>
+<button class="neomorph-raised w-10 h-10 rounded-full flex items-center justify-center text-secondary hover:text-primary transition-soft">
+<span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+</footer>
+<script>
+        // Simple micro-interactions for neomorphic feel
+        document.querySelectorAll('.neomorph-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.add('scale-95');
+                el.style.boxShadow = 'inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5)';
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.remove('scale-95');
+                el.style.boxShadow = '6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6)';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.remove('scale-95');
+                el.style.boxShadow = '6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6)';
+            });
+        });
+    </script>
+</body></html>

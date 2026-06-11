@@ -1,0 +1,287 @@
+<!DOCTYPE html><html class="light" lang="es"><head><script>try{if(localStorage.getItem("darkMode")==="true"){document.documentElement.classList.add("dark");document.documentElement.classList.remove("light");}else{document.documentElement.classList.remove("dark");document.documentElement.classList.add("light");}}catch(e){}</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cúrunír (Saruman) - Beleriand Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6366f1",
+                        "surface-container": "#e2e4ea",
+                        "surface": "#e8eaf0",
+                        "primary-container": "#818cf8",
+                        "surface-tint": "#6366f1",
+                        "secondary-fixed": "#d8dae6",
+                        "primary-fixed-dim": "#a5b4fc",
+                        "on-surface-variant": "#585a68",
+                        "tertiary-container": "#a78bfa",
+                        "on-surface": "#2e3040",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#fee2e2",
+                        "inverse-on-surface": "#e8eaf0",
+                        "tertiary-fixed-dim": "#c4b5fd",
+                        "inverse-surface": "#2e3040",
+                        "surface-bright": "#edeef4",
+                        "on-error-container": "#991b1b",
+                        "on-primary-fixed-variant": "#4338ca",
+                        "surface-container-high": "#dcdee4",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d6d8de",
+                        "tertiary": "#7c3aed",
+                        "surface-container-lowest": "#f0f2f8",
+                        "on-secondary-fixed": "#1a1b26",
+                        "on-background": "#2e3040",
+                        "error": "#dc2626",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#e0e2ff",
+                        "on-primary-fixed": "#1e1b4b",
+                        "outline-variant": "#d0d2dc",
+                        "on-secondary-container": "#585a68",
+                        "surface-variant": "#dcdee4",
+                        "on-secondary-fixed-variant": "#404252",
+                        "on-error": "#ffffff",
+                        "background": "#e8eaf0",
+                        "on-tertiary-container": "#3b1f63",
+                        "secondary-fixed-dim": "#b8baca",
+                        "on-primary-container": "#e0e2ff",
+                        "secondary": "#6c6e7e",
+                        "inverse-primary": "#a5b4fc",
+                        "surface-container-low": "#e5e7ed",
+                        "surface-dim": "#d4d6dc",
+                        "outline": "#8a8c9a",
+                        "on-tertiary-fixed-variant": "#5b21b6",
+                        "tertiary-fixed": "#ede9fe",
+                        "secondary-container": "#d8dae6",
+                        "on-tertiary-fixed": "#2e1065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #e8eaf0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #2e3040;
+        }
+        .neomorphic-raised {
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+        }
+        .neomorphic-inset {
+            box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+        }
+        .neomorphic-text-shadow {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<div id="app-header"></div>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto"><!-- Hero Section -->
+<header class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full neomorphic-inset text-primary text-sm font-medium">
+<span class="material-symbols-outlined text-sm">history_edu</span>
+                    Istari · Maia de Aulë
+                </div>
+<h1 class="text-6xl font-extrabold text-on-surface leading-tight tracking-tight font-headline">
+                    El Mago Blanco:<br>
+<span class="text-primary">Curunír</span>
+</h1>
+<p class="text-xl text-on-surface-variant font-medium max-w-2xl leading-relaxed">
+                    Lord of Isengard and Master of Rings. El más sabio entre los Istari, cuya voz era música y cuyo intelecto no conocía rival en la Tierra Media.
+                </p>
+<div class="flex gap-4 pt-4">
+<button class="neomorphic-raised bg-background px-8 py-3 rounded-xl text-primary font-semibold flex items-center gap-2 active:scale-95 transition-all">
+<span class="material-symbols-outlined">menu_book</span>
+                        Explorar Biografía
+                    </button>
+<button class="neomorphic-raised bg-background px-8 py-3 rounded-xl text-secondary font-semibold flex items-center gap-2 active:scale-95 transition-all">
+<span class="material-symbols-outlined">share</span>
+                        Citar Fuente
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="neomorphic-raised rounded-[2rem] p-4 bg-background">
+<img alt="Curunír" class="w-full h-auto rounded-[1.5rem] object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyNt3rzQrhzyaTQQUJCf7VX91UqZ-k9Ck8tT3v_nZ2S-HmDM7XAnliskqJveYs--GU7RdA1sX6Ods5HTBR-NGrot0E9PInoZTgblFjS6cbuAWO9nXqLPKfhk6QjY05k4o5lRf3nbgclUNYRYXt4zLzL-0JnunXT_WEHmFhbMZrJQGWA5muvJmJj27d2rmACvNKWAxODXJco4UKNDe-rE2_c9XAejl6I7IBIrWTBHyXjPxlY6nWjZcqj9TWJaOi5n43iVys-5GeNA">
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-6 -right-6 w-32 h-32 neomorphic-raised rounded-2xl bg-background flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1">auto_awesome</span>
+</div>
+</div>
+</header>
+<!-- Bento Grid Content -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Quick Facts -->
+<div class="md:col-span-1 space-y-8">
+<div class="neomorphic-raised p-8 rounded-xl bg-background border-l-4 border-primary">
+<h3 class="text-lg font-bold text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">info</span>
+                        Atributos Clave
+                    </h3>
+<ul class="space-y-4">
+<li class="flex justify-between items-center py-2 border-b border-surface-container">
+<span class="text-on-surface-variant text-sm">Nombre Original</span>
+<span class="font-semibold text-on-surface">Curumo</span>
+</li>
+<li class="flex justify-between items-center py-2 border-b border-surface-container">
+<span class="text-on-surface-variant text-sm">Residencia</span>
+<span class="font-semibold text-on-surface">Orthanc</span>
+</li>
+<li class="flex justify-between items-center py-2 border-b border-surface-container">
+<span class="text-on-surface-variant text-sm">Orden</span>
+<span class="font-semibold text-on-surface">Heren Istarion</span>
+</li>
+<li class="flex justify-between items-center py-2">
+<span class="text-on-surface-variant text-sm">Maestro</span>
+<span class="font-semibold text-on-surface">Aulë el Herrero</span>
+</li>
+</ul>
+</div>
+<div class="neomorphic-inset p-8 rounded-xl bg-background relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-8xl">token</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-4">El Poder de la Voz</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Su voz no era simplemente sonido; era una red tejida con hilos de persuasión. Aquellos que la escuchaban sentían que todo lo que decía era sabio y justo, y que el desacuerdo era una locura propia de mentes inferiores.
+                    </p>
+</div>
+</div>
+<!-- Main Narrative -->
+<div class="md:col-span-2 space-y-8">
+<div class="neomorphic-raised p-10 rounded-2xl bg-background">
+<h2 class="text-3xl font-bold text-on-surface mb-6 font-headline">La Caída en la Ambición</h2>
+<div class="prose prose-slate max-w-none text-on-surface-variant leading-loose space-y-4">
+<p>
+                            Curunír, el Hombre de Habilidad, fue enviado a la Tierra Media para guiar a los Pueblos Libres contra la sombra de Sauron. Sin embargo, su propia fascinación por el poder del enemigo se convirtió en su ruina. Al estudiar las artes del Anillo Único, comenzó a desear el orden y el dominio absoluto que éste representaba.
+                        </p>
+<p>
+                            Su traición no fue súbita, sino un lento enfriamiento de la compasión, reemplazada por la lógica fría de las máquinas y la industria. En Isengard, transformó los jardines verdes en fosas de fundición, priorizando el metal y el vapor sobre la vida orgánica, un reflejo de su alejamiento de la voluntad de los Valar.
+                        </p>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-4">
+<img class="rounded-xl w-full h-48 object-cover neomorphic-inset p-1" data-alt="A dark, industrial fortress with tall black obsidian towers rising into a stormy, ash-filled sky. Glowing orange lava flows through metal channels on the ground, illuminating the cold, sharp architecture of a master artificer's domain. The mood is oppressive and grand, with a focus on geometric perfection and dark, cold blues and grays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiaH_40aopOZl7S683ob4omWKNTeLDVj9q_Lnw3BOd8pUHCi_9rKeObUjAjiZrj1wiQlbNR6-dl512ozvCNwslnUQYWe4Vn4RAJLmq22UfZv7u_MYS0My-5FKp0zJd5yn9LHizPDfuSBvYnx6CKuTpcEOaNP2tzFdho-QxW2JJ_fxf7uIa01uHCwOthfWIOVoZ5iwhuYzXzobJFSQpjymf54PPqG8L4d65UUGfOK-5H_dxrK_2X72W0byApRaB1LrIaIdp7iStUQ">
+<img class="rounded-xl w-full h-48 object-cover neomorphic-inset p-1" data-alt="Close-up of a master smith's workshop in a high-fantasy setting. Elaborate mechanical blueprints spread across a stone table, with intricate brass gears, crystal lenses, and ancient scrolls. The lighting is cold and scholarly, reflecting a high-key light mode aesthetic with soft indigo highlights and deep shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_hvlYov8vucYDms52XNcri7c6QPTl4Ik6iupx9In8G096Mx06m_Npn-rN62K-vNCmCmOPl3w_s-uULDobNJX93HA37jLeSHg7jKedCy7hQkZkZwTI4E3-Yi3uYTiAgLFYGaa_H4ryjV1U91Snehh5qSr1Jc2M_ATLJoGvpnu5E5_3sy7FCR6-5I3B4n3xH0seOvAplxjDO0VxkLsxIjHpAj06o7RF_uTosLceJo-K2APMwCqtvFXdOpEGY-znrflwwkuHqZZWlg">
+</div>
+</div>
+<div class="neomorphic-raised p-10 rounded-2xl bg-background">
+<h2 class="text-2xl font-bold text-on-surface mb-4 font-headline">El legado del Maestro de Artificios</h2>
+<p class="text-on-surface-variant leading-relaxed italic border-l-4 border-tertiary-container pl-6 mb-6">
+                        "Tiene una mente de metal y ruedas; y no le importan las cosas que crecen, excepto cuando le sirven por el momento."
+                    </p>
+<p class="text-on-surface-variant leading-relaxed">
+                        A pesar de su caída, Curunír dejó un legado de invenciones sin precedentes. Sus estudios sobre el "Fuego de Orthanc" y la refinación de aleaciones permitieron la creación de armas y máquinas que desafiaron la naturaleza misma. Representa la dualidad del conocimiento: la capacidad de crear maravillas y el peligro de perder el alma en el proceso de optimización.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Navigation Clusters -->
+<section class="mt-20">
+<h3 class="text-center text-secondary font-semibold mb-10 tracking-widest uppercase text-xs">Cronologías Relacionadas</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<button class="neomorphic-raised p-6 rounded-xl flex flex-col items-center gap-3 group active:scale-95 transition-all">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">castle</span>
+<span class="text-sm font-semibold text-on-surface">Caída de Isengard</span>
+</button>
+<button class="neomorphic-raised p-6 rounded-xl flex flex-col items-center gap-3 group active:scale-95 transition-all">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">group</span>
+<span class="text-sm font-semibold text-on-surface">Concilio Blanco</span>
+</button>
+<button class="neomorphic-raised p-6 rounded-xl flex flex-col items-center gap-3 group active:scale-95 transition-all">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">visibility</span>
+<span class="text-sm font-semibold text-on-surface">Las Palantíri</span>
+</button>
+<button class="neomorphic-raised p-6 rounded-xl flex flex-col items-center gap-3 group active:scale-95 transition-all">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">diamond</span>
+<span class="text-sm font-semibold text-on-surface">Anillos de Poder</span>
+</button>
+</div>
+</section></main>
+<!-- Footer -->
+<footer class="w-full mt-12 px-8 py-10 flex flex-col items-center gap-6 bg-surface dark:bg-surface shadow-[0px_-6px_12px_rgba(0,0,0,0.05)] rounded-t-xl">
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Primary Sources</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Genealogies</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Timeline</a>
+<a class="text-on-secondary-fixed-variant hover:text-tertiary transition-colors font-body text-sm" href="#">Editorial Policy</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neomorphic-raised p-3 rounded-full text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-tertiary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="neomorphic-raised p-3 rounded-full text-on-surface-variant hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<p class="font-body text-sm text-on-surface-variant text-center max-w-lg">
+            © 2024 Beleriand Archive. All texts licensed under scholarly fair use. Los anales de Aman y la Tierra Media preservados para la posteridad.
+        </p>
+</footer>
+<!-- Interactive Layer: Floating Action Button (only on appropriate context) -->
+<!-- Suppressed for this detailed character profile as per rules -->
+<script>
+        // Simple interactivity for neomorphic states
+        document.querySelectorAll('.neomorphic-raised').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.classList.remove('neomorphic-raised');
+                el.classList.add('neomorphic-inset');
+            });
+            el.addEventListener('mouseup', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.classList.add('neomorphic-raised');
+                el.classList.remove('neomorphic-inset');
+            });
+        });
+
+        // Soft entry animation logic
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section, .neomorphic-raised, .neomorphic-inset').forEach(el => {
+                el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(el);
+            });
+        });
+    </script>
+  <script src="/characters/header.js"></script>
+  <script src="/characters/footer.js"></script>
+</body></html>
